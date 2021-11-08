@@ -2,3 +2,7 @@
 __pycache__
 .DS_STORE
 .idea
+.mat
+vision_datasets/
+results_detection_espnetv2_2.0/
+results_detection/

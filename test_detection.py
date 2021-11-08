@@ -29,16 +29,35 @@ def main(args):
         cfg = get_config(args.im_size)
     else:
         print_error_message('{} image size not supported'.format(args.im_size))
+    if args.dataset in ['coco', 'pascal','handsynth']:
+        if args.dataset == 'pascal':
 
-    if args.dataset in ['voc', 'pascal']:
-        from data_loader.detection.voc import VOC_CLASS_LIST
-        num_classes = len(VOC_CLASS_LIST)
-    elif args.dataset == 'coco':
-        from data_loader.detection.coco import COCO_CLASS_LIST
-        num_classes = len(COCO_CLASS_LIST)
-    else:
-        print_error_message('{} dataset not supported.'.format(args.dataset))
-        exit(-1)
+            from data_loader.detection.voc import VOCDataset, VOC_CLASS_LIST
+            dataset_class = VOCDataset(root_dir=args.data_path, transform=None, is_training=False,
+                                       split="VOC2007")
+            class_names = VOC_CLASS_LIST
+            num_classes = len(VOC_CLASS_LIST)            
+        elif args.dataset == 'coco':
+            from data_loader.detection.coco import COCOObjectDetection, COCO_CLASS_LIST
+            dataset_class = COCOObjectDetection(root_dir=args.data_path, transform=None,
+                                                is_training=False)
+            class_names = COCO_CLASS_LIST
+            num_classes=len(COCO_CLASS_LIST)
+        elif args.dataset == 'handsynth':
+            from data_loader.detection.handsynth import HandSynthDataset, VOC_CLASS_LIST
+            dataset_class = HandSynthDataset(root=args.data_path, transform=None, is_training=False)
+            class_names = VOC_CLASS_LIST
+
+            num_classes = len(VOC_CLASS_LIST)
+    # if args.dataset in ['voc', 'pascal']:
+        # from data_loader.detection.voc import VOC_CLASS_LIST
+        # num_classes = len(VOC_CLASS_LIST)
+    # elif args.dataset == 'coco':
+        # from data_loader.detection.coco import COCO_CLASS_LIST
+        # num_classes = len(COCO_CLASS_LIST)
+    # else:
+        # print_error_message('{} dataset not supported.'.format(args.dataset))
+        # exit(-1)
 
     cfg.NUM_CLASSES = num_classes
 
@@ -49,7 +68,7 @@ def main(args):
 
     if args.weights_test:
         weight_dict = torch.load(args.weights_test, map_location='cpu')
-        model.load_state_dict(weight_dict)
+        model.load_state_dict(weight_dict["state_dict"])
 
     num_params = model_parameters(model)
     flops = compute_flops(model, input=torch.Tensor(1, 3, cfg.image_size, cfg.image_size))
@@ -70,16 +89,7 @@ def main(args):
     # -----------------------------------------------------------------------------
     # Dataset
     # -----------------------------------------------------------------------------
-    if args.dataset in ['voc', 'pascal']:
-        from data_loader.detection.voc import VOCDataset, VOC_CLASS_LIST
-        dataset_class = VOCDataset(root_dir=args.data_path, transform=None, is_training=False,
-                                   split="VOC2007")
-        class_names = VOC_CLASS_LIST
-    else:
-        from data_loader.detection.coco import COCOObjectDetection, COCO_CLASS_LIST
-        dataset_class = COCOObjectDetection(root_dir=args.data_path, transform=None,
-                                            is_training=False)
-        class_names = COCO_CLASS_LIST
+
 
     # -----------------------------------------------------------------------------
     # Evaluate
@@ -93,23 +103,35 @@ def main(args):
     # -----------------------------------------------------------------------------
     # Results
     # -----------------------------------------------------------------------------
-    if args.dataset in ['voc', 'pascal']:
-        mAP = result_info['map']
-        ap = result_info['ap']
-        for i, c_name in enumerate(class_names):
-            if i == 0:  # skip the background class
-                continue
-            print_info_message('{}: {}'.format(c_name, ap[i]))
+    if args.dataset in ['coco', 'pascal','handsynth']:
+        if args.dataset == 'pascal':
 
-        print_info_message('* mAP: {}'.format(mAP))
-    elif args.dataset == 'coco':
-        print_info_message('AP_IoU=0.50:0.95: {}'.format(result_info.stats[0]))
-        print_info_message('AP_IoU=0.50: {}'.format(result_info.stats[1]))
-        print_info_message('AP_IoU=0.75: {}'.format(result_info.stats[2]))
-    else:
-        print_error_message('{} not supported'.format(args.dataset))
+            mAP = result_info['map']
+            ap = result_info['ap']
+            for i, c_name in enumerate(class_names):
+                if i == 0:  # skip the background class
+                    continue
+                print_info_message('{}: {}'.format(c_name, ap[i]))
 
-    print_log_message('Done')
+            print_info_message('* mAP: {}'.format(mAP))
+        elif args.dataset == 'coco':
+            print_info_message('AP_IoU=0.50:0.95: {}'.format(result_info.stats[0]))
+            print_info_message('AP_IoU=0.50: {}'.format(result_info.stats[1]))
+            print_info_message('AP_IoU=0.75: {}'.format(result_info.stats[2]))
+        elif args.dataset == 'handsynth':
+
+            mAP = result_info['map']
+            ap = result_info['ap']
+            for i, c_name in enumerate(class_names):
+                if i == 0:  # skip the background class
+                    continue
+                print_info_message('{}: {}'.format(c_name, ap[i]))
+
+            print_info_message('* mAP: {}'.format(mAP))
+        else:
+            print_error_message('{} not supported'.format(args.dataset))
+
+        print_log_message('Done')
 
 
 if __name__ == '__main__':
