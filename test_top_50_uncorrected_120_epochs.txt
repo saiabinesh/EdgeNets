@@ -1,0 +1,23 @@
+main function started
+path is :  ./results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20221108-061245//espnetv2_2.0_checkpoint.pth.tar
+path exists
+2022-11-08 10:48:04 - [32m[1mINFO   [0m - FLOPs: 284.81 million
+2022-11-08 10:48:04 - [32m[1mINFO   [0m - Network Parameters: 2.28 million
+2022-11-08 10:48:55 - [34m[1mLOGS   [0m - Batch:[1/19]		BatchTime:19.769		top1:74.414 (82.715)		top5:96.094(96.973)
+2022-11-08 10:48:55 - [34m[1mLOGS   [0m - Batch:[2/19]		BatchTime:13.228		top1:71.875 (79.102)		top5:94.727(96.224)
+2022-11-08 10:48:56 - [34m[1mLOGS   [0m - Batch:[3/19]		BatchTime:9.961		top1:87.305 (81.152)		top5:97.852(96.631)
+2022-11-08 10:49:03 - [34m[1mLOGS   [0m - Batch:[4/19]		BatchTime:9.508		top1:94.141 (83.750)		top5:98.047(96.914)
+2022-11-08 10:49:03 - [34m[1mLOGS   [0m - Batch:[5/19]		BatchTime:7.948		top1:92.383 (85.189)		top5:97.852(97.070)
+2022-11-08 10:49:04 - [34m[1mLOGS   [0m - Batch:[6/19]		BatchTime:6.833		top1:91.016 (86.021)		top5:99.023(97.349)
+2022-11-08 10:49:04 - [34m[1mLOGS   [0m - Batch:[7/19]		BatchTime:5.997		top1:87.695 (86.230)		top5:96.484(97.241)
+2022-11-08 10:49:20 - [34m[1mLOGS   [0m - Batch:[8/19]		BatchTime:7.112		top1:81.445 (85.699)		top5:96.094(97.114)
+2022-11-08 10:49:20 - [34m[1mLOGS   [0m - Batch:[9/19]		BatchTime:6.421		top1:84.570 (85.586)		top5:97.656(97.168)
+2022-11-08 10:49:20 - [34m[1mLOGS   [0m - Batch:[11/19]		BatchTime:5.375		top1:83.008 (85.059)		top5:95.508(97.005)
+2022-11-08 10:49:37 - [34m[1mLOGS   [0m - Batch:[12/19]		BatchTime:6.250		top1:65.430 (83.549)		top5:91.406(96.575)
+2022-11-08 10:49:37 - [34m[1mLOGS   [0m - Batch:[13/19]		BatchTime:5.814		top1:61.133 (81.948)		top5:91.992(96.247)
+2022-11-08 10:49:38 - [34m[1mLOGS   [0m - Batch:[14/19]		BatchTime:5.477		top1:75.781 (81.536)		top5:91.602(95.938)
+2022-11-08 10:49:38 - [34m[1mLOGS   [0m - Batch:[15/19]		BatchTime:5.148		top1:65.430 (80.530)		top5:91.211(95.642)
+2022-11-08 10:49:55 - [34m[1mLOGS   [0m - Batch:[16/19]		BatchTime:5.834		top1:79.102 (80.446)		top5:91.406(95.393)
+2022-11-08 10:49:55 - [34m[1mLOGS   [0m - Batch:[17/19]		BatchTime:5.518		top1:70.117 (79.872)		top5:95.117(95.378)
+2022-11-08 10:49:56 - [34m[1mLOGS   [0m - Batch:[18/19]		BatchTime:5.272		top1:76.446 (79.701)		top5:94.215(95.320)
+2022-11-08 10:49:56 - [32m[1mINFO   [0m -  * Prec@1:79.701 Prec@5:95.320

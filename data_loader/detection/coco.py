@@ -9,7 +9,25 @@ import numpy as np
 from PIL import Image
 from pycocotools.coco import COCO
 
-COCO_CLASS_LIST = ['__background__','person', 'car', 'chair', 'book', 'bottle', 'cup', 'dining table', 'bowl', 'traffic light', 'handbag', 'umbrella', 'bird', 'boat', 'truck', 'bench', 'sheep', 'banana', 'kite', 'motorcycle', 'backpack', 'potted plant', 'cow', 'wine glass', 'carrot', 'knife', 'broccoli', 'donut', 'bicycle', 'skis', 'vase', 'horse', 'tie', 'cell phone', 'orange', 'cake', 'sports ball', 'clock', 'suitcase', 'spoon', 'surfboard']
+# COCO_CLASS_LIST = ['__background__',
+                   # 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
+                   # 'train', 'truck', 'boat', 'traffic light', 'fire hydrant',
+                   # 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog',
+                   # 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra',
+                   # 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie',
+                   # 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball',
+               # 'kite', 'baseball bat', 'baseball glove', 'skateboard',
+               # 'surfboard', 'tennis racket', 'bottle', 'wine glass', 'cup',
+               # 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+               # 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza',
+               # 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed',
+               # 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote',
+               # 'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink',
+               # 'refrigerator', 'book', 'clock', 'vase', 'scissors',
+               # 'teddy bear', 'hair drier', 'toothbrush'
+                # ]
+                
+COCO_CLASS_LIST = ['person', 'car', 'chair', 'book', 'bottle', 'cup', 'dining table', 'bowl', 'traffic light', 'handbag', 'umbrella', 'bird', 'boat', 'truck', 'bench', 'sheep', 'banana', 'kite', 'motorcycle', 'backpack', 'potted plant', 'cow', 'wine glass', 'carrot', 'knife', 'broccoli', 'donut', 'bicycle', 'skis', 'vase', 'horse', 'tie', 'cell phone', 'orange', 'cake', 'sports ball', 'clock', 'suitcase', 'spoon', 'surfboard']
 
 class COCOObjectDetection(torch.utils.data.Dataset):
 

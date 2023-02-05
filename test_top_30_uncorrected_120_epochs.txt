@@ -1,0 +1,16 @@
+main function started
+path is :  ./results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20221108-032252//espnetv2_2.0_checkpoint.pth.tar
+path exists
+2022-11-08 06:11:09 - [32m[1mINFO   [0m - FLOPs: 284.81 million
+2022-11-08 06:11:09 - [32m[1mINFO   [0m - Network Parameters: 2.26 million
+2022-11-08 06:12:07 - [34m[1mLOGS   [0m - Batch:[1/12]		BatchTime:23.631		top1:74.219 (83.105)		top5:96.094(97.168)
+2022-11-08 06:12:07 - [34m[1mLOGS   [0m - Batch:[2/12]		BatchTime:15.803		top1:73.047 (79.753)		top5:97.070(97.135)
+2022-11-08 06:12:07 - [34m[1mLOGS   [0m - Batch:[3/12]		BatchTime:11.888		top1:87.305 (81.641)		top5:97.656(97.266)
+2022-11-08 06:12:17 - [34m[1mLOGS   [0m - Batch:[4/12]		BatchTime:11.389		top1:93.750 (84.062)		top5:99.414(97.695)
+2022-11-08 06:12:18 - [34m[1mLOGS   [0m - Batch:[5/12]		BatchTime:9.746		top1:94.141 (85.742)		top5:98.242(97.786)
+2022-11-08 06:12:18 - [34m[1mLOGS   [0m - Batch:[6/12]		BatchTime:8.375		top1:90.625 (86.440)		top5:98.633(97.907)
+2022-11-08 06:12:19 - [34m[1mLOGS   [0m - Batch:[7/12]		BatchTime:7.346		top1:87.695 (86.597)		top5:97.266(97.827)
+2022-11-08 06:12:34 - [34m[1mLOGS   [0m - Batch:[8/12]		BatchTime:8.302		top1:79.297 (85.786)		top5:95.703(97.591)
+2022-11-08 06:12:37 - [34m[1mLOGS   [0m - Batch:[9/12]		BatchTime:7.767		top1:86.523 (85.859)		top5:98.633(97.695)
+2022-11-08 06:12:38 - [34m[1mLOGS   [0m - Batch:[11/12]		BatchTime:6.518		top1:80.851 (85.430)		top5:95.745(97.680)
+2022-11-08 06:12:38 - [32m[1mINFO   [0m -  * Prec@1:85.430 Prec@5:97.680

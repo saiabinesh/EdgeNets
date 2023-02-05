@@ -108,7 +108,7 @@ def main(args):
     if args.resume:
         if os.path.isfile(args.resume):
             print_info_message("=> loading checkpoint '{}'".format(args.resume))
-            checkpoint = torch.load(args.checkpoint, map_location=torch.device('cpu'))
+            checkpoint = torch.load(args.resume, map_location=torch.device('cpu'))
             model.load_state_dict(checkpoint['state_dict'])
             min_val_loss = checkpoint['min_loss']
             start_epoch = checkpoint['epoch']
@@ -186,7 +186,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Training detection network')
     ### MODEL RELATED PARAMS
-    parser.add_argument('--resume', action='store_true', help='resume from checkpoint')
+    parser.add_argument('--resume', type=str, help='resume from checkpoint') #action='store_true',
     parser.add_argument('--model', default='espnetv2', choices=detection_models, type=str, help='initialized model path')
     parser.add_argument('--s', default=2.0, type=float, help='Model scale factor')
     parser.add_argument('--channels', default=3, type=int, help='Input channels')

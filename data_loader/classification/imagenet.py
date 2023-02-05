@@ -47,9 +47,21 @@ def val_loader(args):
 
     return val_loader
 
+#helper function for the loading the test data
+def test_loader(args):
+    testdir = os.path.join(args.data, 'test')
+    test_loader = torch.utils.data.DataLoader(
+        datasets.ImageFolder(testdir, val_transforms(args.inpSize)),
+        batch_size=args.batch_size, shuffle=False,
+        num_workers=args.workers, pin_memory=True)
+
+    return test_loader
+
+    
 # helped function for loading trianing and validation data
 def data_loaders(args):
     tr_loader = train_loader(args)
     vl_loader = val_loader(args)
-    return tr_loader, vl_loader
+    tst_loader = test_loader(args)
+    return tr_loader, vl_loader, tst_loader
 

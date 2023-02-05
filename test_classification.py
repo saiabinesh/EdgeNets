@@ -3,14 +3,14 @@ import torch
 from utilities.utils import model_parameters, compute_flops
 from utilities.train_eval_classification import validate
 import os
-from data_loader.classification.imagenet import val_loader as loader
+from data_loader.classification.imagenet import test_loader as loader
 from utilities.print_utils import *
 #============================================
 __author__ = "Sachin Mehta"
 __license__ = "MIT"
 __maintainer__ = "Sachin Mehta"
 #============================================
-
+from torch import nn
 
 def main(args):
     # create model
@@ -44,7 +44,7 @@ def main(args):
     num_gpus = torch.cuda.device_count()
     device = 'cuda' if num_gpus >=1 else 'cpu'
     weight_dict = torch.load(args.weights, map_location=torch.device(device))
-    model.load_state_dict(weight_dict)
+    model.load_state_dict(weight_dict['state_dict']) #(weight_dict)
 
     if num_gpus >= 1:
         model = torch.nn.DataParallel(model)
@@ -53,10 +53,33 @@ def main(args):
             import torch.backends.cudnn as cudnn
             cudnn.benchmark = True
             cudnn.deterministic = True
+    if args.dataset=='imagenet':
+        # Data loading code
+        val_loader = loader(args) #actually it's only loading test set now
+        from utilities.train_eval_classification import validate
+        validate(val_loader, model, criteria=None, device=device)
+    elif args.dataset=='coco':
+        from data_loader.classification.coco import COCOClassification
+        # train_dataset = COCOClassification(root=args.data, split='train', year='2017', inp_size=args.inpSize,
+                                           # scale=args.scale, is_training=True)
+        val_dataset = COCOClassification(root=args.data, split='val', year='2017', inp_size=args.inpSize,
+                                         is_training=False)
 
-    # Data loading code
-    val_loader = loader(args)
-    validate(val_loader, model, criteria=None, device=device)
+        # train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True,
+                                                   # pin_memory=True, num_workers=args.workers)
+        val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False,
+                                                 pin_memory=True, num_workers=args.workers)
+                                                 
+        # print("size(train_loader) ",size(train_loader))
+        # print("size(val_loader) ",size(val_loader))
+
+        criterion = nn.BCEWithLogitsLoss()
+        acc_metric = 'F1'                                        
+
+        # # import the loaders too
+        # from utilities.train_eval_classification import train_multi as train
+        from utilities.train_eval_classification import validate_multi as validate
+        validate(val_loader, model, criteria=criterion, device=device)
 
 
 if __name__ == '__main__':

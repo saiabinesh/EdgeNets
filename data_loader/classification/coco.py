@@ -12,23 +12,7 @@ from torchvision.transforms import Compose, RandomResizedCrop, RandomHorizontalF
 from transforms.classification.data_transforms import MEAN, STD
 from torch.utils import data
 
-COCO_CLASS_LIST = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
-                   'train', 'truck', 'boat', 'traffic light', 'fire', 'hydrant',
-                   'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog',
-                   'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra',
-                   'giraffe', 'backpack', 'umbrella', 'handbag', 'tie',
-                   'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball',
-                   'kite', 'baseball bat', 'baseball glove', 'skateboard',
-                   'surfboard', 'tennis racket', 'bottle', 'wine glass', 'cup',
-                   'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
-                   'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza',
-                   'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed',
-                   'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote',
-                   'keyboard', 'cell phone', 'microwave oven', 'toaster', 'sink',
-                   'refrigerator', 'book', 'clock', 'vase', 'scissors',
-                   'teddy bear', 'hair drier', 'toothbrush'
-                   ]
-
+COCO_CLASS_LIST = ['person', 'car', 'chair', 'book', 'bottle', 'cup', 'dining table', 'bowl', 'traffic light', 'handbag', 'umbrella', 'bird', 'boat', 'truck', 'bench', 'sheep', 'banana', 'kite', 'motorcycle', 'backpack', 'potted plant', 'cow', 'wine glass', 'carrot', 'knife', 'broccoli', 'donut', 'bicycle', 'skis', 'vase', 'horse', 'tie', 'cell phone', 'orange', 'cake', 'sports ball', 'clock', 'suitcase', 'spoon', 'surfboard']
 
 class COCOClassification(data.Dataset):
     def __init__(self, root, split='train', year='2017', inp_size=224, scale=(0.2, 1.0), is_training=True):

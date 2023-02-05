@@ -18,6 +18,54 @@ from torch import nn
 __author__ = "Sachin Mehta"
 __maintainer__ = "Sachin Mehta"
 # ============================================
+class EarlyStopping(object):
+    def __init__(self, mode='min', min_delta=0, patience=10, percentage=False):
+        self.mode = mode
+        self.min_delta = min_delta
+        self.patience = patience
+        self.best = None
+        self.num_bad_epochs = 0
+        self.is_better = None
+        self._init_is_better(mode, min_delta, percentage)
+
+        if patience == 0:
+            self.is_better = lambda a, b: True
+            self.step = lambda a: False
+
+    def step(self, metrics):
+        if self.best is None:
+            self.best = metrics
+            return False
+
+        if torch.isnan(metrics):
+            return True
+
+        if self.is_better(metrics, self.best):
+            self.num_bad_epochs = 0
+            self.best = metrics
+        else:
+            self.num_bad_epochs += 1
+
+        if self.num_bad_epochs >= self.patience:
+            return True
+
+        return False
+
+    def _init_is_better(self, mode, min_delta, percentage):
+        if mode not in {'min', 'max'}:
+            raise ValueError('mode ' + mode + ' is unknown!')
+        if not percentage:
+            if mode == 'min':
+                self.is_better = lambda a, best: a < best - min_delta
+            if mode == 'max':
+                self.is_better = lambda a, best: a > best + min_delta
+        else:
+            if mode == 'min':
+                self.is_better = lambda a, best: a < best - (
+                            best * min_delta / 100)
+            if mode == 'max':
+                self.is_better = lambda a, best: a > best + (
+                            best * min_delta / 100)
 
 
 def main(args):
@@ -93,13 +141,17 @@ def main(args):
     best_acc = 0.0
     num_gpus = torch.cuda.device_count()
     device = 'cuda' if num_gpus >= 1 else 'cpu'
+    es = EarlyStopping(patience=50,mode='max')
+    
     if args.resume:
         if os.path.isfile(args.resume):
             print_info_message("=> loading checkpoint '{}'".format(args.resume))
             checkpoint = torch.load(args.resume, map_location=torch.device('cpu'))
             args.start_epoch = checkpoint['epoch']
             best_acc = checkpoint['best_prec1']
-            model.load_state_dict(checkpoint['state_dict'], map_location=torch.device(device))
+
+            model.load_state_dict(checkpoint['state_dict'])#, map_location=torch.device(device))
+            model=model.to(device)
             optimizer.load_state_dict(checkpoint['optimizer'])
             print_info_message("=> loaded checkpoint '{}' (epoch {})"
                                .format(args.resume, checkpoint['epoch']))
@@ -132,7 +184,7 @@ def main(args):
     # -----------------------------------------------------------------------------
     # Data loading code
     if args.dataset == 'imagenet':
-        train_loader, val_loader = img_loader.data_loaders(args)
+        train_loader, val_loader, test_loader= img_loader.data_loaders(args)
         # import the loaders too
         from utilities.train_eval_classification import train, validate
     elif args.dataset == 'coco':
@@ -227,6 +279,9 @@ def main(args):
         writer.add_scalar('Classification/{}/Val'.format(acc_metric), val_acc, epoch)
         writer.add_scalar('Classification/Complexity/Top1_vs_flops', best_acc, round(flops, 2))
         writer.add_scalar('Classification/Complexity/Top1_vs_params', best_acc, round(num_params, 2))
+        if es.step(torch.tensor(val_acc)):
+            print("BReaking now as early stopping criterion met")
+            break
 
     writer.close()
 
@@ -272,7 +327,7 @@ if __name__ == '__main__':
     # DiceNet related settings
     parser.add_argument('--model-width', default=224, type=int, help='Model width')
     parser.add_argument('--model-height', default=224, type=int, help='Model height')
-
+    parser.add_argument('--num_classes', default=1000, type=int, help='# of classes in the dataset')
     ## Experiment related settings
     parser.add_argument('--exp-type', type=str, choices=classification_exp_choices, default='main',
                         help='Experiment type')
@@ -303,9 +358,12 @@ if __name__ == '__main__':
         args.weights_ft = model_weight_map[weight_file_key]
 
 
-    if args.dataset == 'imagenet':
-        args.num_classes = 1000
-    elif args.dataset == 'coco':
+    # if args.dataset == 'imagenet':
+        # args.num_classes = 1000
+    # elif args.dataset == 'coco':
+        # from data_loader.classification.coco import COCO_CLASS_LIST
+        # args.num_classes = len(COCO_CLASS_LIST)
+    if args.dataset == 'coco':
         from data_loader.classification.coco import COCO_CLASS_LIST
         args.num_classes = len(COCO_CLASS_LIST)
 
