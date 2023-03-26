@@ -1,0 +1,20 @@
+main function started
+path is :  ./results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230312-174206/\espnetv2_2.0_checkpoint.pth.tar
+path exists
+2023-03-12 22:56:12 - [32m[1mINFO   [0m - FLOPs: 284.81 million
+2023-03-12 22:56:12 - [32m[1mINFO   [0m - Network Parameters: 4.78 million
+2023-03-12 22:57:03 - [34m[1mLOGS   [0m - Batch:[1/16]		BatchTime:14.745		top1:81.445 (78.906)		top5:92.383(90.039)
+2023-03-12 22:57:03 - [34m[1mLOGS   [0m - Batch:[2/16]		BatchTime:9.930		top1:84.570 (80.794)		top5:92.188(90.755)
+2023-03-12 22:57:04 - [34m[1mLOGS   [0m - Batch:[3/16]		BatchTime:7.523		top1:84.570 (81.738)		top5:93.945(91.553)
+2023-03-12 22:57:04 - [34m[1mLOGS   [0m - Batch:[4/16]		BatchTime:6.082		top1:82.617 (81.914)		top5:92.188(91.680)
+2023-03-12 22:57:04 - [34m[1mLOGS   [0m - Batch:[5/16]		BatchTime:5.118		top1:80.273 (81.641)		top5:90.820(91.536)
+2023-03-12 22:57:05 - [34m[1mLOGS   [0m - Batch:[6/16]		BatchTime:4.430		top1:82.422 (81.752)		top5:90.820(91.434)
+2023-03-12 22:57:05 - [34m[1mLOGS   [0m - Batch:[7/16]		BatchTime:3.916		top1:78.125 (81.299)		top5:88.867(91.113)
+2023-03-12 22:57:05 - [34m[1mLOGS   [0m - Batch:[8/16]		BatchTime:3.515		top1:86.523 (81.879)		top5:92.773(91.298)
+2023-03-12 22:57:10 - [34m[1mLOGS   [0m - Batch:[9/16]		BatchTime:3.675		top1:82.031 (81.895)		top5:91.602(91.328)
+2023-03-12 22:57:12 - [34m[1mLOGS   [0m - Batch:[11/16]		BatchTime:3.165		top1:83.594 (82.243)		top5:90.039(91.341)
+2023-03-12 22:57:12 - [34m[1mLOGS   [0m - Batch:[12/16]		BatchTime:2.946		top1:84.961 (82.452)		top5:93.750(91.526)
+2023-03-12 22:57:16 - [34m[1mLOGS   [0m - Batch:[13/16]		BatchTime:3.029		top1:79.102 (82.213)		top5:90.234(91.434)
+2023-03-12 22:57:16 - [34m[1mLOGS   [0m - Batch:[14/16]		BatchTime:2.847		top1:76.953 (81.862)		top5:90.234(91.354)
+2023-03-12 22:57:17 - [34m[1mLOGS   [0m - Batch:[15/16]		BatchTime:2.717		top1:79.692 (81.774)		top5:89.846(91.293)
+2023-03-12 22:57:17 - [32m[1mINFO   [0m -  * Prec@1:81.774 Prec@5:91.293

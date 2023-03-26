@@ -1,0 +1,7 @@
+main function started
+path is :  ./results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-233810/\espnetv2_2.0_checkpoint.pth.tar
+path exists
+2023-03-06 01:19:42 - [32m[1mINFO   [0m - FLOPs: 284.81 million
+2023-03-06 01:19:42 - [32m[1mINFO   [0m - Network Parameters: 2.47 million
+2023-03-06 01:20:00 - [34m[1mLOGS   [0m - Batch:[1/2]		BatchTime:7.986		top1:66.212 (64.845)		top5:86.348(84.845)
+2023-03-06 01:20:00 - [32m[1mINFO   [0m -  * Prec@1:64.845 Prec@5:84.845

@@ -1,0 +1,1258 @@
+2023-03-05 01:36:01 - [32m[1mINFO   [0m - FLOPs: 284.81 million
+2023-03-05 01:36:01 - [32m[1mINFO   [0m - Network Parameters: 2.28 million
+2023-03-05 01:36:04 - [32m[1mINFO   [0m - Scheduler HybirdLR
+    Total Epochs: 300
+    Cycle with length of 5: 12
+    Base LR with 5 cycle length: 0.1
+    Cycle with length of 240: 1
+    Base LR with 240 cycle length: 0.1
+
+2023-03-05 01:36:04 - [32m[1mINFO   [0m - LR for epoch 0 = 0.10000
+2023-03-05 01:36:20 - [34m[1mLOGS   [0m - Epoch: 0[0/16]		Batch Time:15.9193		Loss:3.9131		top1:0.0000 (0.0000)		top5:6.9444 (6.9444)
+2023-03-05 01:36:21 - [34m[1mLOGS   [0m - Epoch: 0[10/16]		Batch Time:1.5891		Loss:3.9900		top1:4.1667 (3.2828)		top5:16.6667 (12.1212)
+2023-03-05 01:36:33 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:10.389		Loss:3.833		top1:0.000 (0.000)		top5:15.278(15.278)
+2023-03-05 01:36:33 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:5.220		top1:0.000 (0.000)		top5:9.722(12.500)
+2023-03-05 01:36:34 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:3.554		top1:6.557 (1.951)		top5:6.557(10.732)
+2023-03-05 01:36:34 - [32m[1mINFO   [0m -  * Prec@1:1.951 Prec@5:10.732
+2023-03-05 01:36:34 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:36:34 - [32m[1mINFO   [0m - LR for epoch 1 = 0.50000
+2023-03-05 01:36:42 - [34m[1mLOGS   [0m - Epoch: 1[0/16]		Batch Time:8.2298		Loss:3.8029		top1:5.5556 (5.5556)		top5:26.3889 (26.3889)
+2023-03-05 01:36:44 - [34m[1mLOGS   [0m - Epoch: 1[10/16]		Batch Time:0.8929		Loss:6.4968		top1:1.3889 (2.9040)		top5:8.3333 (14.7727)
+2023-03-05 01:36:53 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.989		Loss:3744381.250		top1:0.000 (0.000)		top5:0.000(0.000)
+2023-03-05 01:36:53 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.019		top1:5.556 (2.778)		top5:18.056(9.028)
+2023-03-05 01:36:53 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.694		top1:0.000 (1.951)		top5:13.115(10.244)
+2023-03-05 01:36:53 - [32m[1mINFO   [0m -  * Prec@1:1.951 Prec@5:10.244
+2023-03-05 01:36:54 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:36:54 - [32m[1mINFO   [0m - LR for epoch 2 = 0.40000
+2023-03-05 01:37:02 - [34m[1mLOGS   [0m - Epoch: 2[0/16]		Batch Time:8.1720		Loss:5.9699		top1:8.3333 (8.3333)		top5:23.6111 (23.6111)
+2023-03-05 01:37:03 - [34m[1mLOGS   [0m - Epoch: 2[10/16]		Batch Time:0.8823		Loss:5.1642		top1:1.3889 (3.6616)		top5:26.3889 (18.3081)
+2023-03-05 01:37:12 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.709		Loss:1758.652		top1:0.000 (0.000)		top5:6.944(6.944)
+2023-03-05 01:37:12 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.878		top1:0.000 (0.000)		top5:5.556(6.250)
+2023-03-05 01:37:12 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.603		top1:6.557 (1.951)		top5:22.951(11.220)
+2023-03-05 01:37:13 - [32m[1mINFO   [0m -  * Prec@1:1.951 Prec@5:11.220
+2023-03-05 01:37:13 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:37:13 - [32m[1mINFO   [0m - LR for epoch 3 = 0.30000
+2023-03-05 01:37:21 - [34m[1mLOGS   [0m - Epoch: 3[0/16]		Batch Time:8.0219		Loss:3.7467		top1:9.7222 (9.7222)		top5:19.4444 (19.4444)
+2023-03-05 01:37:22 - [34m[1mLOGS   [0m - Epoch: 3[10/16]		Batch Time:0.8763		Loss:4.1568		top1:5.5556 (5.4293)		top5:16.6667 (22.2222)
+2023-03-05 01:37:32 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.384		Loss:4.243		top1:2.778 (2.778)		top5:16.667(16.667)
+2023-03-05 01:37:32 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.217		top1:2.778 (2.778)		top5:15.278(15.972)
+2023-03-05 01:37:32 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.825		top1:9.836 (4.878)		top5:27.869(19.512)
+2023-03-05 01:37:32 - [32m[1mINFO   [0m -  * Prec@1:4.878 Prec@5:19.512
+2023-03-05 01:37:32 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:37:32 - [32m[1mINFO   [0m - LR for epoch 4 = 0.20000
+2023-03-05 01:37:40 - [34m[1mLOGS   [0m - Epoch: 4[0/16]		Batch Time:7.9667		Loss:3.7203		top1:8.3333 (8.3333)		top5:20.8333 (20.8333)
+2023-03-05 01:37:42 - [34m[1mLOGS   [0m - Epoch: 4[10/16]		Batch Time:0.8688		Loss:3.7115		top1:15.2778 (7.5758)		top5:33.3333 (25.5050)
+2023-03-05 01:37:51 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.600		Loss:3.545		top1:12.500 (12.500)		top5:27.778(27.778)
+2023-03-05 01:37:51 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.826		top1:12.500 (12.500)		top5:47.222(37.500)
+2023-03-05 01:37:51 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.564		top1:6.557 (10.732)		top5:34.426(36.585)
+2023-03-05 01:37:51 - [32m[1mINFO   [0m -  * Prec@1:10.732 Prec@5:36.585
+2023-03-05 01:37:51 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:37:51 - [32m[1mINFO   [0m - LR for epoch 5 = 0.10000
+2023-03-05 01:37:59 - [34m[1mLOGS   [0m - Epoch: 5[0/16]		Batch Time:7.9032		Loss:3.4172		top1:6.9444 (6.9444)		top5:29.1667 (29.1667)
+2023-03-05 01:38:01 - [34m[1mLOGS   [0m - Epoch: 5[10/16]		Batch Time:0.8643		Loss:3.4730		top1:8.3333 (9.7222)		top5:27.7778 (31.0606)
+2023-03-05 01:38:10 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.647		Loss:3.474		top1:11.111 (11.111)		top5:30.556(30.556)
+2023-03-05 01:38:10 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.850		top1:6.944 (9.028)		top5:30.556(30.556)
+2023-03-05 01:38:10 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.582		top1:14.754 (10.732)		top5:37.705(32.683)
+2023-03-05 01:38:10 - [32m[1mINFO   [0m -  * Prec@1:10.732 Prec@5:32.683
+2023-03-05 01:38:10 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:38:10 - [32m[1mINFO   [0m - LR for epoch 6 = 0.50000
+2023-03-05 01:38:18 - [34m[1mLOGS   [0m - Epoch: 6[0/16]		Batch Time:8.0062		Loss:3.2785		top1:6.9444 (6.9444)		top5:36.1111 (36.1111)
+2023-03-05 01:38:20 - [34m[1mLOGS   [0m - Epoch: 6[10/16]		Batch Time:0.8708		Loss:3.5948		top1:6.9444 (9.0909)		top5:20.8333 (32.0707)
+2023-03-05 01:38:29 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.820		Loss:3.905		top1:8.333 (8.333)		top5:26.389(26.389)
+2023-03-05 01:38:29 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.929		top1:9.722 (9.028)		top5:22.222(24.306)
+2023-03-05 01:38:29 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.635		top1:14.754 (10.732)		top5:37.705(28.293)
+2023-03-05 01:38:29 - [32m[1mINFO   [0m -  * Prec@1:10.732 Prec@5:28.293
+2023-03-05 01:38:29 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:38:29 - [32m[1mINFO   [0m - LR for epoch 7 = 0.40000
+2023-03-05 01:38:37 - [34m[1mLOGS   [0m - Epoch: 7[0/16]		Batch Time:7.9483		Loss:3.4081		top1:9.7222 (9.7222)		top5:33.3333 (33.3333)
+2023-03-05 01:38:39 - [34m[1mLOGS   [0m - Epoch: 7[10/16]		Batch Time:0.8694		Loss:3.4649		top1:9.7222 (10.9848)		top5:25.0000 (34.3434)
+2023-03-05 01:38:48 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.444		Loss:3.549		top1:4.167 (4.167)		top5:25.000(25.000)
+2023-03-05 01:38:48 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.746		top1:9.722 (6.944)		top5:33.333(29.167)
+2023-03-05 01:38:48 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.510		top1:19.672 (10.732)		top5:50.820(35.610)
+2023-03-05 01:38:48 - [32m[1mINFO   [0m -  * Prec@1:10.732 Prec@5:35.610
+2023-03-05 01:38:48 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:38:48 - [32m[1mINFO   [0m - LR for epoch 8 = 0.30000
+2023-03-05 01:38:56 - [34m[1mLOGS   [0m - Epoch: 8[0/16]		Batch Time:7.9871		Loss:3.2629		top1:15.2778 (15.2778)		top5:33.3333 (33.3333)
+2023-03-05 01:38:58 - [34m[1mLOGS   [0m - Epoch: 8[10/16]		Batch Time:0.8730		Loss:3.3438		top1:5.5556 (14.0152)		top5:36.1111 (39.0151)
+2023-03-05 01:39:06 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.627		Loss:3.324		top1:16.667 (16.667)		top5:43.056(43.056)
+2023-03-05 01:39:07 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.837		top1:12.500 (14.583)		top5:38.889(40.972)
+2023-03-05 01:39:07 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.571		top1:18.033 (15.610)		top5:55.738(45.366)
+2023-03-05 01:39:07 - [32m[1mINFO   [0m -  * Prec@1:15.610 Prec@5:45.366
+2023-03-05 01:39:07 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:39:07 - [32m[1mINFO   [0m - LR for epoch 9 = 0.20000
+2023-03-05 01:39:15 - [34m[1mLOGS   [0m - Epoch: 9[0/16]		Batch Time:7.8985		Loss:3.1785		top1:13.8889 (13.8889)		top5:44.4444 (44.4444)
+2023-03-05 01:39:17 - [34m[1mLOGS   [0m - Epoch: 9[10/16]		Batch Time:0.8665		Loss:3.2246		top1:16.6667 (13.2576)		top5:44.4444 (43.8131)
+2023-03-05 01:39:25 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.559		Loss:3.361		top1:13.889 (13.889)		top5:44.444(44.444)
+2023-03-05 01:39:25 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.806		top1:18.056 (15.972)		top5:48.611(46.528)
+2023-03-05 01:39:25 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.553		top1:26.230 (19.024)		top5:54.098(48.780)
+2023-03-05 01:39:26 - [32m[1mINFO   [0m -  * Prec@1:19.024 Prec@5:48.780
+2023-03-05 01:39:26 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:39:26 - [32m[1mINFO   [0m - LR for epoch 10 = 0.10000
+2023-03-05 01:39:34 - [34m[1mLOGS   [0m - Epoch: 10[0/16]		Batch Time:7.9138		Loss:3.0888		top1:12.5000 (12.5000)		top5:50.0000 (50.0000)
+2023-03-05 01:39:36 - [34m[1mLOGS   [0m - Epoch: 10[10/16]		Batch Time:0.8679		Loss:3.0835		top1:15.2778 (17.4242)		top5:47.2222 (49.8737)
+2023-03-05 01:39:44 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.395		Loss:3.172		top1:16.667 (16.667)		top5:45.833(45.833)
+2023-03-05 01:39:44 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.724		top1:13.889 (15.278)		top5:50.000(47.917)
+2023-03-05 01:39:44 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.498		top1:29.508 (19.512)		top5:54.098(49.756)
+2023-03-05 01:39:45 - [32m[1mINFO   [0m -  * Prec@1:19.512 Prec@5:49.756
+2023-03-05 01:39:45 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:39:45 - [32m[1mINFO   [0m - LR for epoch 11 = 0.50000
+2023-03-05 01:39:53 - [34m[1mLOGS   [0m - Epoch: 11[0/16]		Batch Time:8.2533		Loss:2.7489		top1:27.7778 (27.7778)		top5:59.7222 (59.7222)
+2023-03-05 01:39:55 - [34m[1mLOGS   [0m - Epoch: 11[10/16]		Batch Time:0.8963		Loss:3.1921		top1:5.5556 (17.5505)		top5:29.1667 (45.5808)
+2023-03-05 01:40:03 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.676		Loss:3.779		top1:6.944 (6.944)		top5:38.889(38.889)
+2023-03-05 01:40:03 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.861		top1:1.389 (4.167)		top5:29.167(34.028)
+2023-03-05 01:40:03 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.592		top1:21.311 (9.268)		top5:40.984(36.098)
+2023-03-05 01:40:04 - [32m[1mINFO   [0m -  * Prec@1:9.268 Prec@5:36.098
+2023-03-05 01:40:04 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:40:04 - [32m[1mINFO   [0m - LR for epoch 12 = 0.40000
+2023-03-05 01:40:12 - [34m[1mLOGS   [0m - Epoch: 12[0/16]		Batch Time:7.8137		Loss:3.5718		top1:9.7222 (9.7222)		top5:38.8889 (38.8889)
+2023-03-05 01:40:13 - [34m[1mLOGS   [0m - Epoch: 12[10/16]		Batch Time:0.8613		Loss:3.2448		top1:20.8333 (14.7727)		top5:41.6667 (44.5707)
+2023-03-05 01:40:22 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.548		Loss:3.491		top1:16.667 (16.667)		top5:38.889(38.889)
+2023-03-05 01:40:22 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.800		top1:18.056 (17.361)		top5:40.278(39.583)
+2023-03-05 01:40:22 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.547		top1:29.508 (20.976)		top5:54.098(43.902)
+2023-03-05 01:40:23 - [32m[1mINFO   [0m -  * Prec@1:20.976 Prec@5:43.902
+2023-03-05 01:40:23 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:40:23 - [32m[1mINFO   [0m - LR for epoch 13 = 0.30000
+2023-03-05 01:40:31 - [34m[1mLOGS   [0m - Epoch: 13[0/16]		Batch Time:7.9677		Loss:3.1807		top1:12.5000 (12.5000)		top5:45.8333 (45.8333)
+2023-03-05 01:40:32 - [34m[1mLOGS   [0m - Epoch: 13[10/16]		Batch Time:0.8749		Loss:3.0190		top1:25.0000 (19.8232)		top5:51.3889 (49.6212)
+2023-03-05 01:40:41 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.721		Loss:3.234		top1:11.111 (11.111)		top5:47.222(47.222)
+2023-03-05 01:40:41 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.887		top1:11.111 (11.111)		top5:41.667(44.444)
+2023-03-05 01:40:41 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.602		top1:21.311 (14.146)		top5:44.262(44.390)
+2023-03-05 01:40:42 - [32m[1mINFO   [0m -  * Prec@1:14.146 Prec@5:44.390
+2023-03-05 01:40:42 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:40:42 - [32m[1mINFO   [0m - LR for epoch 14 = 0.20000
+2023-03-05 01:40:50 - [34m[1mLOGS   [0m - Epoch: 14[0/16]		Batch Time:8.0135		Loss:2.6505		top1:19.4444 (19.4444)		top5:66.6667 (66.6667)
+2023-03-05 01:40:51 - [34m[1mLOGS   [0m - Epoch: 14[10/16]		Batch Time:0.8709		Loss:2.8285		top1:23.6111 (21.7172)		top5:62.5000 (57.7020)
+2023-03-05 01:41:00 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.613		Loss:3.461		top1:19.444 (19.444)		top5:48.611(48.611)
+2023-03-05 01:41:00 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.831		top1:20.833 (20.139)		top5:50.000(49.306)
+2023-03-05 01:41:00 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.568		top1:27.869 (22.439)		top5:55.738(51.220)
+2023-03-05 01:41:01 - [32m[1mINFO   [0m -  * Prec@1:22.439 Prec@5:51.220
+2023-03-05 01:41:01 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:41:01 - [32m[1mINFO   [0m - LR for epoch 15 = 0.10000
+2023-03-05 01:41:09 - [34m[1mLOGS   [0m - Epoch: 15[0/16]		Batch Time:8.0146		Loss:2.6702		top1:30.5556 (30.5556)		top5:59.7222 (59.7222)
+2023-03-05 01:41:10 - [34m[1mLOGS   [0m - Epoch: 15[10/16]		Batch Time:0.8708		Loss:2.7313		top1:23.6111 (25.6313)		top5:62.5000 (59.5960)
+2023-03-05 01:41:19 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.436		Loss:2.988		top1:20.833 (20.833)		top5:56.944(56.944)
+2023-03-05 01:41:19 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.745		top1:23.611 (22.222)		top5:52.778(54.861)
+2023-03-05 01:41:19 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.512		top1:27.869 (23.902)		top5:54.098(54.634)
+2023-03-05 01:41:19 - [32m[1mINFO   [0m -  * Prec@1:23.902 Prec@5:54.634
+2023-03-05 01:41:20 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:41:20 - [32m[1mINFO   [0m - LR for epoch 16 = 0.50000
+2023-03-05 01:41:28 - [34m[1mLOGS   [0m - Epoch: 16[0/16]		Batch Time:8.1263		Loss:2.8369		top1:20.8333 (20.8333)		top5:59.7222 (59.7222)
+2023-03-05 01:41:29 - [34m[1mLOGS   [0m - Epoch: 16[10/16]		Batch Time:0.8796		Loss:2.9986		top1:16.6667 (20.5808)		top5:45.8333 (53.2828)
+2023-03-05 01:41:39 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.231		Loss:3.448		top1:16.667 (16.667)		top5:48.611(48.611)
+2023-03-05 01:41:39 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.137		top1:9.722 (13.194)		top5:34.722(41.667)
+2023-03-05 01:41:39 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.774		top1:16.393 (14.146)		top5:37.705(40.488)
+2023-03-05 01:41:39 - [32m[1mINFO   [0m -  * Prec@1:14.146 Prec@5:40.488
+2023-03-05 01:41:39 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:41:39 - [32m[1mINFO   [0m - LR for epoch 17 = 0.40000
+2023-03-05 01:41:47 - [34m[1mLOGS   [0m - Epoch: 17[0/16]		Batch Time:8.1383		Loss:3.1362		top1:16.6667 (16.6667)		top5:44.4444 (44.4444)
+2023-03-05 01:41:49 - [34m[1mLOGS   [0m - Epoch: 17[10/16]		Batch Time:0.8853		Loss:3.0030		top1:19.4444 (20.8333)		top5:51.3889 (50.6313)
+2023-03-05 01:41:58 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.628		Loss:3.215		top1:18.056 (18.056)		top5:41.667(41.667)
+2023-03-05 01:41:58 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.841		top1:26.389 (22.222)		top5:44.444(43.056)
+2023-03-05 01:41:58 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.571		top1:24.590 (22.927)		top5:62.295(48.780)
+2023-03-05 01:41:58 - [32m[1mINFO   [0m -  * Prec@1:22.927 Prec@5:48.780
+2023-03-05 01:41:58 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:41:58 - [32m[1mINFO   [0m - LR for epoch 18 = 0.30000
+2023-03-05 01:42:06 - [34m[1mLOGS   [0m - Epoch: 18[0/16]		Batch Time:7.8051		Loss:3.2085		top1:22.2222 (22.2222)		top5:47.2222 (47.2222)
+2023-03-05 01:42:08 - [34m[1mLOGS   [0m - Epoch: 18[10/16]		Batch Time:0.8597		Loss:2.7238		top1:30.5556 (26.1364)		top5:72.2222 (60.1010)
+2023-03-05 01:42:16 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.545		Loss:3.508		top1:12.500 (12.500)		top5:47.222(47.222)
+2023-03-05 01:42:16 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.796		top1:16.667 (14.583)		top5:50.000(48.611)
+2023-03-05 01:42:17 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.543		top1:26.230 (18.049)		top5:55.738(50.732)
+2023-03-05 01:42:17 - [32m[1mINFO   [0m -  * Prec@1:18.049 Prec@5:50.732
+2023-03-05 01:42:17 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:42:17 - [32m[1mINFO   [0m - LR for epoch 19 = 0.20000
+2023-03-05 01:42:25 - [34m[1mLOGS   [0m - Epoch: 19[0/16]		Batch Time:7.7770		Loss:2.7402		top1:22.2222 (22.2222)		top5:61.1111 (61.1111)
+2023-03-05 01:42:26 - [34m[1mLOGS   [0m - Epoch: 19[10/16]		Batch Time:0.8561		Loss:2.5846		top1:25.0000 (29.7980)		top5:62.5000 (63.8889)
+2023-03-05 01:42:35 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.614		Loss:3.176		top1:23.611 (23.611)		top5:45.833(45.833)
+2023-03-05 01:42:35 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.832		top1:19.444 (21.528)		top5:52.778(49.306)
+2023-03-05 01:42:35 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.569		top1:34.426 (25.366)		top5:60.656(52.683)
+2023-03-05 01:42:36 - [32m[1mINFO   [0m -  * Prec@1:25.366 Prec@5:52.683
+2023-03-05 01:42:36 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:42:36 - [32m[1mINFO   [0m - LR for epoch 20 = 0.10000
+2023-03-05 01:42:44 - [34m[1mLOGS   [0m - Epoch: 20[0/16]		Batch Time:7.9314		Loss:2.3996		top1:29.1667 (29.1667)		top5:65.2778 (65.2778)
+2023-03-05 01:42:45 - [34m[1mLOGS   [0m - Epoch: 20[10/16]		Batch Time:0.8709		Loss:2.4276		top1:36.1111 (31.3131)		top5:70.8333 (67.0455)
+2023-03-05 01:42:54 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.557		Loss:2.942		top1:23.611 (23.611)		top5:58.333(58.333)
+2023-03-05 01:42:54 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.802		top1:27.778 (25.694)		top5:51.389(54.861)
+2023-03-05 01:42:54 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.547		top1:40.984 (30.244)		top5:68.852(59.024)
+2023-03-05 01:42:55 - [32m[1mINFO   [0m -  * Prec@1:30.244 Prec@5:59.024
+2023-03-05 01:42:55 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:42:55 - [32m[1mINFO   [0m - LR for epoch 21 = 0.50000
+2023-03-05 01:43:03 - [34m[1mLOGS   [0m - Epoch: 21[0/16]		Batch Time:8.1275		Loss:2.4482		top1:27.7778 (27.7778)		top5:63.8889 (63.8889)
+2023-03-05 01:43:04 - [34m[1mLOGS   [0m - Epoch: 21[10/16]		Batch Time:0.8823		Loss:2.6628		top1:19.4444 (27.5253)		top5:52.7778 (61.2374)
+2023-03-05 01:43:13 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.641		Loss:3.904		top1:11.111 (11.111)		top5:31.944(31.944)
+2023-03-05 01:43:13 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.844		top1:15.278 (13.194)		top5:33.333(32.639)
+2023-03-05 01:43:13 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.578		top1:21.311 (15.610)		top5:59.016(40.488)
+2023-03-05 01:43:14 - [32m[1mINFO   [0m -  * Prec@1:15.610 Prec@5:40.488
+2023-03-05 01:43:14 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:43:14 - [32m[1mINFO   [0m - LR for epoch 22 = 0.40000
+2023-03-05 01:43:22 - [34m[1mLOGS   [0m - Epoch: 22[0/16]		Batch Time:7.9748		Loss:2.6070		top1:20.8333 (20.8333)		top5:68.0555 (68.0555)
+2023-03-05 01:43:23 - [34m[1mLOGS   [0m - Epoch: 22[10/16]		Batch Time:0.8676		Loss:2.6708		top1:27.7778 (25.7576)		top5:58.3333 (60.9848)
+2023-03-05 01:43:32 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.681		Loss:3.619		top1:15.278 (15.278)		top5:40.278(40.278)
+2023-03-05 01:43:32 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.864		top1:18.056 (16.667)		top5:44.444(42.361)
+2023-03-05 01:43:32 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.588		top1:24.590 (19.024)		top5:57.377(46.829)
+2023-03-05 01:43:33 - [32m[1mINFO   [0m -  * Prec@1:19.024 Prec@5:46.829
+2023-03-05 01:43:33 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:43:33 - [32m[1mINFO   [0m - LR for epoch 23 = 0.30000
+2023-03-05 01:43:41 - [34m[1mLOGS   [0m - Epoch: 23[0/16]		Batch Time:8.0129		Loss:2.4656		top1:31.9444 (31.9444)		top5:62.5000 (62.5000)
+2023-03-05 01:43:42 - [34m[1mLOGS   [0m - Epoch: 23[10/16]		Batch Time:0.8787		Loss:2.5539		top1:29.1667 (30.3030)		top5:66.6667 (63.8889)
+2023-03-05 01:43:51 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.762		Loss:3.018		top1:22.222 (22.222)		top5:54.167(54.167)
+2023-03-05 01:43:51 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.907		top1:18.056 (20.139)		top5:52.778(53.472)
+2023-03-05 01:43:51 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.618		top1:36.066 (24.878)		top5:59.016(55.122)
+2023-03-05 01:43:52 - [32m[1mINFO   [0m -  * Prec@1:24.878 Prec@5:55.122
+2023-03-05 01:43:52 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:43:52 - [32m[1mINFO   [0m - LR for epoch 24 = 0.20000
+2023-03-05 01:44:00 - [34m[1mLOGS   [0m - Epoch: 24[0/16]		Batch Time:7.9828		Loss:2.4005		top1:27.7778 (27.7778)		top5:70.8333 (70.8333)
+2023-03-05 01:44:01 - [34m[1mLOGS   [0m - Epoch: 24[10/16]		Batch Time:0.8710		Loss:2.3424		top1:29.1667 (32.7020)		top5:66.6667 (69.0657)
+2023-03-05 01:44:10 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.643		Loss:2.958		top1:29.167 (29.167)		top5:61.111(61.111)
+2023-03-05 01:44:10 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.845		top1:26.389 (27.778)		top5:54.167(57.639)
+2023-03-05 01:44:10 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.576		top1:37.705 (30.732)		top5:68.852(60.976)
+2023-03-05 01:44:11 - [32m[1mINFO   [0m -  * Prec@1:30.732 Prec@5:60.976
+2023-03-05 01:44:11 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:44:11 - [32m[1mINFO   [0m - LR for epoch 25 = 0.10000
+2023-03-05 01:44:19 - [34m[1mLOGS   [0m - Epoch: 25[0/16]		Batch Time:7.9284		Loss:2.1787		top1:33.3333 (33.3333)		top5:72.2222 (72.2222)
+2023-03-05 01:44:20 - [34m[1mLOGS   [0m - Epoch: 25[10/16]		Batch Time:0.8694		Loss:2.1184		top1:47.2222 (38.1313)		top5:80.5555 (75.1263)
+2023-03-05 01:44:29 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.565		Loss:2.916		top1:22.222 (22.222)		top5:58.333(58.333)
+2023-03-05 01:44:29 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.814		top1:27.778 (25.000)		top5:63.889(61.111)
+2023-03-05 01:44:29 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.555		top1:36.066 (28.293)		top5:70.492(63.902)
+2023-03-05 01:44:30 - [32m[1mINFO   [0m -  * Prec@1:28.293 Prec@5:63.902
+2023-03-05 01:44:30 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:44:30 - [32m[1mINFO   [0m - LR for epoch 26 = 0.50000
+2023-03-05 01:44:38 - [34m[1mLOGS   [0m - Epoch: 26[0/16]		Batch Time:8.1063		Loss:2.3047		top1:33.3333 (33.3333)		top5:70.8333 (70.8333)
+2023-03-05 01:44:40 - [34m[1mLOGS   [0m - Epoch: 26[10/16]		Batch Time:0.8867		Loss:2.4248		top1:25.0000 (31.4394)		top5:63.8889 (66.7929)
+2023-03-05 01:44:49 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.156		Loss:3.749		top1:16.667 (16.667)		top5:43.056(43.056)
+2023-03-05 01:44:49 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.105		top1:9.722 (13.194)		top5:41.667(42.361)
+2023-03-05 01:44:49 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.747		top1:22.951 (16.098)		top5:52.459(45.366)
+2023-03-05 01:44:49 - [32m[1mINFO   [0m -  * Prec@1:16.098 Prec@5:45.366
+2023-03-05 01:44:49 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:44:49 - [32m[1mINFO   [0m - LR for epoch 27 = 0.40000
+2023-03-05 01:44:58 - [34m[1mLOGS   [0m - Epoch: 27[0/16]		Batch Time:8.3078		Loss:2.4919		top1:27.7778 (27.7778)		top5:69.4444 (69.4444)
+2023-03-05 01:44:59 - [34m[1mLOGS   [0m - Epoch: 27[10/16]		Batch Time:0.8969		Loss:2.5481		top1:30.5556 (28.6616)		top5:69.4444 (64.3939)
+2023-03-05 01:45:08 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.901		Loss:3.541		top1:18.056 (18.056)		top5:48.611(48.611)
+2023-03-05 01:45:08 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.969		top1:18.056 (18.056)		top5:41.667(45.139)
+2023-03-05 01:45:08 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.662		top1:27.869 (20.976)		top5:50.820(46.829)
+2023-03-05 01:45:09 - [32m[1mINFO   [0m -  * Prec@1:20.976 Prec@5:46.829
+2023-03-05 01:45:09 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:45:09 - [32m[1mINFO   [0m - LR for epoch 28 = 0.30000
+2023-03-05 01:45:17 - [34m[1mLOGS   [0m - Epoch: 28[0/16]		Batch Time:8.1791		Loss:2.2690		top1:34.7222 (34.7222)		top5:72.2222 (72.2222)
+2023-03-05 01:45:19 - [34m[1mLOGS   [0m - Epoch: 28[10/16]		Batch Time:0.8863		Loss:2.3611		top1:34.7222 (33.2071)		top5:75.0000 (70.0758)
+2023-03-05 01:45:27 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.434		Loss:3.882		top1:18.056 (18.056)		top5:44.444(44.444)
+2023-03-05 01:45:27 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.741		top1:19.444 (18.750)		top5:52.778(48.611)
+2023-03-05 01:45:27 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.508		top1:27.869 (21.463)		top5:45.902(47.805)
+2023-03-05 01:45:28 - [32m[1mINFO   [0m -  * Prec@1:21.463 Prec@5:47.805
+2023-03-05 01:45:28 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:45:28 - [32m[1mINFO   [0m - LR for epoch 29 = 0.20000
+2023-03-05 01:45:36 - [34m[1mLOGS   [0m - Epoch: 29[0/16]		Batch Time:8.6072		Loss:2.0913		top1:43.0556 (43.0556)		top5:80.5555 (80.5555)
+2023-03-05 01:45:38 - [34m[1mLOGS   [0m - Epoch: 29[10/16]		Batch Time:0.9254		Loss:2.0595		top1:44.4444 (41.5404)		top5:83.3333 (77.7778)
+2023-03-05 01:45:47 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.471		Loss:2.945		top1:25.000 (25.000)		top5:63.889(63.889)
+2023-03-05 01:45:47 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.759		top1:27.778 (26.389)		top5:62.500(63.194)
+2023-03-05 01:45:47 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.519		top1:34.426 (28.780)		top5:72.131(65.854)
+2023-03-05 01:45:47 - [32m[1mINFO   [0m -  * Prec@1:28.780 Prec@5:65.854
+2023-03-05 01:45:47 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:45:47 - [32m[1mINFO   [0m - LR for epoch 30 = 0.10000
+2023-03-05 01:45:55 - [34m[1mLOGS   [0m - Epoch: 30[0/16]		Batch Time:8.1730		Loss:1.4872		top1:47.2222 (47.2222)		top5:90.2778 (90.2778)
+2023-03-05 01:45:57 - [34m[1mLOGS   [0m - Epoch: 30[10/16]		Batch Time:0.8849		Loss:1.8198		top1:45.8333 (47.3485)		top5:80.5555 (81.0606)
+2023-03-05 01:46:05 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.461		Loss:2.833		top1:27.778 (27.778)		top5:66.667(66.667)
+2023-03-05 01:46:06 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.754		top1:33.333 (30.556)		top5:62.500(64.583)
+2023-03-05 01:46:06 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.515		top1:42.623 (34.146)		top5:72.131(66.829)
+2023-03-05 01:46:06 - [32m[1mINFO   [0m -  * Prec@1:34.146 Prec@5:66.829
+2023-03-05 01:46:06 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:46:06 - [32m[1mINFO   [0m - LR for epoch 31 = 0.50000
+2023-03-05 01:46:14 - [34m[1mLOGS   [0m - Epoch: 31[0/16]		Batch Time:8.1571		Loss:1.8274		top1:44.4444 (44.4444)		top5:83.3333 (83.3333)
+2023-03-05 01:46:16 - [34m[1mLOGS   [0m - Epoch: 31[10/16]		Batch Time:0.8826		Loss:2.1308		top1:31.9444 (38.8889)		top5:58.3333 (73.9899)
+2023-03-05 01:46:24 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.459		Loss:3.665		top1:19.444 (19.444)		top5:54.167(54.167)
+2023-03-05 01:46:24 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.750		top1:12.500 (15.972)		top5:43.056(48.611)
+2023-03-05 01:46:24 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.516		top1:22.951 (18.049)		top5:36.066(44.878)
+2023-03-05 01:46:25 - [32m[1mINFO   [0m -  * Prec@1:18.049 Prec@5:44.878
+2023-03-05 01:46:25 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:46:25 - [32m[1mINFO   [0m - LR for epoch 32 = 0.40000
+2023-03-05 01:46:33 - [34m[1mLOGS   [0m - Epoch: 32[0/16]		Batch Time:8.1910		Loss:2.3644		top1:29.1667 (29.1667)		top5:70.8333 (70.8333)
+2023-03-05 01:46:35 - [34m[1mLOGS   [0m - Epoch: 32[10/16]		Batch Time:0.8846		Loss:2.4160		top1:33.3333 (31.9444)		top5:65.2778 (67.5505)
+2023-03-05 01:46:44 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.301		Loss:3.600		top1:15.278 (15.278)		top5:43.056(43.056)
+2023-03-05 01:46:44 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.175		top1:18.056 (16.667)		top5:47.222(45.139)
+2023-03-05 01:46:44 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.797		top1:29.508 (20.488)		top5:62.295(50.244)
+2023-03-05 01:46:45 - [32m[1mINFO   [0m -  * Prec@1:20.488 Prec@5:50.244
+2023-03-05 01:46:45 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:46:45 - [32m[1mINFO   [0m - LR for epoch 33 = 0.30000
+2023-03-05 01:46:53 - [34m[1mLOGS   [0m - Epoch: 33[0/16]		Batch Time:8.1150		Loss:2.0337		top1:43.0556 (43.0556)		top5:72.2222 (72.2222)
+2023-03-05 01:46:54 - [34m[1mLOGS   [0m - Epoch: 33[10/16]		Batch Time:0.8819		Loss:2.1252		top1:40.2778 (39.0151)		top5:70.8333 (75.2525)
+2023-03-05 01:47:03 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.432		Loss:3.111		top1:26.389 (26.389)		top5:63.889(63.889)
+2023-03-05 01:47:03 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.740		top1:27.778 (27.083)		top5:55.556(59.722)
+2023-03-05 01:47:03 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.503		top1:34.426 (29.268)		top5:68.852(62.439)
+2023-03-05 01:47:03 - [32m[1mINFO   [0m -  * Prec@1:29.268 Prec@5:62.439
+2023-03-05 01:47:04 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:47:04 - [32m[1mINFO   [0m - LR for epoch 34 = 0.20000
+2023-03-05 01:47:12 - [34m[1mLOGS   [0m - Epoch: 34[0/16]		Batch Time:8.1884		Loss:2.0062		top1:40.2778 (40.2778)		top5:79.1667 (79.1667)
+2023-03-05 01:47:13 - [34m[1mLOGS   [0m - Epoch: 34[10/16]		Batch Time:0.8862		Loss:1.9178		top1:44.4444 (44.0657)		top5:80.5555 (80.5556)
+2023-03-05 01:47:22 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.869		Loss:2.923		top1:30.556 (30.556)		top5:63.889(63.889)
+2023-03-05 01:47:22 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.958		top1:29.167 (29.861)		top5:58.333(61.111)
+2023-03-05 01:47:22 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.651		top1:31.148 (30.244)		top5:63.934(61.951)
+2023-03-05 01:47:23 - [32m[1mINFO   [0m -  * Prec@1:30.244 Prec@5:61.951
+2023-03-05 01:47:23 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:47:23 - [32m[1mINFO   [0m - LR for epoch 35 = 0.10000
+2023-03-05 01:47:31 - [34m[1mLOGS   [0m - Epoch: 35[0/16]		Batch Time:7.9883		Loss:1.6003		top1:48.6111 (48.6111)		top5:87.5000 (87.5000)
+2023-03-05 01:47:33 - [34m[1mLOGS   [0m - Epoch: 35[10/16]		Batch Time:0.8729		Loss:1.6032		top1:69.4444 (52.3990)		top5:90.2778 (84.0909)
+2023-03-05 01:47:41 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.619		Loss:3.046		top1:31.944 (31.944)		top5:62.500(62.500)
+2023-03-05 01:47:41 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.836		top1:29.167 (30.556)		top5:68.056(65.278)
+2023-03-05 01:47:41 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.568		top1:36.066 (32.195)		top5:72.131(67.317)
+2023-03-05 01:47:42 - [32m[1mINFO   [0m -  * Prec@1:32.195 Prec@5:67.317
+2023-03-05 01:47:42 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:47:42 - [32m[1mINFO   [0m - LR for epoch 36 = 0.50000
+2023-03-05 01:47:50 - [34m[1mLOGS   [0m - Epoch: 36[0/16]		Batch Time:8.0101		Loss:1.3384		top1:66.6667 (66.6667)		top5:90.2778 (90.2778)
+2023-03-05 01:47:51 - [34m[1mLOGS   [0m - Epoch: 36[10/16]		Batch Time:0.8693		Loss:1.8659		top1:30.5556 (46.8434)		top5:61.1111 (80.4293)
+2023-03-05 01:48:00 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.638		Loss:3.742		top1:15.278 (15.278)		top5:44.444(44.444)
+2023-03-05 01:48:00 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.844		top1:16.667 (15.972)		top5:51.389(47.917)
+2023-03-05 01:48:00 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.576		top1:31.148 (20.488)		top5:62.295(52.195)
+2023-03-05 01:48:01 - [32m[1mINFO   [0m -  * Prec@1:20.488 Prec@5:52.195
+2023-03-05 01:48:01 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:48:01 - [32m[1mINFO   [0m - LR for epoch 37 = 0.40000
+2023-03-05 01:48:09 - [34m[1mLOGS   [0m - Epoch: 37[0/16]		Batch Time:8.0334		Loss:2.2085		top1:37.5000 (37.5000)		top5:70.8333 (70.8333)
+2023-03-05 01:48:10 - [34m[1mLOGS   [0m - Epoch: 37[10/16]		Batch Time:0.8737		Loss:2.1539		top1:44.4444 (37.7525)		top5:77.7778 (75.1263)
+2023-03-05 01:48:19 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.617		Loss:3.846		top1:18.056 (18.056)		top5:43.056(43.056)
+2023-03-05 01:48:19 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.832		top1:11.111 (14.583)		top5:43.056(43.056)
+2023-03-05 01:48:19 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.573		top1:27.869 (18.537)		top5:50.820(45.366)
+2023-03-05 01:48:20 - [32m[1mINFO   [0m -  * Prec@1:18.537 Prec@5:45.366
+2023-03-05 01:48:20 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:48:20 - [32m[1mINFO   [0m - LR for epoch 38 = 0.30000
+2023-03-05 01:48:28 - [34m[1mLOGS   [0m - Epoch: 38[0/16]		Batch Time:8.0349		Loss:1.8849		top1:43.0556 (43.0556)		top5:77.7778 (77.7778)
+2023-03-05 01:48:29 - [34m[1mLOGS   [0m - Epoch: 38[10/16]		Batch Time:0.8698		Loss:1.9099		top1:45.8333 (43.4343)		top5:84.7222 (79.0404)
+2023-03-05 01:48:38 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.661		Loss:3.408		top1:23.611 (23.611)		top5:55.556(55.556)
+2023-03-05 01:48:38 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.855		top1:26.389 (25.000)		top5:55.556(55.556)
+2023-03-05 01:48:38 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.584		top1:29.508 (26.341)		top5:65.574(58.537)
+2023-03-05 01:48:39 - [32m[1mINFO   [0m -  * Prec@1:26.341 Prec@5:58.537
+2023-03-05 01:48:39 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:48:39 - [32m[1mINFO   [0m - LR for epoch 39 = 0.20000
+2023-03-05 01:48:47 - [34m[1mLOGS   [0m - Epoch: 39[0/16]		Batch Time:8.0546		Loss:1.7700		top1:45.8333 (45.8333)		top5:79.1667 (79.1667)
+2023-03-05 01:48:48 - [34m[1mLOGS   [0m - Epoch: 39[10/16]		Batch Time:0.8752		Loss:1.6321		top1:51.3889 (51.7677)		top5:77.7778 (83.9646)
+2023-03-05 01:48:57 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.682		Loss:2.902		top1:27.778 (27.778)		top5:66.667(66.667)
+2023-03-05 01:48:57 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.867		top1:26.389 (27.083)		top5:62.500(64.583)
+2023-03-05 01:48:57 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.591		top1:36.066 (29.756)		top5:67.213(65.366)
+2023-03-05 01:48:58 - [32m[1mINFO   [0m -  * Prec@1:29.756 Prec@5:65.366
+2023-03-05 01:48:58 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:48:58 - [32m[1mINFO   [0m - LR for epoch 40 = 0.10000
+2023-03-05 01:49:06 - [34m[1mLOGS   [0m - Epoch: 40[0/16]		Batch Time:7.9612		Loss:1.5435		top1:55.5556 (55.5556)		top5:80.5555 (80.5555)
+2023-03-05 01:49:07 - [34m[1mLOGS   [0m - Epoch: 40[10/16]		Batch Time:0.8718		Loss:1.3578		top1:59.7222 (60.6061)		top5:87.5000 (88.1313)
+2023-03-05 01:49:16 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.579		Loss:2.591		top1:31.944 (31.944)		top5:69.444(69.444)
+2023-03-05 01:49:16 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.816		top1:40.278 (36.111)		top5:73.611(71.528)
+2023-03-05 01:49:16 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:47.541 (39.512)		top5:72.131(71.707)
+2023-03-05 01:49:17 - [32m[1mINFO   [0m -  * Prec@1:39.512 Prec@5:71.707
+2023-03-05 01:49:17 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:49:17 - [32m[1mINFO   [0m - LR for epoch 41 = 0.50000
+2023-03-05 01:49:25 - [34m[1mLOGS   [0m - Epoch: 41[0/16]		Batch Time:7.9063		Loss:1.2111		top1:62.5000 (62.5000)		top5:93.0555 (93.0555)
+2023-03-05 01:49:26 - [34m[1mLOGS   [0m - Epoch: 41[10/16]		Batch Time:0.8668		Loss:1.7013		top1:45.8333 (50.3788)		top5:83.3333 (83.5859)
+2023-03-05 01:49:35 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.580		Loss:4.636		top1:11.111 (11.111)		top5:41.667(41.667)
+2023-03-05 01:49:35 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.817		top1:19.444 (15.278)		top5:38.889(40.278)
+2023-03-05 01:49:35 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:27.869 (19.024)		top5:57.377(45.366)
+2023-03-05 01:49:35 - [32m[1mINFO   [0m -  * Prec@1:19.024 Prec@5:45.366
+2023-03-05 01:49:36 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:49:36 - [32m[1mINFO   [0m - LR for epoch 42 = 0.40000
+2023-03-05 01:49:44 - [34m[1mLOGS   [0m - Epoch: 42[0/16]		Batch Time:8.2029		Loss:2.4539		top1:37.5000 (37.5000)		top5:69.4444 (69.4444)
+2023-03-05 01:49:45 - [34m[1mLOGS   [0m - Epoch: 42[10/16]		Batch Time:0.8983		Loss:1.9397		top1:47.2222 (46.4646)		top5:77.7778 (79.1667)
+2023-03-05 01:49:54 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.500		Loss:5.245		top1:13.889 (13.889)		top5:38.889(38.889)
+2023-03-05 01:49:54 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.775		top1:25.000 (19.444)		top5:52.778(45.833)
+2023-03-05 01:49:54 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.530		top1:34.426 (23.902)		top5:60.656(50.244)
+2023-03-05 01:49:55 - [32m[1mINFO   [0m -  * Prec@1:23.902 Prec@5:50.244
+2023-03-05 01:49:55 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:49:55 - [32m[1mINFO   [0m - LR for epoch 43 = 0.30000
+2023-03-05 01:50:03 - [34m[1mLOGS   [0m - Epoch: 43[0/16]		Batch Time:8.1845		Loss:1.5342		top1:55.5556 (55.5556)		top5:91.6667 (91.6667)
+2023-03-05 01:50:04 - [34m[1mLOGS   [0m - Epoch: 43[10/16]		Batch Time:0.8869		Loss:1.6298		top1:59.7222 (52.9040)		top5:87.5000 (84.7222)
+2023-03-05 01:50:13 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.496		Loss:3.786		top1:20.833 (20.833)		top5:45.833(45.833)
+2023-03-05 01:50:13 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.775		top1:40.278 (30.556)		top5:63.889(54.861)
+2023-03-05 01:50:13 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.532		top1:34.426 (31.707)		top5:70.492(59.512)
+2023-03-05 01:50:13 - [32m[1mINFO   [0m -  * Prec@1:31.707 Prec@5:59.512
+2023-03-05 01:50:14 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:50:14 - [32m[1mINFO   [0m - LR for epoch 44 = 0.20000
+2023-03-05 01:50:22 - [34m[1mLOGS   [0m - Epoch: 44[0/16]		Batch Time:7.9854		Loss:1.4253		top1:51.3889 (51.3889)		top5:87.5000 (87.5000)
+2023-03-05 01:50:23 - [34m[1mLOGS   [0m - Epoch: 44[10/16]		Batch Time:0.8720		Loss:1.3528		top1:63.8889 (58.8384)		top5:90.2778 (89.2677)
+2023-03-05 01:50:32 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.626		Loss:3.336		top1:29.167 (29.167)		top5:58.333(58.333)
+2023-03-05 01:50:32 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.840		top1:33.333 (31.250)		top5:66.667(62.500)
+2023-03-05 01:50:32 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.575		top1:47.541 (36.098)		top5:70.492(64.878)
+2023-03-05 01:50:32 - [32m[1mINFO   [0m -  * Prec@1:36.098 Prec@5:64.878
+2023-03-05 01:50:33 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:50:33 - [32m[1mINFO   [0m - LR for epoch 45 = 0.10000
+2023-03-05 01:50:41 - [34m[1mLOGS   [0m - Epoch: 45[0/16]		Batch Time:8.1687		Loss:1.3269		top1:55.5556 (55.5556)		top5:93.0555 (93.0555)
+2023-03-05 01:50:42 - [34m[1mLOGS   [0m - Epoch: 45[10/16]		Batch Time:0.8896		Loss:1.1527		top1:66.6667 (65.0253)		top5:95.8333 (92.4242)
+2023-03-05 01:50:51 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.611		Loss:2.743		top1:31.944 (31.944)		top5:73.611(73.611)
+2023-03-05 01:50:51 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.832		top1:37.500 (34.722)		top5:72.222(72.917)
+2023-03-05 01:50:51 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.571		top1:44.262 (37.561)		top5:78.689(74.634)
+2023-03-05 01:50:52 - [32m[1mINFO   [0m -  * Prec@1:37.561 Prec@5:74.634
+2023-03-05 01:50:52 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:50:52 - [32m[1mINFO   [0m - LR for epoch 46 = 0.50000
+2023-03-05 01:51:00 - [34m[1mLOGS   [0m - Epoch: 46[0/16]		Batch Time:7.9731		Loss:0.9314		top1:73.6111 (73.6111)		top5:95.8333 (95.8333)
+2023-03-05 01:51:01 - [34m[1mLOGS   [0m - Epoch: 46[10/16]		Batch Time:0.8680		Loss:1.4136		top1:50.0000 (60.1010)		top5:87.5000 (88.3838)
+2023-03-05 01:51:10 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.464		Loss:5.557		top1:12.500 (12.500)		top5:51.389(51.389)
+2023-03-05 01:51:10 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.756		top1:20.833 (16.667)		top5:55.556(53.472)
+2023-03-05 01:51:10 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.516		top1:29.508 (20.488)		top5:52.459(53.171)
+2023-03-05 01:51:10 - [32m[1mINFO   [0m -  * Prec@1:20.488 Prec@5:53.171
+2023-03-05 01:51:10 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:51:10 - [32m[1mINFO   [0m - LR for epoch 47 = 0.40000
+2023-03-05 01:51:18 - [34m[1mLOGS   [0m - Epoch: 47[0/16]		Batch Time:7.9786		Loss:1.6100		top1:48.6111 (48.6111)		top5:84.7222 (84.7222)
+2023-03-05 01:51:20 - [34m[1mLOGS   [0m - Epoch: 47[10/16]		Batch Time:0.8724		Loss:1.7889		top1:36.1111 (47.6010)		top5:73.6111 (82.0707)
+2023-03-05 01:51:29 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.587		Loss:4.141		top1:20.833 (20.833)		top5:55.556(55.556)
+2023-03-05 01:51:29 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.812		top1:29.167 (25.000)		top5:56.944(56.250)
+2023-03-05 01:51:29 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.557		top1:40.984 (29.756)		top5:70.492(60.488)
+2023-03-05 01:51:29 - [32m[1mINFO   [0m -  * Prec@1:29.756 Prec@5:60.488
+2023-03-05 01:51:29 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:51:29 - [32m[1mINFO   [0m - LR for epoch 48 = 0.30000
+2023-03-05 01:51:37 - [34m[1mLOGS   [0m - Epoch: 48[0/16]		Batch Time:8.0093		Loss:1.4879		top1:56.9444 (56.9444)		top5:86.1111 (86.1111)
+2023-03-05 01:51:39 - [34m[1mLOGS   [0m - Epoch: 48[10/16]		Batch Time:0.8722		Loss:1.6779		top1:43.0556 (51.7677)		top5:83.3333 (84.5960)
+2023-03-05 01:51:48 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.765		Loss:3.501		top1:19.444 (19.444)		top5:59.722(59.722)
+2023-03-05 01:51:48 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.908		top1:31.944 (25.694)		top5:73.611(66.667)
+2023-03-05 01:51:48 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.619		top1:42.623 (30.732)		top5:70.492(67.805)
+2023-03-05 01:51:48 - [32m[1mINFO   [0m -  * Prec@1:30.732 Prec@5:67.805
+2023-03-05 01:51:48 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:51:48 - [32m[1mINFO   [0m - LR for epoch 49 = 0.20000
+2023-03-05 01:51:57 - [34m[1mLOGS   [0m - Epoch: 49[0/16]		Batch Time:8.7324		Loss:1.1724		top1:66.6667 (66.6667)		top5:91.6667 (91.6667)
+2023-03-05 01:51:59 - [34m[1mLOGS   [0m - Epoch: 49[10/16]		Batch Time:0.9358		Loss:1.2197		top1:56.9444 (62.7525)		top5:93.0555 (91.9192)
+2023-03-05 01:52:08 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.635		Loss:2.812		top1:37.500 (37.500)		top5:69.444(69.444)
+2023-03-05 01:52:08 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.841		top1:37.500 (37.500)		top5:69.444(69.444)
+2023-03-05 01:52:08 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.578		top1:39.344 (38.049)		top5:78.689(72.195)
+2023-03-05 01:52:08 - [32m[1mINFO   [0m -  * Prec@1:38.049 Prec@5:72.195
+2023-03-05 01:52:08 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:52:08 - [32m[1mINFO   [0m - LR for epoch 50 = 0.10000
+2023-03-05 01:52:16 - [34m[1mLOGS   [0m - Epoch: 50[0/16]		Batch Time:7.9726		Loss:1.0161		top1:65.2778 (65.2778)		top5:95.8333 (95.8333)
+2023-03-05 01:52:18 - [34m[1mLOGS   [0m - Epoch: 50[10/16]		Batch Time:0.8726		Loss:0.9835		top1:68.0555 (71.5909)		top5:95.8333 (93.9394)
+2023-03-05 01:52:26 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.642		Loss:2.656		top1:36.111 (36.111)		top5:72.222(72.222)
+2023-03-05 01:52:27 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.846		top1:47.222 (41.667)		top5:70.833(71.528)
+2023-03-05 01:52:27 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.578		top1:55.738 (45.854)		top5:83.607(75.122)
+2023-03-05 01:52:27 - [32m[1mINFO   [0m -  * Prec@1:45.854 Prec@5:75.122
+2023-03-05 01:52:27 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:52:27 - [32m[1mINFO   [0m - LR for epoch 51 = 0.50000
+2023-03-05 01:52:35 - [34m[1mLOGS   [0m - Epoch: 51[0/16]		Batch Time:7.9042		Loss:0.8799		top1:72.2222 (72.2222)		top5:94.4444 (94.4444)
+2023-03-05 01:52:37 - [34m[1mLOGS   [0m - Epoch: 51[10/16]		Batch Time:0.8665		Loss:1.2051		top1:63.8889 (66.1616)		top5:87.5000 (90.7828)
+2023-03-05 01:52:46 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.792		Loss:3.255		top1:30.556 (30.556)		top5:68.056(68.056)
+2023-03-05 01:52:46 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.921		top1:26.389 (28.472)		top5:59.722(63.889)
+2023-03-05 01:52:46 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.628		top1:36.066 (30.732)		top5:67.213(64.878)
+2023-03-05 01:52:46 - [32m[1mINFO   [0m -  * Prec@1:30.732 Prec@5:64.878
+2023-03-05 01:52:46 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:52:46 - [32m[1mINFO   [0m - LR for epoch 52 = 0.40000
+2023-03-05 01:52:54 - [34m[1mLOGS   [0m - Epoch: 52[0/16]		Batch Time:7.9914		Loss:1.5449		top1:54.1667 (54.1667)		top5:87.5000 (87.5000)
+2023-03-05 01:52:56 - [34m[1mLOGS   [0m - Epoch: 52[10/16]		Batch Time:0.8705		Loss:1.4221		top1:47.2222 (57.5758)		top5:88.8889 (89.2677)
+2023-03-05 01:53:05 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.657		Loss:4.327		top1:20.833 (20.833)		top5:63.889(63.889)
+2023-03-05 01:53:05 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.852		top1:23.611 (22.222)		top5:63.889(63.889)
+2023-03-05 01:53:05 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.581		top1:29.508 (24.390)		top5:73.770(66.829)
+2023-03-05 01:53:05 - [32m[1mINFO   [0m -  * Prec@1:24.390 Prec@5:66.829
+2023-03-05 01:53:05 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:53:05 - [32m[1mINFO   [0m - LR for epoch 53 = 0.30000
+2023-03-05 01:53:13 - [34m[1mLOGS   [0m - Epoch: 53[0/16]		Batch Time:7.7903		Loss:0.9910		top1:70.8333 (70.8333)		top5:87.5000 (87.5000)
+2023-03-05 01:53:15 - [34m[1mLOGS   [0m - Epoch: 53[10/16]		Batch Time:0.8589		Loss:1.2481		top1:54.1667 (64.1414)		top5:88.8889 (90.6566)
+2023-03-05 01:53:23 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.589		Loss:3.976		top1:25.000 (25.000)		top5:58.333(58.333)
+2023-03-05 01:53:23 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.818		top1:33.333 (29.167)		top5:70.833(64.583)
+2023-03-05 01:53:23 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.558		top1:44.262 (33.659)		top5:73.770(67.317)
+2023-03-05 01:53:24 - [32m[1mINFO   [0m -  * Prec@1:33.659 Prec@5:67.317
+2023-03-05 01:53:24 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:53:24 - [32m[1mINFO   [0m - LR for epoch 54 = 0.20000
+2023-03-05 01:53:32 - [34m[1mLOGS   [0m - Epoch: 54[0/16]		Batch Time:7.9690		Loss:0.7966		top1:75.0000 (75.0000)		top5:95.8333 (95.8333)
+2023-03-05 01:53:33 - [34m[1mLOGS   [0m - Epoch: 54[10/16]		Batch Time:0.8685		Loss:1.0220		top1:65.2778 (68.3081)		top5:95.8333 (93.0556)
+2023-03-05 01:53:42 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.621		Loss:3.204		top1:34.722 (34.722)		top5:68.056(68.056)
+2023-03-05 01:53:42 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.836		top1:36.111 (35.417)		top5:72.222(70.139)
+2023-03-05 01:53:42 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.571		top1:45.902 (38.537)		top5:78.689(72.683)
+2023-03-05 01:53:43 - [32m[1mINFO   [0m -  * Prec@1:38.537 Prec@5:72.683
+2023-03-05 01:53:43 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:53:43 - [32m[1mINFO   [0m - LR for epoch 55 = 0.10000
+2023-03-05 01:53:51 - [34m[1mLOGS   [0m - Epoch: 55[0/16]		Batch Time:8.2220		Loss:0.8969		top1:68.0555 (68.0555)		top5:95.8333 (95.8333)
+2023-03-05 01:53:52 - [34m[1mLOGS   [0m - Epoch: 55[10/16]		Batch Time:0.8876		Loss:0.8255		top1:81.9444 (76.1364)		top5:90.2778 (94.5707)
+2023-03-05 01:54:01 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.501		Loss:2.624		top1:40.278 (40.278)		top5:79.167(79.167)
+2023-03-05 01:54:01 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.774		top1:43.056 (41.667)		top5:75.000(77.083)
+2023-03-05 01:54:01 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.534		top1:45.902 (42.927)		top5:78.689(77.561)
+2023-03-05 01:54:02 - [32m[1mINFO   [0m -  * Prec@1:42.927 Prec@5:77.561
+2023-03-05 01:54:02 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:54:02 - [32m[1mINFO   [0m - LR for epoch 56 = 0.50000
+2023-03-05 01:54:09 - [34m[1mLOGS   [0m - Epoch: 56[0/16]		Batch Time:7.7782		Loss:0.5856		top1:83.3333 (83.3333)		top5:100.0000 (100.0000)
+2023-03-05 01:54:11 - [34m[1mLOGS   [0m - Epoch: 56[10/16]		Batch Time:0.8562		Loss:1.0271		top1:68.0555 (66.7929)		top5:97.2222 (93.1818)
+2023-03-05 01:54:20 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.569		Loss:5.431		top1:26.389 (26.389)		top5:54.167(54.167)
+2023-03-05 01:54:20 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.808		top1:31.944 (29.167)		top5:65.278(59.722)
+2023-03-05 01:54:20 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.551		top1:39.344 (32.195)		top5:70.492(62.927)
+2023-03-05 01:54:20 - [32m[1mINFO   [0m -  * Prec@1:32.195 Prec@5:62.927
+2023-03-05 01:54:20 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:54:20 - [32m[1mINFO   [0m - LR for epoch 57 = 0.40000
+2023-03-05 01:54:28 - [34m[1mLOGS   [0m - Epoch: 57[0/16]		Batch Time:8.1550		Loss:1.2873		top1:62.5000 (62.5000)		top5:91.6667 (91.6667)
+2023-03-05 01:54:30 - [34m[1mLOGS   [0m - Epoch: 57[10/16]		Batch Time:0.8854		Loss:1.3774		top1:63.8889 (59.2172)		top5:93.0555 (89.7727)
+2023-03-05 01:54:39 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.475		Loss:3.998		top1:27.778 (27.778)		top5:63.889(63.889)
+2023-03-05 01:54:39 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.763		top1:37.500 (32.639)		top5:63.889(63.889)
+2023-03-05 01:54:39 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.522		top1:22.951 (29.756)		top5:70.492(65.854)
+2023-03-05 01:54:39 - [32m[1mINFO   [0m -  * Prec@1:29.756 Prec@5:65.854
+2023-03-05 01:54:39 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:54:39 - [32m[1mINFO   [0m - LR for epoch 58 = 0.30000
+2023-03-05 01:54:47 - [34m[1mLOGS   [0m - Epoch: 58[0/16]		Batch Time:8.0023		Loss:0.9357		top1:79.1667 (79.1667)		top5:90.2778 (90.2778)
+2023-03-05 01:54:49 - [34m[1mLOGS   [0m - Epoch: 58[10/16]		Batch Time:0.8772		Loss:1.2292		top1:63.8889 (62.7525)		top5:95.8333 (90.7828)
+2023-03-05 01:54:58 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.573		Loss:3.365		top1:30.556 (30.556)		top5:65.278(65.278)
+2023-03-05 01:54:58 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.810		top1:37.500 (34.028)		top5:65.278(65.278)
+2023-03-05 01:54:58 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.558		top1:40.984 (36.098)		top5:75.410(68.293)
+2023-03-05 01:54:58 - [32m[1mINFO   [0m -  * Prec@1:36.098 Prec@5:68.293
+2023-03-05 01:54:58 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:54:58 - [32m[1mINFO   [0m - LR for epoch 59 = 0.20000
+2023-03-05 01:55:06 - [34m[1mLOGS   [0m - Epoch: 59[0/16]		Batch Time:8.0058		Loss:0.9387		top1:80.5555 (80.5555)		top5:93.0555 (93.0555)
+2023-03-05 01:55:08 - [34m[1mLOGS   [0m - Epoch: 59[10/16]		Batch Time:0.8727		Loss:0.8846		top1:76.3889 (73.3586)		top5:94.4444 (94.9495)
+2023-03-05 01:55:18 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.604		Loss:2.952		top1:43.056 (43.056)		top5:70.833(70.833)
+2023-03-05 01:55:18 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.328		top1:44.444 (43.750)		top5:79.167(75.000)
+2023-03-05 01:55:18 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.899		top1:45.902 (44.390)		top5:78.689(76.098)
+2023-03-05 01:55:18 - [32m[1mINFO   [0m -  * Prec@1:44.390 Prec@5:76.098
+2023-03-05 01:55:18 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:55:18 - [32m[1mINFO   [0m - LR for epoch 60 = 0.10000
+2023-03-05 01:55:27 - [34m[1mLOGS   [0m - Epoch: 60[0/16]		Batch Time:8.3787		Loss:0.6658		top1:81.9444 (81.9444)		top5:97.2222 (97.2222)
+2023-03-05 01:55:28 - [34m[1mLOGS   [0m - Epoch: 60[10/16]		Batch Time:0.9096		Loss:0.6953		top1:73.6111 (77.7778)		top5:95.8333 (96.7172)
+2023-03-05 01:55:37 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.783		Loss:2.807		top1:41.667 (41.667)		top5:73.611(73.611)
+2023-03-05 01:55:37 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.915		top1:48.611 (45.139)		top5:76.389(75.000)
+2023-03-05 01:55:37 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.621		top1:49.180 (46.341)		top5:80.328(76.585)
+2023-03-05 01:55:38 - [32m[1mINFO   [0m -  * Prec@1:46.341 Prec@5:76.585
+2023-03-05 01:55:38 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:55:38 - [32m[1mINFO   [0m - LR for epoch 61 = 0.09958
+2023-03-05 01:55:46 - [34m[1mLOGS   [0m - Epoch: 61[0/16]		Batch Time:8.1224		Loss:0.4620		top1:88.8889 (88.8889)		top5:97.2222 (97.2222)
+2023-03-05 01:55:47 - [34m[1mLOGS   [0m - Epoch: 61[10/16]		Batch Time:0.8814		Loss:0.5365		top1:75.0000 (84.2172)		top5:95.8333 (97.4747)
+2023-03-05 01:55:56 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.665		Loss:2.689		top1:40.278 (40.278)		top5:77.778(77.778)
+2023-03-05 01:55:56 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.856		top1:55.556 (47.917)		top5:80.556(79.167)
+2023-03-05 01:55:56 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.583		top1:55.738 (50.244)		top5:78.689(79.024)
+2023-03-05 01:55:57 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:79.024
+2023-03-05 01:55:57 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:55:57 - [32m[1mINFO   [0m - LR for epoch 62 = 0.09917
+2023-03-05 01:56:05 - [34m[1mLOGS   [0m - Epoch: 62[0/16]		Batch Time:8.1156		Loss:0.6058		top1:79.1667 (79.1667)		top5:98.6111 (98.6111)
+2023-03-05 01:56:07 - [34m[1mLOGS   [0m - Epoch: 62[10/16]		Batch Time:0.8822		Loss:0.5303		top1:81.9444 (84.5960)		top5:97.2222 (97.8535)
+2023-03-05 01:56:15 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.656		Loss:2.677		top1:38.889 (38.889)		top5:76.389(76.389)
+2023-03-05 01:56:15 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.848		top1:48.611 (43.750)		top5:75.000(75.694)
+2023-03-05 01:56:15 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.582		top1:47.541 (44.878)		top5:83.607(78.049)
+2023-03-05 01:56:16 - [32m[1mINFO   [0m -  * Prec@1:44.878 Prec@5:78.049
+2023-03-05 01:56:16 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:56:16 - [32m[1mINFO   [0m - LR for epoch 63 = 0.09875
+2023-03-05 01:56:24 - [34m[1mLOGS   [0m - Epoch: 63[0/16]		Batch Time:7.9846		Loss:0.2593		top1:94.4444 (94.4444)		top5:98.6111 (98.6111)
+2023-03-05 01:56:25 - [34m[1mLOGS   [0m - Epoch: 63[10/16]		Batch Time:0.8709		Loss:0.4652		top1:86.1111 (87.2475)		top5:100.0000 (98.2323)
+2023-03-05 01:56:34 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.588		Loss:2.645		top1:44.444 (44.444)		top5:76.389(76.389)
+2023-03-05 01:56:34 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.821		top1:50.000 (47.222)		top5:77.778(77.083)
+2023-03-05 01:56:34 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.558		top1:52.459 (48.780)		top5:83.607(79.024)
+2023-03-05 01:56:35 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:79.024
+2023-03-05 01:56:35 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:56:35 - [32m[1mINFO   [0m - LR for epoch 64 = 0.09833
+2023-03-05 01:56:43 - [34m[1mLOGS   [0m - Epoch: 64[0/16]		Batch Time:7.9883		Loss:0.2981		top1:94.4444 (94.4444)		top5:98.6111 (98.6111)
+2023-03-05 01:56:44 - [34m[1mLOGS   [0m - Epoch: 64[10/16]		Batch Time:0.8732		Loss:0.3830		top1:87.5000 (88.2576)		top5:98.6111 (98.7374)
+2023-03-05 01:56:53 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.626		Loss:2.728		top1:41.667 (41.667)		top5:77.778(77.778)
+2023-03-05 01:56:53 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.836		top1:48.611 (45.139)		top5:81.944(79.861)
+2023-03-05 01:56:53 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.570		top1:52.459 (47.317)		top5:83.607(80.976)
+2023-03-05 01:56:54 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:80.976
+2023-03-05 01:56:54 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:56:54 - [32m[1mINFO   [0m - LR for epoch 65 = 0.09792
+2023-03-05 01:57:03 - [34m[1mLOGS   [0m - Epoch: 65[0/16]		Batch Time:8.9272		Loss:0.3737		top1:88.8889 (88.8889)		top5:100.0000 (100.0000)
+2023-03-05 01:57:04 - [34m[1mLOGS   [0m - Epoch: 65[10/16]		Batch Time:0.9546		Loss:0.3858		top1:94.4444 (89.1414)		top5:98.6111 (98.8636)
+2023-03-05 01:57:13 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.465		Loss:2.699		top1:43.056 (43.056)		top5:72.222(72.222)
+2023-03-05 01:57:13 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.758		top1:54.167 (48.611)		top5:77.778(75.000)
+2023-03-05 01:57:13 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.519		top1:52.459 (49.756)		top5:81.967(77.073)
+2023-03-05 01:57:13 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:77.073
+2023-03-05 01:57:13 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:57:13 - [32m[1mINFO   [0m - LR for epoch 66 = 0.09750
+2023-03-05 01:57:21 - [34m[1mLOGS   [0m - Epoch: 66[0/16]		Batch Time:7.9786		Loss:0.3053		top1:88.8889 (88.8889)		top5:100.0000 (100.0000)
+2023-03-05 01:57:23 - [34m[1mLOGS   [0m - Epoch: 66[10/16]		Batch Time:0.8721		Loss:0.3796		top1:88.8889 (88.6364)		top5:98.6111 (98.6111)
+2023-03-05 01:57:32 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.630		Loss:2.908		top1:41.667 (41.667)		top5:77.778(77.778)
+2023-03-05 01:57:32 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.840		top1:50.000 (45.833)		top5:73.611(75.694)
+2023-03-05 01:57:32 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.574		top1:52.459 (47.805)		top5:78.689(76.585)
+2023-03-05 01:57:32 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:76.585
+2023-03-05 01:57:32 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:57:32 - [32m[1mINFO   [0m - LR for epoch 67 = 0.09708
+2023-03-05 01:57:41 - [34m[1mLOGS   [0m - Epoch: 67[0/16]		Batch Time:8.1334		Loss:0.3595		top1:87.5000 (87.5000)		top5:98.6111 (98.6111)
+2023-03-05 01:57:42 - [34m[1mLOGS   [0m - Epoch: 67[10/16]		Batch Time:0.8827		Loss:0.3893		top1:90.2778 (89.2677)		top5:98.6111 (97.6010)
+2023-03-05 01:57:51 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.675		Loss:2.992		top1:41.667 (41.667)		top5:75.000(75.000)
+2023-03-05 01:57:51 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.861		top1:56.944 (49.306)		top5:80.556(77.778)
+2023-03-05 01:57:51 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.590		top1:59.016 (52.195)		top5:81.967(79.024)
+2023-03-05 01:57:51 - [32m[1mINFO   [0m -  * Prec@1:52.195 Prec@5:79.024
+2023-03-05 01:57:52 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:57:52 - [32m[1mINFO   [0m - LR for epoch 68 = 0.09667
+2023-03-05 01:57:59 - [34m[1mLOGS   [0m - Epoch: 68[0/16]		Batch Time:7.9397		Loss:0.4021		top1:90.2778 (90.2778)		top5:97.2222 (97.2222)
+2023-03-05 01:58:01 - [34m[1mLOGS   [0m - Epoch: 68[10/16]		Batch Time:0.8677		Loss:0.3620		top1:88.8889 (89.5202)		top5:98.6111 (98.3586)
+2023-03-05 01:58:10 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.560		Loss:2.925		top1:43.056 (43.056)		top5:77.778(77.778)
+2023-03-05 01:58:10 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.806		top1:47.222 (45.139)		top5:73.611(75.694)
+2023-03-05 01:58:10 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.551		top1:47.541 (45.854)		top5:81.967(77.561)
+2023-03-05 01:58:10 - [32m[1mINFO   [0m -  * Prec@1:45.854 Prec@5:77.561
+2023-03-05 01:58:10 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:58:10 - [32m[1mINFO   [0m - LR for epoch 69 = 0.09625
+2023-03-05 01:58:18 - [34m[1mLOGS   [0m - Epoch: 69[0/16]		Batch Time:7.9828		Loss:0.2817		top1:88.8889 (88.8889)		top5:100.0000 (100.0000)
+2023-03-05 01:58:20 - [34m[1mLOGS   [0m - Epoch: 69[10/16]		Batch Time:0.8702		Loss:0.3250		top1:88.8889 (90.1515)		top5:97.2222 (98.6111)
+2023-03-05 01:58:29 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.677		Loss:3.018		top1:37.500 (37.500)		top5:72.222(72.222)
+2023-03-05 01:58:29 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.864		top1:50.000 (43.750)		top5:76.389(74.306)
+2023-03-05 01:58:29 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.590		top1:55.738 (47.317)		top5:85.246(77.561)
+2023-03-05 01:58:29 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:77.561
+2023-03-05 01:58:29 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:58:29 - [32m[1mINFO   [0m - LR for epoch 70 = 0.09583
+2023-03-05 01:58:37 - [34m[1mLOGS   [0m - Epoch: 70[0/16]		Batch Time:8.0212		Loss:0.2729		top1:91.6667 (91.6667)		top5:97.2222 (97.2222)
+2023-03-05 01:58:39 - [34m[1mLOGS   [0m - Epoch: 70[10/16]		Batch Time:0.8688		Loss:0.2848		top1:91.6667 (92.5505)		top5:98.6111 (98.6111)
+2023-03-05 01:58:48 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.639		Loss:3.060		top1:45.833 (45.833)		top5:69.444(69.444)
+2023-03-05 01:58:48 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.841		top1:56.944 (51.389)		top5:75.000(72.222)
+2023-03-05 01:58:48 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.577		top1:59.016 (53.659)		top5:85.246(76.098)
+2023-03-05 01:58:48 - [32m[1mINFO   [0m -  * Prec@1:53.659 Prec@5:76.098
+2023-03-05 01:58:48 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:58:48 - [32m[1mINFO   [0m - LR for epoch 71 = 0.09542
+2023-03-05 01:58:56 - [34m[1mLOGS   [0m - Epoch: 71[0/16]		Batch Time:8.1402		Loss:0.2101		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 01:58:58 - [34m[1mLOGS   [0m - Epoch: 71[10/16]		Batch Time:0.8811		Loss:0.3175		top1:91.6667 (91.2879)		top5:100.0000 (99.1162)
+2023-03-05 01:59:07 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.464		Loss:3.125		top1:38.889 (38.889)		top5:73.611(73.611)
+2023-03-05 01:59:07 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.755		top1:50.000 (44.444)		top5:76.389(75.000)
+2023-03-05 01:59:07 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.521		top1:55.738 (47.805)		top5:81.967(77.073)
+2023-03-05 01:59:07 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:77.073
+2023-03-05 01:59:07 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:59:07 - [32m[1mINFO   [0m - LR for epoch 72 = 0.09500
+2023-03-05 01:59:15 - [34m[1mLOGS   [0m - Epoch: 72[0/16]		Batch Time:8.1542		Loss:0.2339		top1:93.0555 (93.0555)		top5:100.0000 (100.0000)
+2023-03-05 01:59:17 - [34m[1mLOGS   [0m - Epoch: 72[10/16]		Batch Time:0.8832		Loss:0.3023		top1:97.2222 (91.4141)		top5:100.0000 (98.8636)
+2023-03-05 01:59:26 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.871		Loss:3.139		top1:40.278 (40.278)		top5:70.833(70.833)
+2023-03-05 01:59:26 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.961		top1:52.778 (46.528)		top5:79.167(75.000)
+2023-03-05 01:59:26 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.654		top1:50.820 (47.805)		top5:78.689(76.098)
+2023-03-05 01:59:26 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:76.098
+2023-03-05 01:59:26 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:59:26 - [32m[1mINFO   [0m - LR for epoch 73 = 0.09458
+2023-03-05 01:59:34 - [34m[1mLOGS   [0m - Epoch: 73[0/16]		Batch Time:7.9868		Loss:0.3835		top1:91.6667 (91.6667)		top5:97.2222 (97.2222)
+2023-03-05 01:59:36 - [34m[1mLOGS   [0m - Epoch: 73[10/16]		Batch Time:0.8701		Loss:0.3111		top1:95.8333 (90.6566)		top5:98.6111 (98.9899)
+2023-03-05 01:59:45 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.673		Loss:3.336		top1:45.833 (45.833)		top5:72.222(72.222)
+2023-03-05 01:59:45 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.860		top1:51.389 (48.611)		top5:73.611(72.917)
+2023-03-05 01:59:45 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.586		top1:50.820 (49.268)		top5:78.689(74.634)
+2023-03-05 01:59:45 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:74.634
+2023-03-05 01:59:45 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 01:59:45 - [32m[1mINFO   [0m - LR for epoch 74 = 0.09417
+2023-03-05 01:59:53 - [34m[1mLOGS   [0m - Epoch: 74[0/16]		Batch Time:7.9667		Loss:0.2182		top1:94.4444 (94.4444)		top5:98.6111 (98.6111)
+2023-03-05 01:59:55 - [34m[1mLOGS   [0m - Epoch: 74[10/16]		Batch Time:0.8741		Loss:0.3056		top1:93.0555 (90.7828)		top5:100.0000 (98.9899)
+2023-03-05 02:00:04 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.572		Loss:3.333		top1:40.278 (40.278)		top5:75.000(75.000)
+2023-03-05 02:00:04 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.810		top1:52.778 (46.528)		top5:81.944(78.472)
+2023-03-05 02:00:04 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.552		top1:59.016 (50.244)		top5:85.246(80.488)
+2023-03-05 02:00:04 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:80.488
+2023-03-05 02:00:04 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:00:04 - [32m[1mINFO   [0m - LR for epoch 75 = 0.09375
+2023-03-05 02:00:12 - [34m[1mLOGS   [0m - Epoch: 75[0/16]		Batch Time:7.8177		Loss:0.2032		top1:91.6667 (91.6667)		top5:100.0000 (100.0000)
+2023-03-05 02:00:14 - [34m[1mLOGS   [0m - Epoch: 75[10/16]		Batch Time:0.8586		Loss:0.2451		top1:91.6667 (92.1717)		top5:97.2222 (99.2424)
+2023-03-05 02:00:22 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.561		Loss:3.233		top1:41.667 (41.667)		top5:77.778(77.778)
+2023-03-05 02:00:22 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.804		top1:55.556 (48.611)		top5:75.000(76.389)
+2023-03-05 02:00:23 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.548		top1:55.738 (50.732)		top5:83.607(78.537)
+2023-03-05 02:00:23 - [32m[1mINFO   [0m -  * Prec@1:50.732 Prec@5:78.537
+2023-03-05 02:00:23 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:00:23 - [32m[1mINFO   [0m - LR for epoch 76 = 0.09333
+2023-03-05 02:00:31 - [34m[1mLOGS   [0m - Epoch: 76[0/16]		Batch Time:8.0057		Loss:0.3113		top1:87.5000 (87.5000)		top5:98.6111 (98.6111)
+2023-03-05 02:00:33 - [34m[1mLOGS   [0m - Epoch: 76[10/16]		Batch Time:0.8710		Loss:0.2881		top1:86.1111 (90.9091)		top5:94.4444 (98.6111)
+2023-03-05 02:00:41 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.608		Loss:3.331		top1:41.667 (41.667)		top5:76.389(76.389)
+2023-03-05 02:00:41 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.831		top1:55.556 (48.611)		top5:79.167(77.778)
+2023-03-05 02:00:41 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.569		top1:54.098 (50.244)		top5:77.049(77.561)
+2023-03-05 02:00:42 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:77.561
+2023-03-05 02:00:42 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:00:42 - [32m[1mINFO   [0m - LR for epoch 77 = 0.09292
+2023-03-05 02:00:50 - [34m[1mLOGS   [0m - Epoch: 77[0/16]		Batch Time:8.1782		Loss:0.3131		top1:86.1111 (86.1111)		top5:100.0000 (100.0000)
+2023-03-05 02:00:52 - [34m[1mLOGS   [0m - Epoch: 77[10/16]		Batch Time:0.8842		Loss:0.2633		top1:90.2778 (91.9192)		top5:97.2222 (99.1162)
+2023-03-05 02:01:00 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.666		Loss:3.407		top1:45.833 (45.833)		top5:75.000(75.000)
+2023-03-05 02:01:01 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.859		top1:54.167 (50.000)		top5:77.778(76.389)
+2023-03-05 02:01:01 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.586		top1:47.541 (49.268)		top5:81.967(78.049)
+2023-03-05 02:01:01 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:78.049
+2023-03-05 02:01:01 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:01:01 - [32m[1mINFO   [0m - LR for epoch 78 = 0.09250
+2023-03-05 02:01:09 - [34m[1mLOGS   [0m - Epoch: 78[0/16]		Batch Time:8.1891		Loss:0.2571		top1:91.6667 (91.6667)		top5:98.6111 (98.6111)
+2023-03-05 02:01:11 - [34m[1mLOGS   [0m - Epoch: 78[10/16]		Batch Time:0.8877		Loss:0.2903		top1:97.2222 (92.0455)		top5:98.6111 (98.9899)
+2023-03-05 02:01:20 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.636		Loss:3.310		top1:43.056 (43.056)		top5:69.444(69.444)
+2023-03-05 02:01:20 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.842		top1:56.944 (50.000)		top5:79.167(74.306)
+2023-03-05 02:01:20 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.579		top1:55.738 (51.707)		top5:78.689(75.610)
+2023-03-05 02:01:20 - [32m[1mINFO   [0m -  * Prec@1:51.707 Prec@5:75.610
+2023-03-05 02:01:20 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:01:20 - [32m[1mINFO   [0m - LR for epoch 79 = 0.09208
+2023-03-05 02:01:28 - [34m[1mLOGS   [0m - Epoch: 79[0/16]		Batch Time:8.1995		Loss:0.2278		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:01:30 - [34m[1mLOGS   [0m - Epoch: 79[10/16]		Batch Time:0.8938		Loss:0.2169		top1:91.6667 (93.1818)		top5:98.6111 (99.4949)
+2023-03-05 02:01:39 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.411		Loss:3.380		top1:43.056 (43.056)		top5:75.000(75.000)
+2023-03-05 02:01:39 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.724		top1:51.389 (47.222)		top5:76.389(75.694)
+2023-03-05 02:01:39 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.498		top1:54.098 (49.268)		top5:78.689(76.585)
+2023-03-05 02:01:39 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:76.585
+2023-03-05 02:01:39 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:01:39 - [32m[1mINFO   [0m - LR for epoch 80 = 0.09167
+2023-03-05 02:01:47 - [34m[1mLOGS   [0m - Epoch: 80[0/16]		Batch Time:8.0207		Loss:0.2881		top1:88.8889 (88.8889)		top5:98.6111 (98.6111)
+2023-03-05 02:01:49 - [34m[1mLOGS   [0m - Epoch: 80[10/16]		Batch Time:0.8733		Loss:0.2397		top1:93.0555 (93.1818)		top5:100.0000 (99.3687)
+2023-03-05 02:01:57 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.619		Loss:3.076		top1:45.833 (45.833)		top5:77.778(77.778)
+2023-03-05 02:01:57 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.836		top1:47.222 (46.528)		top5:72.222(75.000)
+2023-03-05 02:01:58 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.568		top1:55.738 (49.268)		top5:81.967(77.073)
+2023-03-05 02:01:58 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:77.073
+2023-03-05 02:01:58 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:01:58 - [32m[1mINFO   [0m - LR for epoch 81 = 0.09125
+2023-03-05 02:02:06 - [34m[1mLOGS   [0m - Epoch: 81[0/16]		Batch Time:8.0029		Loss:0.2466		top1:91.6667 (91.6667)		top5:97.2222 (97.2222)
+2023-03-05 02:02:08 - [34m[1mLOGS   [0m - Epoch: 81[10/16]		Batch Time:0.8740		Loss:0.2407		top1:90.2778 (92.0455)		top5:100.0000 (98.8636)
+2023-03-05 02:02:17 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.188		Loss:3.327		top1:44.444 (44.444)		top5:73.611(73.611)
+2023-03-05 02:02:17 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.119		top1:45.833 (45.139)		top5:73.611(73.611)
+2023-03-05 02:02:17 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.760		top1:52.459 (47.317)		top5:80.328(75.610)
+2023-03-05 02:02:17 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:75.610
+2023-03-05 02:02:18 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:02:18 - [32m[1mINFO   [0m - LR for epoch 82 = 0.09083
+2023-03-05 02:02:26 - [34m[1mLOGS   [0m - Epoch: 82[0/16]		Batch Time:7.9678		Loss:0.3546		top1:90.2778 (90.2778)		top5:98.6111 (98.6111)
+2023-03-05 02:02:27 - [34m[1mLOGS   [0m - Epoch: 82[10/16]		Batch Time:0.8694		Loss:0.3028		top1:87.5000 (91.0353)		top5:97.2222 (98.7374)
+2023-03-05 02:02:36 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.613		Loss:3.304		top1:41.667 (41.667)		top5:73.611(73.611)
+2023-03-05 02:02:36 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.830		top1:50.000 (45.833)		top5:73.611(73.611)
+2023-03-05 02:02:36 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.564		top1:55.738 (48.780)		top5:78.689(75.122)
+2023-03-05 02:02:36 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:75.122
+2023-03-05 02:02:36 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:02:36 - [32m[1mINFO   [0m - LR for epoch 83 = 0.09042
+2023-03-05 02:02:44 - [34m[1mLOGS   [0m - Epoch: 83[0/16]		Batch Time:8.0108		Loss:0.3112		top1:88.8889 (88.8889)		top5:98.6111 (98.6111)
+2023-03-05 02:02:46 - [34m[1mLOGS   [0m - Epoch: 83[10/16]		Batch Time:0.8707		Loss:0.2497		top1:90.2778 (92.4242)		top5:98.6111 (98.8636)
+2023-03-05 02:02:55 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.635		Loss:3.196		top1:43.056 (43.056)		top5:73.611(73.611)
+2023-03-05 02:02:55 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.836		top1:54.167 (48.611)		top5:73.611(73.611)
+2023-03-05 02:02:55 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.573		top1:52.459 (49.756)		top5:78.689(75.122)
+2023-03-05 02:02:55 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:75.122
+2023-03-05 02:02:55 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:02:55 - [32m[1mINFO   [0m - LR for epoch 84 = 0.09000
+2023-03-05 02:03:03 - [34m[1mLOGS   [0m - Epoch: 84[0/16]		Batch Time:8.0096		Loss:0.1521		top1:95.8333 (95.8333)		top5:100.0000 (100.0000)
+2023-03-05 02:03:05 - [34m[1mLOGS   [0m - Epoch: 84[10/16]		Batch Time:0.8729		Loss:0.2257		top1:93.0555 (92.5505)		top5:100.0000 (99.2424)
+2023-03-05 02:03:14 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.631		Loss:3.540		top1:41.667 (41.667)		top5:72.222(72.222)
+2023-03-05 02:03:14 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.837		top1:52.778 (47.222)		top5:75.000(73.611)
+2023-03-05 02:03:14 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.571		top1:57.377 (50.244)		top5:77.049(74.634)
+2023-03-05 02:03:14 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:74.634
+2023-03-05 02:03:14 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:03:14 - [32m[1mINFO   [0m - LR for epoch 85 = 0.08958
+2023-03-05 02:03:22 - [34m[1mLOGS   [0m - Epoch: 85[0/16]		Batch Time:7.9983		Loss:0.2794		top1:91.6667 (91.6667)		top5:100.0000 (100.0000)
+2023-03-05 02:03:24 - [34m[1mLOGS   [0m - Epoch: 85[10/16]		Batch Time:0.8711		Loss:0.2603		top1:91.6667 (92.5505)		top5:98.6111 (98.3586)
+2023-03-05 02:03:33 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.619		Loss:3.244		top1:44.444 (44.444)		top5:79.167(79.167)
+2023-03-05 02:03:33 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.837		top1:50.000 (47.222)		top5:77.778(78.472)
+2023-03-05 02:03:33 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.571		top1:52.459 (48.780)		top5:81.967(79.512)
+2023-03-05 02:03:33 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:79.512
+2023-03-05 02:03:33 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:03:33 - [32m[1mINFO   [0m - LR for epoch 86 = 0.08917
+2023-03-05 02:03:41 - [34m[1mLOGS   [0m - Epoch: 86[0/16]		Batch Time:7.8186		Loss:0.3711		top1:91.6667 (91.6667)		top5:97.2222 (97.2222)
+2023-03-05 02:03:43 - [34m[1mLOGS   [0m - Epoch: 86[10/16]		Batch Time:0.8607		Loss:0.2797		top1:93.0555 (91.6667)		top5:98.6111 (98.6111)
+2023-03-05 02:03:52 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.742		Loss:3.055		top1:41.667 (41.667)		top5:73.611(73.611)
+2023-03-05 02:03:52 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.902		top1:54.167 (47.917)		top5:77.778(75.694)
+2023-03-05 02:03:52 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.614		top1:50.820 (48.780)		top5:78.689(76.585)
+2023-03-05 02:03:52 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:76.585
+2023-03-05 02:03:52 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:03:52 - [32m[1mINFO   [0m - LR for epoch 87 = 0.08875
+2023-03-05 02:04:00 - [34m[1mLOGS   [0m - Epoch: 87[0/16]		Batch Time:8.0004		Loss:0.1514		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:04:02 - [34m[1mLOGS   [0m - Epoch: 87[10/16]		Batch Time:0.8723		Loss:0.2424		top1:94.4444 (93.1818)		top5:98.6111 (98.8636)
+2023-03-05 02:04:10 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.611		Loss:3.337		top1:47.222 (47.222)		top5:79.167(79.167)
+2023-03-05 02:04:11 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.832		top1:45.833 (46.528)		top5:76.389(77.778)
+2023-03-05 02:04:11 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.570		top1:52.459 (48.293)		top5:81.967(79.024)
+2023-03-05 02:04:11 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:79.024
+2023-03-05 02:04:11 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:04:11 - [32m[1mINFO   [0m - LR for epoch 88 = 0.08833
+2023-03-05 02:04:19 - [34m[1mLOGS   [0m - Epoch: 88[0/16]		Batch Time:7.7846		Loss:0.1624		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:04:20 - [34m[1mLOGS   [0m - Epoch: 88[10/16]		Batch Time:0.8586		Loss:0.1958		top1:94.4444 (94.3182)		top5:100.0000 (99.1162)
+2023-03-05 02:04:29 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.566		Loss:3.208		top1:44.444 (44.444)		top5:76.389(76.389)
+2023-03-05 02:04:29 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.808		top1:47.222 (45.833)		top5:72.222(74.306)
+2023-03-05 02:04:29 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.552		top1:49.180 (46.829)		top5:81.967(76.585)
+2023-03-05 02:04:30 - [32m[1mINFO   [0m -  * Prec@1:46.829 Prec@5:76.585
+2023-03-05 02:04:30 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:04:30 - [32m[1mINFO   [0m - LR for epoch 89 = 0.08792
+2023-03-05 02:04:38 - [34m[1mLOGS   [0m - Epoch: 89[0/16]		Batch Time:7.9714		Loss:0.3806		top1:90.2778 (90.2778)		top5:97.2222 (97.2222)
+2023-03-05 02:04:39 - [34m[1mLOGS   [0m - Epoch: 89[10/16]		Batch Time:0.8707		Loss:0.1948		top1:98.6111 (94.8232)		top5:100.0000 (99.4949)
+2023-03-05 02:04:48 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.584		Loss:3.297		top1:43.056 (43.056)		top5:75.000(75.000)
+2023-03-05 02:04:48 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.816		top1:48.611 (45.833)		top5:70.833(72.917)
+2023-03-05 02:04:48 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.561		top1:52.459 (47.805)		top5:80.328(75.122)
+2023-03-05 02:04:49 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:75.122
+2023-03-05 02:04:49 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:04:49 - [32m[1mINFO   [0m - LR for epoch 90 = 0.08750
+2023-03-05 02:04:57 - [34m[1mLOGS   [0m - Epoch: 90[0/16]		Batch Time:8.0606		Loss:0.1975		top1:94.4444 (94.4444)		top5:98.6111 (98.6111)
+2023-03-05 02:04:58 - [34m[1mLOGS   [0m - Epoch: 90[10/16]		Batch Time:0.8788		Loss:0.2278		top1:91.6667 (93.3081)		top5:98.6111 (98.7374)
+2023-03-05 02:05:07 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.578		Loss:3.382		top1:41.667 (41.667)		top5:73.611(73.611)
+2023-03-05 02:05:07 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.816		top1:48.611 (45.139)		top5:77.778(75.694)
+2023-03-05 02:05:07 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:54.098 (47.805)		top5:77.049(76.098)
+2023-03-05 02:05:07 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:76.098
+2023-03-05 02:05:08 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:05:08 - [32m[1mINFO   [0m - LR for epoch 91 = 0.08708
+2023-03-05 02:05:16 - [34m[1mLOGS   [0m - Epoch: 91[0/16]		Batch Time:8.1709		Loss:0.1071		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:05:17 - [34m[1mLOGS   [0m - Epoch: 91[10/16]		Batch Time:0.8857		Loss:0.1982		top1:98.6111 (94.6970)		top5:98.6111 (98.8636)
+2023-03-05 02:05:26 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.436		Loss:3.239		top1:44.444 (44.444)		top5:72.222(72.222)
+2023-03-05 02:05:26 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.741		top1:48.611 (46.528)		top5:73.611(72.917)
+2023-03-05 02:05:26 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.507		top1:52.459 (48.293)		top5:78.689(74.634)
+2023-03-05 02:05:26 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:74.634
+2023-03-05 02:05:26 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:05:26 - [32m[1mINFO   [0m - LR for epoch 92 = 0.08667
+2023-03-05 02:05:35 - [34m[1mLOGS   [0m - Epoch: 92[0/16]		Batch Time:8.2328		Loss:0.2908		top1:93.0555 (93.0555)		top5:98.6111 (98.6111)
+2023-03-05 02:05:36 - [34m[1mLOGS   [0m - Epoch: 92[10/16]		Batch Time:0.8970		Loss:0.2281		top1:95.8333 (94.3182)		top5:98.6111 (99.6212)
+2023-03-05 02:05:45 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.796		Loss:3.682		top1:40.278 (40.278)		top5:77.778(77.778)
+2023-03-05 02:05:45 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.923		top1:51.389 (45.833)		top5:76.389(77.083)
+2023-03-05 02:05:45 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.629		top1:55.738 (48.780)		top5:83.607(79.024)
+2023-03-05 02:05:46 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:79.024
+2023-03-05 02:05:46 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:05:46 - [32m[1mINFO   [0m - LR for epoch 93 = 0.08625
+2023-03-05 02:05:54 - [34m[1mLOGS   [0m - Epoch: 93[0/16]		Batch Time:8.1924		Loss:0.1344		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:05:56 - [34m[1mLOGS   [0m - Epoch: 93[10/16]		Batch Time:0.8871		Loss:0.2066		top1:87.5000 (94.0657)		top5:98.6111 (99.4949)
+2023-03-05 02:06:04 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.660		Loss:3.544		top1:38.889 (38.889)		top5:76.389(76.389)
+2023-03-05 02:06:04 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.853		top1:51.389 (45.139)		top5:79.167(77.778)
+2023-03-05 02:06:04 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.581		top1:52.459 (47.317)		top5:83.607(79.512)
+2023-03-05 02:06:05 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:79.512
+2023-03-05 02:06:05 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:06:05 - [32m[1mINFO   [0m - LR for epoch 94 = 0.08583
+2023-03-05 02:06:13 - [34m[1mLOGS   [0m - Epoch: 94[0/16]		Batch Time:8.0364		Loss:0.2771		top1:93.0555 (93.0555)		top5:100.0000 (100.0000)
+2023-03-05 02:06:15 - [34m[1mLOGS   [0m - Epoch: 94[10/16]		Batch Time:0.8716		Loss:0.2021		top1:94.4444 (93.3081)		top5:100.0000 (99.4949)
+2023-03-05 02:06:23 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.657		Loss:3.406		top1:43.056 (43.056)		top5:77.778(77.778)
+2023-03-05 02:06:23 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.850		top1:50.000 (46.528)		top5:77.778(77.778)
+2023-03-05 02:06:23 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.583		top1:49.180 (47.317)		top5:81.967(79.024)
+2023-03-05 02:06:24 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:79.024
+2023-03-05 02:06:24 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:06:24 - [32m[1mINFO   [0m - LR for epoch 95 = 0.08542
+2023-03-05 02:06:32 - [34m[1mLOGS   [0m - Epoch: 95[0/16]		Batch Time:7.9680		Loss:0.3871		top1:90.2778 (90.2778)		top5:97.2222 (97.2222)
+2023-03-05 02:06:33 - [34m[1mLOGS   [0m - Epoch: 95[10/16]		Batch Time:0.8675		Loss:0.2520		top1:87.5000 (93.4343)		top5:97.2222 (98.7374)
+2023-03-05 02:06:42 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.469		Loss:3.552		top1:41.667 (41.667)		top5:76.389(76.389)
+2023-03-05 02:06:42 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.760		top1:48.611 (45.139)		top5:75.000(75.694)
+2023-03-05 02:06:42 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.520		top1:52.459 (47.317)		top5:77.049(76.098)
+2023-03-05 02:06:42 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:76.098
+2023-03-05 02:06:43 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:06:43 - [32m[1mINFO   [0m - LR for epoch 96 = 0.08500
+2023-03-05 02:06:51 - [34m[1mLOGS   [0m - Epoch: 96[0/16]		Batch Time:7.9154		Loss:0.3188		top1:87.5000 (87.5000)		top5:100.0000 (100.0000)
+2023-03-05 02:06:52 - [34m[1mLOGS   [0m - Epoch: 96[10/16]		Batch Time:0.8673		Loss:0.2191		top1:94.4444 (93.4343)		top5:98.6111 (99.3687)
+2023-03-05 02:07:01 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.580		Loss:3.197		top1:45.833 (45.833)		top5:73.611(73.611)
+2023-03-05 02:07:01 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.817		top1:50.000 (47.917)		top5:76.389(75.000)
+2023-03-05 02:07:01 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:55.738 (50.244)		top5:81.967(77.073)
+2023-03-05 02:07:01 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:77.073
+2023-03-05 02:07:01 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:07:01 - [32m[1mINFO   [0m - LR for epoch 97 = 0.08458
+2023-03-05 02:07:09 - [34m[1mLOGS   [0m - Epoch: 97[0/16]		Batch Time:7.8026		Loss:0.1217		top1:95.8333 (95.8333)		top5:100.0000 (100.0000)
+2023-03-05 02:07:11 - [34m[1mLOGS   [0m - Epoch: 97[10/16]		Batch Time:0.8583		Loss:0.1904		top1:95.8333 (93.9394)		top5:100.0000 (99.2424)
+2023-03-05 02:07:20 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.000		Loss:3.432		top1:45.833 (45.833)		top5:72.222(72.222)
+2023-03-05 02:07:20 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.022		top1:51.389 (48.611)		top5:77.778(75.000)
+2023-03-05 02:07:20 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.698		top1:54.098 (50.244)		top5:80.328(76.585)
+2023-03-05 02:07:21 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:76.585
+2023-03-05 02:07:21 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:07:21 - [32m[1mINFO   [0m - LR for epoch 98 = 0.08417
+2023-03-05 02:07:29 - [34m[1mLOGS   [0m - Epoch: 98[0/16]		Batch Time:8.6666		Loss:0.1961		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:07:31 - [34m[1mLOGS   [0m - Epoch: 98[10/16]		Batch Time:0.9325		Loss:0.1482		top1:94.4444 (96.2121)		top5:100.0000 (99.8737)
+2023-03-05 02:07:40 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.661		Loss:3.411		top1:48.611 (48.611)		top5:69.444(69.444)
+2023-03-05 02:07:40 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.852		top1:55.556 (52.083)		top5:80.556(75.000)
+2023-03-05 02:07:40 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.584		top1:59.016 (54.146)		top5:81.967(77.073)
+2023-03-05 02:07:40 - [32m[1mINFO   [0m -  * Prec@1:54.146 Prec@5:77.073
+2023-03-05 02:07:40 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:07:40 - [32m[1mINFO   [0m - LR for epoch 99 = 0.08375
+2023-03-05 02:07:48 - [34m[1mLOGS   [0m - Epoch: 99[0/16]		Batch Time:7.9835		Loss:0.0884		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:07:50 - [34m[1mLOGS   [0m - Epoch: 99[10/16]		Batch Time:0.8699		Loss:0.1643		top1:100.0000 (95.5808)		top5:100.0000 (98.9899)
+2023-03-05 02:07:59 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.587		Loss:3.367		top1:43.056 (43.056)		top5:75.000(75.000)
+2023-03-05 02:07:59 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.820		top1:54.167 (48.611)		top5:84.722(79.861)
+2023-03-05 02:07:59 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.557		top1:52.459 (49.756)		top5:81.967(80.488)
+2023-03-05 02:07:59 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:80.488
+2023-03-05 02:07:59 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:07:59 - [32m[1mINFO   [0m - LR for epoch 100 = 0.08333
+2023-03-05 02:08:07 - [34m[1mLOGS   [0m - Epoch: 100[0/16]		Batch Time:7.9831		Loss:0.1781		top1:91.6667 (91.6667)		top5:98.6111 (98.6111)
+2023-03-05 02:08:09 - [34m[1mLOGS   [0m - Epoch: 100[10/16]		Batch Time:0.8728		Loss:0.1649		top1:95.8333 (94.5707)		top5:100.0000 (99.2424)
+2023-03-05 02:08:18 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.604		Loss:3.471		top1:37.500 (37.500)		top5:70.833(70.833)
+2023-03-05 02:08:18 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.821		top1:51.389 (44.444)		top5:73.611(72.222)
+2023-03-05 02:08:18 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.563		top1:55.738 (47.805)		top5:81.967(75.122)
+2023-03-05 02:08:18 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:75.122
+2023-03-05 02:08:18 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:08:18 - [32m[1mINFO   [0m - LR for epoch 101 = 0.08292
+2023-03-05 02:08:26 - [34m[1mLOGS   [0m - Epoch: 101[0/16]		Batch Time:8.1474		Loss:0.1744		top1:93.0555 (93.0555)		top5:100.0000 (100.0000)
+2023-03-05 02:08:28 - [34m[1mLOGS   [0m - Epoch: 101[10/16]		Batch Time:0.8830		Loss:0.1968		top1:91.6667 (93.9394)		top5:98.6111 (99.1162)
+2023-03-05 02:08:37 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.512		Loss:3.436		top1:40.278 (40.278)		top5:72.222(72.222)
+2023-03-05 02:08:37 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.783		top1:50.000 (45.139)		top5:76.389(74.306)
+2023-03-05 02:08:37 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.537		top1:55.738 (48.293)		top5:80.328(76.098)
+2023-03-05 02:08:37 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:76.098
+2023-03-05 02:08:37 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:08:37 - [32m[1mINFO   [0m - LR for epoch 102 = 0.08250
+2023-03-05 02:08:45 - [34m[1mLOGS   [0m - Epoch: 102[0/16]		Batch Time:7.9310		Loss:0.2369		top1:93.0555 (93.0555)		top5:98.6111 (98.6111)
+2023-03-05 02:08:47 - [34m[1mLOGS   [0m - Epoch: 102[10/16]		Batch Time:0.8718		Loss:0.1898		top1:91.6667 (94.4444)		top5:98.6111 (99.2424)
+2023-03-05 02:08:55 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.608		Loss:3.251		top1:44.444 (44.444)		top5:75.000(75.000)
+2023-03-05 02:08:56 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.828		top1:52.778 (48.611)		top5:79.167(77.083)
+2023-03-05 02:08:56 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.564		top1:54.098 (50.244)		top5:80.328(78.049)
+2023-03-05 02:08:56 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:78.049
+2023-03-05 02:08:56 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:08:56 - [32m[1mINFO   [0m - LR for epoch 103 = 0.08208
+2023-03-05 02:09:04 - [34m[1mLOGS   [0m - Epoch: 103[0/16]		Batch Time:7.8409		Loss:0.1656		top1:93.0555 (93.0555)		top5:100.0000 (100.0000)
+2023-03-05 02:09:05 - [34m[1mLOGS   [0m - Epoch: 103[10/16]		Batch Time:0.8610		Loss:0.1461		top1:93.0555 (95.8333)		top5:98.6111 (99.7475)
+2023-03-05 02:09:14 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.504		Loss:3.200		top1:44.444 (44.444)		top5:75.000(75.000)
+2023-03-05 02:09:14 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.779		top1:54.167 (49.306)		top5:79.167(77.083)
+2023-03-05 02:09:14 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.535		top1:55.738 (51.220)		top5:80.328(78.049)
+2023-03-05 02:09:15 - [32m[1mINFO   [0m -  * Prec@1:51.220 Prec@5:78.049
+2023-03-05 02:09:15 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:09:15 - [32m[1mINFO   [0m - LR for epoch 104 = 0.08167
+2023-03-05 02:09:23 - [34m[1mLOGS   [0m - Epoch: 104[0/16]		Batch Time:7.9806		Loss:0.2318		top1:94.4444 (94.4444)		top5:98.6111 (98.6111)
+2023-03-05 02:09:24 - [34m[1mLOGS   [0m - Epoch: 104[10/16]		Batch Time:0.8706		Loss:0.2148		top1:93.0555 (93.3081)		top5:98.6111 (99.4949)
+2023-03-05 02:09:33 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.657		Loss:3.122		top1:50.000 (50.000)		top5:73.611(73.611)
+2023-03-05 02:09:33 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.852		top1:44.444 (47.222)		top5:75.000(74.306)
+2023-03-05 02:09:33 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.581		top1:60.656 (51.220)		top5:81.967(76.585)
+2023-03-05 02:09:34 - [32m[1mINFO   [0m -  * Prec@1:51.220 Prec@5:76.585
+2023-03-05 02:09:34 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:09:34 - [32m[1mINFO   [0m - LR for epoch 105 = 0.08125
+2023-03-05 02:09:42 - [34m[1mLOGS   [0m - Epoch: 105[0/16]		Batch Time:7.9594		Loss:0.1000		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:09:43 - [34m[1mLOGS   [0m - Epoch: 105[10/16]		Batch Time:0.8715		Loss:0.1626		top1:95.8333 (95.3283)		top5:98.6111 (99.4949)
+2023-03-05 02:09:52 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.581		Loss:2.838		top1:54.167 (54.167)		top5:79.167(79.167)
+2023-03-05 02:09:52 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.817		top1:50.000 (52.083)		top5:79.167(79.167)
+2023-03-05 02:09:52 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:60.656 (54.634)		top5:85.246(80.976)
+2023-03-05 02:09:52 - [32m[1mINFO   [0m -  * Prec@1:54.634 Prec@5:80.976
+2023-03-05 02:09:53 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:09:53 - [32m[1mINFO   [0m - LR for epoch 106 = 0.08083
+2023-03-05 02:10:01 - [34m[1mLOGS   [0m - Epoch: 106[0/16]		Batch Time:8.1758		Loss:0.0830		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:10:02 - [34m[1mLOGS   [0m - Epoch: 106[10/16]		Batch Time:0.8817		Loss:0.1542		top1:94.4444 (95.2020)		top5:100.0000 (99.4949)
+2023-03-05 02:10:13 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:9.250		Loss:3.237		top1:45.833 (45.833)		top5:77.778(77.778)
+2023-03-05 02:10:13 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.650		top1:47.222 (46.528)		top5:76.389(77.083)
+2023-03-05 02:10:13 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:3.113		top1:55.738 (49.268)		top5:77.049(77.073)
+2023-03-05 02:10:13 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:77.073
+2023-03-05 02:10:13 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:10:14 - [32m[1mINFO   [0m - LR for epoch 107 = 0.08042
+2023-03-05 02:10:22 - [34m[1mLOGS   [0m - Epoch: 107[0/16]		Batch Time:8.7850		Loss:0.2137		top1:91.6667 (91.6667)		top5:100.0000 (100.0000)
+2023-03-05 02:10:24 - [34m[1mLOGS   [0m - Epoch: 107[10/16]		Batch Time:0.9446		Loss:0.1745		top1:94.4444 (94.9495)		top5:100.0000 (99.4949)
+2023-03-05 02:10:34 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.606		Loss:3.334		top1:43.056 (43.056)		top5:83.333(83.333)
+2023-03-05 02:10:34 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.330		top1:54.167 (48.611)		top5:76.389(79.861)
+2023-03-05 02:10:34 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.897		top1:54.098 (50.244)		top5:81.967(80.488)
+2023-03-05 02:10:34 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:80.488
+2023-03-05 02:10:34 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:10:34 - [32m[1mINFO   [0m - LR for epoch 108 = 0.08000
+2023-03-05 02:10:43 - [34m[1mLOGS   [0m - Epoch: 108[0/16]		Batch Time:8.7416		Loss:0.0902		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:10:45 - [34m[1mLOGS   [0m - Epoch: 108[10/16]		Batch Time:0.9396		Loss:0.1646		top1:93.0555 (95.4545)		top5:98.6111 (99.4949)
+2023-03-05 02:10:54 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.026		Loss:3.043		top1:45.833 (45.833)		top5:79.167(79.167)
+2023-03-05 02:10:54 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.036		top1:50.000 (47.917)		top5:77.778(78.472)
+2023-03-05 02:10:54 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.704		top1:50.820 (48.780)		top5:81.967(79.512)
+2023-03-05 02:10:54 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:79.512
+2023-03-05 02:10:54 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:10:54 - [32m[1mINFO   [0m - LR for epoch 109 = 0.07958
+2023-03-05 02:11:03 - [34m[1mLOGS   [0m - Epoch: 109[0/16]		Batch Time:8.1751		Loss:0.1699		top1:94.4444 (94.4444)		top5:98.6111 (98.6111)
+2023-03-05 02:11:04 - [34m[1mLOGS   [0m - Epoch: 109[10/16]		Batch Time:0.8884		Loss:0.1830		top1:95.8333 (94.1919)		top5:100.0000 (99.4949)
+2023-03-05 02:11:13 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.612		Loss:3.308		top1:41.667 (41.667)		top5:77.778(77.778)
+2023-03-05 02:11:13 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.825		top1:48.611 (45.139)		top5:79.167(78.472)
+2023-03-05 02:11:13 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.565		top1:54.098 (47.805)		top5:78.689(78.537)
+2023-03-05 02:11:13 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:78.537
+2023-03-05 02:11:13 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:11:13 - [32m[1mINFO   [0m - LR for epoch 110 = 0.07917
+2023-03-05 02:11:22 - [34m[1mLOGS   [0m - Epoch: 110[0/16]		Batch Time:8.2254		Loss:0.1635		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:11:23 - [34m[1mLOGS   [0m - Epoch: 110[10/16]		Batch Time:0.8863		Loss:0.1507		top1:95.8333 (95.7071)		top5:100.0000 (99.3687)
+2023-03-05 02:11:32 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.608		Loss:3.371		top1:38.889 (38.889)		top5:75.000(75.000)
+2023-03-05 02:11:32 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.830		top1:51.389 (45.139)		top5:77.778(76.389)
+2023-03-05 02:11:32 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.567		top1:55.738 (48.293)		top5:81.967(78.049)
+2023-03-05 02:11:32 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:78.049
+2023-03-05 02:11:33 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:11:33 - [32m[1mINFO   [0m - LR for epoch 111 = 0.07875
+2023-03-05 02:11:41 - [34m[1mLOGS   [0m - Epoch: 111[0/16]		Batch Time:8.0347		Loss:0.1872		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:11:42 - [34m[1mLOGS   [0m - Epoch: 111[10/16]		Batch Time:0.8731		Loss:0.1839		top1:95.8333 (95.0758)		top5:100.0000 (98.9899)
+2023-03-05 02:11:51 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.826		Loss:3.407		top1:40.278 (40.278)		top5:77.778(77.778)
+2023-03-05 02:11:51 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.936		top1:48.611 (44.444)		top5:75.000(76.389)
+2023-03-05 02:11:51 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.642		top1:54.098 (47.317)		top5:81.967(78.049)
+2023-03-05 02:11:52 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:78.049
+2023-03-05 02:11:52 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:11:52 - [32m[1mINFO   [0m - LR for epoch 112 = 0.07833
+2023-03-05 02:12:00 - [34m[1mLOGS   [0m - Epoch: 112[0/16]		Batch Time:8.4513		Loss:0.2187		top1:95.8333 (95.8333)		top5:97.2222 (97.2222)
+2023-03-05 02:12:02 - [34m[1mLOGS   [0m - Epoch: 112[10/16]		Batch Time:0.9123		Loss:0.1479		top1:97.2222 (95.9596)		top5:100.0000 (99.1162)
+2023-03-05 02:12:11 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.673		Loss:3.484		top1:41.667 (41.667)		top5:76.389(76.389)
+2023-03-05 02:12:11 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.860		top1:50.000 (45.833)		top5:81.944(79.167)
+2023-03-05 02:12:11 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.586		top1:52.459 (47.805)		top5:83.607(80.488)
+2023-03-05 02:12:11 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:80.488
+2023-03-05 02:12:11 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:12:11 - [32m[1mINFO   [0m - LR for epoch 113 = 0.07792
+2023-03-05 02:12:19 - [34m[1mLOGS   [0m - Epoch: 113[0/16]		Batch Time:7.7990		Loss:0.0903		top1:98.6111 (98.6111)		top5:98.6111 (98.6111)
+2023-03-05 02:12:21 - [34m[1mLOGS   [0m - Epoch: 113[10/16]		Batch Time:0.8572		Loss:0.1241		top1:97.2222 (96.5909)		top5:100.0000 (99.6212)
+2023-03-05 02:12:30 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.010		Loss:3.218		top1:45.833 (45.833)		top5:76.389(76.389)
+2023-03-05 02:12:30 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.030		top1:52.778 (49.306)		top5:77.778(77.083)
+2023-03-05 02:12:30 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.700		top1:55.738 (51.220)		top5:81.967(78.537)
+2023-03-05 02:12:30 - [32m[1mINFO   [0m -  * Prec@1:51.220 Prec@5:78.537
+2023-03-05 02:12:30 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:12:30 - [32m[1mINFO   [0m - LR for epoch 114 = 0.07750
+2023-03-05 02:12:39 - [34m[1mLOGS   [0m - Epoch: 114[0/16]		Batch Time:8.5415		Loss:0.1110		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:12:41 - [34m[1mLOGS   [0m - Epoch: 114[10/16]		Batch Time:0.9187		Loss:0.1402		top1:94.4444 (96.2121)		top5:98.6111 (99.3687)
+2023-03-05 02:12:49 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.671		Loss:3.248		top1:41.667 (41.667)		top5:77.778(77.778)
+2023-03-05 02:12:49 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.862		top1:55.556 (48.611)		top5:76.389(77.083)
+2023-03-05 02:12:49 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.590		top1:50.820 (49.268)		top5:80.328(78.049)
+2023-03-05 02:12:50 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:78.049
+2023-03-05 02:12:50 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:12:50 - [32m[1mINFO   [0m - LR for epoch 115 = 0.07708
+2023-03-05 02:12:58 - [34m[1mLOGS   [0m - Epoch: 115[0/16]		Batch Time:8.0280		Loss:0.1285		top1:95.8333 (95.8333)		top5:98.6111 (98.6111)
+2023-03-05 02:12:59 - [34m[1mLOGS   [0m - Epoch: 115[10/16]		Batch Time:0.8759		Loss:0.1413		top1:94.4444 (96.5909)		top5:97.2222 (99.3687)
+2023-03-05 02:13:08 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.377		Loss:3.470		top1:40.278 (40.278)		top5:75.000(75.000)
+2023-03-05 02:13:08 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.712		top1:52.778 (46.528)		top5:76.389(75.694)
+2023-03-05 02:13:08 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.493		top1:54.098 (48.780)		top5:80.328(77.073)
+2023-03-05 02:13:08 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:77.073
+2023-03-05 02:13:09 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:13:09 - [32m[1mINFO   [0m - LR for epoch 116 = 0.07667
+2023-03-05 02:13:17 - [34m[1mLOGS   [0m - Epoch: 116[0/16]		Batch Time:7.9985		Loss:0.1268		top1:97.2222 (97.2222)		top5:98.6111 (98.6111)
+2023-03-05 02:13:18 - [34m[1mLOGS   [0m - Epoch: 116[10/16]		Batch Time:0.8697		Loss:0.1489		top1:94.4444 (96.0859)		top5:98.6111 (99.3687)
+2023-03-05 02:13:27 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.673		Loss:3.510		top1:44.444 (44.444)		top5:75.000(75.000)
+2023-03-05 02:13:27 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.860		top1:50.000 (47.222)		top5:83.333(79.167)
+2023-03-05 02:13:27 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.586		top1:49.180 (47.805)		top5:81.967(80.000)
+2023-03-05 02:13:27 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:80.000
+2023-03-05 02:13:28 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:13:28 - [32m[1mINFO   [0m - LR for epoch 117 = 0.07625
+2023-03-05 02:13:35 - [34m[1mLOGS   [0m - Epoch: 117[0/16]		Batch Time:7.7739		Loss:0.1848		top1:95.8333 (95.8333)		top5:98.6111 (98.6111)
+2023-03-05 02:13:37 - [34m[1mLOGS   [0m - Epoch: 117[10/16]		Batch Time:0.8605		Loss:0.1449		top1:97.2222 (95.7071)		top5:100.0000 (99.8737)
+2023-03-05 02:13:46 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.520		Loss:3.649		top1:38.889 (38.889)		top5:76.389(76.389)
+2023-03-05 02:13:46 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.787		top1:55.556 (47.222)		top5:79.167(77.778)
+2023-03-05 02:13:46 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.535		top1:55.738 (49.756)		top5:81.967(79.024)
+2023-03-05 02:13:46 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:79.024
+2023-03-05 02:13:46 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:13:46 - [32m[1mINFO   [0m - LR for epoch 118 = 0.07583
+2023-03-05 02:13:54 - [34m[1mLOGS   [0m - Epoch: 118[0/16]		Batch Time:8.0275		Loss:0.1417		top1:95.8333 (95.8333)		top5:100.0000 (100.0000)
+2023-03-05 02:13:56 - [34m[1mLOGS   [0m - Epoch: 118[10/16]		Batch Time:0.8740		Loss:0.1333		top1:95.8333 (96.4646)		top5:100.0000 (99.8737)
+2023-03-05 02:14:05 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.833		Loss:3.559		top1:44.444 (44.444)		top5:77.778(77.778)
+2023-03-05 02:14:05 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.942		top1:52.778 (48.611)		top5:79.167(78.472)
+2023-03-05 02:14:05 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.641		top1:57.377 (51.220)		top5:78.689(78.537)
+2023-03-05 02:14:05 - [32m[1mINFO   [0m -  * Prec@1:51.220 Prec@5:78.537
+2023-03-05 02:14:05 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:14:05 - [32m[1mINFO   [0m - LR for epoch 119 = 0.07542
+2023-03-05 02:14:13 - [34m[1mLOGS   [0m - Epoch: 119[0/16]		Batch Time:7.7949		Loss:0.0997		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:14:15 - [34m[1mLOGS   [0m - Epoch: 119[10/16]		Batch Time:0.8587		Loss:0.1335		top1:97.2222 (96.5909)		top5:98.6111 (99.1162)
+2023-03-05 02:14:23 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.579		Loss:3.561		top1:43.056 (43.056)		top5:76.389(76.389)
+2023-03-05 02:14:24 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.815		top1:47.222 (45.139)		top5:75.000(75.694)
+2023-03-05 02:14:24 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.557		top1:57.377 (48.780)		top5:85.246(78.537)
+2023-03-05 02:14:24 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:78.537
+2023-03-05 02:14:24 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:14:24 - [32m[1mINFO   [0m - LR for epoch 120 = 0.07500
+2023-03-05 02:14:32 - [34m[1mLOGS   [0m - Epoch: 120[0/16]		Batch Time:8.1628		Loss:0.1144		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:14:34 - [34m[1mLOGS   [0m - Epoch: 120[10/16]		Batch Time:0.8839		Loss:0.1092		top1:97.2222 (96.9697)		top5:100.0000 (99.8737)
+2023-03-05 02:14:42 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.479		Loss:3.480		top1:43.056 (43.056)		top5:77.778(77.778)
+2023-03-05 02:14:42 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.760		top1:50.000 (46.528)		top5:80.556(79.167)
+2023-03-05 02:14:42 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.523		top1:54.098 (48.780)		top5:78.689(79.024)
+2023-03-05 02:14:43 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:79.024
+2023-03-05 02:14:43 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:14:43 - [32m[1mINFO   [0m - LR for epoch 121 = 0.07458
+2023-03-05 02:14:51 - [34m[1mLOGS   [0m - Epoch: 121[0/16]		Batch Time:7.8964		Loss:0.0870		top1:95.8333 (95.8333)		top5:100.0000 (100.0000)
+2023-03-05 02:14:52 - [34m[1mLOGS   [0m - Epoch: 121[10/16]		Batch Time:0.8628		Loss:0.1524		top1:94.4444 (95.7071)		top5:100.0000 (99.4949)
+2023-03-05 02:15:01 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.554		Loss:3.363		top1:40.278 (40.278)		top5:80.556(80.556)
+2023-03-05 02:15:01 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.800		top1:50.000 (45.139)		top5:79.167(79.861)
+2023-03-05 02:15:01 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.549		top1:50.820 (46.829)		top5:80.328(80.000)
+2023-03-05 02:15:02 - [32m[1mINFO   [0m -  * Prec@1:46.829 Prec@5:80.000
+2023-03-05 02:15:02 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:15:02 - [32m[1mINFO   [0m - LR for epoch 122 = 0.07417
+2023-03-05 02:15:10 - [34m[1mLOGS   [0m - Epoch: 122[0/16]		Batch Time:7.9984		Loss:0.1115		top1:95.8333 (95.8333)		top5:100.0000 (100.0000)
+2023-03-05 02:15:11 - [34m[1mLOGS   [0m - Epoch: 122[10/16]		Batch Time:0.8714		Loss:0.0949		top1:98.6111 (97.0960)		top5:100.0000 (100.0000)
+2023-03-05 02:15:20 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.589		Loss:3.363		top1:45.833 (45.833)		top5:77.778(77.778)
+2023-03-05 02:15:20 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.821		top1:47.222 (46.528)		top5:76.389(77.083)
+2023-03-05 02:15:20 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.558		top1:50.820 (47.805)		top5:81.967(78.537)
+2023-03-05 02:15:20 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:78.537
+2023-03-05 02:15:21 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:15:21 - [32m[1mINFO   [0m - LR for epoch 123 = 0.07375
+2023-03-05 02:15:29 - [34m[1mLOGS   [0m - Epoch: 123[0/16]		Batch Time:8.0133		Loss:0.0908		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:15:30 - [34m[1mLOGS   [0m - Epoch: 123[10/16]		Batch Time:0.8712		Loss:0.1035		top1:97.2222 (96.7172)		top5:98.6111 (99.7475)
+2023-03-05 02:15:39 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.811		Loss:3.498		top1:44.444 (44.444)		top5:79.167(79.167)
+2023-03-05 02:15:39 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.924		top1:56.944 (50.694)		top5:79.167(79.167)
+2023-03-05 02:15:39 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.632		top1:54.098 (51.707)		top5:83.607(80.488)
+2023-03-05 02:15:40 - [32m[1mINFO   [0m -  * Prec@1:51.707 Prec@5:80.488
+2023-03-05 02:15:40 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:15:40 - [32m[1mINFO   [0m - LR for epoch 124 = 0.07333
+2023-03-05 02:15:48 - [34m[1mLOGS   [0m - Epoch: 124[0/16]		Batch Time:7.7891		Loss:0.0236		top1:100.0000 (100.0000)		top5:100.0000 (100.0000)
+2023-03-05 02:15:49 - [34m[1mLOGS   [0m - Epoch: 124[10/16]		Batch Time:0.8569		Loss:0.1114		top1:93.0555 (96.7172)		top5:100.0000 (99.8737)
+2023-03-05 02:15:58 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.746		Loss:3.608		top1:38.889 (38.889)		top5:83.333(83.333)
+2023-03-05 02:15:58 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.894		top1:56.944 (47.917)		top5:81.944(82.639)
+2023-03-05 02:15:58 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.613		top1:50.820 (48.780)		top5:81.967(82.439)
+2023-03-05 02:15:59 - [32m[1mINFO   [0m -  * Prec@1:48.780 Prec@5:82.439
+2023-03-05 02:15:59 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:15:59 - [32m[1mINFO   [0m - LR for epoch 125 = 0.07292
+2023-03-05 02:16:07 - [34m[1mLOGS   [0m - Epoch: 125[0/16]		Batch Time:8.1183		Loss:0.1059		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:16:09 - [34m[1mLOGS   [0m - Epoch: 125[10/16]		Batch Time:0.8821		Loss:0.1274		top1:91.6667 (95.8333)		top5:98.6111 (99.7475)
+2023-03-05 02:16:17 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.674		Loss:3.448		top1:44.444 (44.444)		top5:76.389(76.389)
+2023-03-05 02:16:17 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.861		top1:54.167 (49.306)		top5:81.944(79.167)
+2023-03-05 02:16:17 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.586		top1:50.820 (49.756)		top5:85.246(80.976)
+2023-03-05 02:16:18 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:80.976
+2023-03-05 02:16:18 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:16:18 - [32m[1mINFO   [0m - LR for epoch 126 = 0.07250
+2023-03-05 02:16:26 - [34m[1mLOGS   [0m - Epoch: 126[0/16]		Batch Time:7.8324		Loss:0.1120		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:16:28 - [34m[1mLOGS   [0m - Epoch: 126[10/16]		Batch Time:0.8601		Loss:0.1241		top1:95.8333 (96.9697)		top5:98.6111 (99.4949)
+2023-03-05 02:16:36 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.554		Loss:3.713		top1:43.056 (43.056)		top5:75.000(75.000)
+2023-03-05 02:16:36 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.799		top1:54.167 (48.611)		top5:77.778(76.389)
+2023-03-05 02:16:36 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.546		top1:52.459 (49.756)		top5:83.607(78.537)
+2023-03-05 02:16:37 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:78.537
+2023-03-05 02:16:37 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:16:37 - [32m[1mINFO   [0m - LR for epoch 127 = 0.07208
+2023-03-05 02:16:45 - [34m[1mLOGS   [0m - Epoch: 127[0/16]		Batch Time:7.7866		Loss:0.1716		top1:93.0555 (93.0555)		top5:98.6111 (98.6111)
+2023-03-05 02:16:46 - [34m[1mLOGS   [0m - Epoch: 127[10/16]		Batch Time:0.8587		Loss:0.1048		top1:98.6111 (96.8434)		top5:100.0000 (99.7475)
+2023-03-05 02:16:55 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.604		Loss:3.642		top1:43.056 (43.056)		top5:77.778(77.778)
+2023-03-05 02:16:55 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.821		top1:48.611 (45.833)		top5:73.611(75.694)
+2023-03-05 02:16:55 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.563		top1:50.820 (47.317)		top5:85.246(78.537)
+2023-03-05 02:16:55 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:78.537
+2023-03-05 02:16:56 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:16:56 - [32m[1mINFO   [0m - LR for epoch 128 = 0.07167
+2023-03-05 02:17:04 - [34m[1mLOGS   [0m - Epoch: 128[0/16]		Batch Time:8.1606		Loss:0.1761		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:17:05 - [34m[1mLOGS   [0m - Epoch: 128[10/16]		Batch Time:0.8840		Loss:0.1158		top1:95.8333 (96.4646)		top5:100.0000 (100.0000)
+2023-03-05 02:17:14 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.454		Loss:3.384		top1:38.889 (38.889)		top5:76.389(76.389)
+2023-03-05 02:17:14 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.750		top1:55.556 (47.222)		top5:76.389(76.389)
+2023-03-05 02:17:14 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.518		top1:57.377 (50.244)		top5:81.967(78.049)
+2023-03-05 02:17:14 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:78.049
+2023-03-05 02:17:14 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:17:14 - [32m[1mINFO   [0m - LR for epoch 129 = 0.07125
+2023-03-05 02:17:23 - [34m[1mLOGS   [0m - Epoch: 129[0/16]		Batch Time:8.0086		Loss:0.0602		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:17:24 - [34m[1mLOGS   [0m - Epoch: 129[10/16]		Batch Time:0.8703		Loss:0.1018		top1:97.2222 (97.3485)		top5:100.0000 (99.4949)
+2023-03-05 02:17:33 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.630		Loss:3.601		top1:43.056 (43.056)		top5:76.389(76.389)
+2023-03-05 02:17:33 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.838		top1:52.778 (47.917)		top5:76.389(76.389)
+2023-03-05 02:17:33 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.571		top1:54.098 (49.756)		top5:81.967(78.049)
+2023-03-05 02:17:33 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:78.049
+2023-03-05 02:17:33 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:17:33 - [32m[1mINFO   [0m - LR for epoch 130 = 0.07083
+2023-03-05 02:17:42 - [34m[1mLOGS   [0m - Epoch: 130[0/16]		Batch Time:8.6602		Loss:0.0823		top1:98.6111 (98.6111)		top5:98.6111 (98.6111)
+2023-03-05 02:17:44 - [34m[1mLOGS   [0m - Epoch: 130[10/16]		Batch Time:0.9329		Loss:0.1388		top1:91.6667 (95.8333)		top5:100.0000 (99.3687)
+2023-03-05 02:17:52 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.521		Loss:3.772		top1:41.667 (41.667)		top5:75.000(75.000)
+2023-03-05 02:17:52 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.787		top1:51.389 (46.528)		top5:73.611(74.306)
+2023-03-05 02:17:52 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.535		top1:52.459 (48.293)		top5:81.967(76.585)
+2023-03-05 02:17:53 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:76.585
+2023-03-05 02:17:53 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:17:53 - [32m[1mINFO   [0m - LR for epoch 131 = 0.07042
+2023-03-05 02:18:01 - [34m[1mLOGS   [0m - Epoch: 131[0/16]		Batch Time:7.9282		Loss:0.1228		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:18:03 - [34m[1mLOGS   [0m - Epoch: 131[10/16]		Batch Time:0.8703		Loss:0.1102		top1:100.0000 (96.9697)		top5:100.0000 (99.6212)
+2023-03-05 02:18:11 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.579		Loss:3.774		top1:45.833 (45.833)		top5:73.611(73.611)
+2023-03-05 02:18:11 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.813		top1:45.833 (45.833)		top5:75.000(74.306)
+2023-03-05 02:18:11 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.555		top1:50.820 (47.317)		top5:81.967(76.585)
+2023-03-05 02:18:12 - [32m[1mINFO   [0m -  * Prec@1:47.317 Prec@5:76.585
+2023-03-05 02:18:12 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:18:12 - [32m[1mINFO   [0m - LR for epoch 132 = 0.07000
+2023-03-05 02:18:20 - [34m[1mLOGS   [0m - Epoch: 132[0/16]		Batch Time:8.0077		Loss:0.0924		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:18:21 - [34m[1mLOGS   [0m - Epoch: 132[10/16]		Batch Time:0.8717		Loss:0.1544		top1:97.2222 (95.0758)		top5:100.0000 (99.7475)
+2023-03-05 02:18:30 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.657		Loss:3.968		top1:38.889 (38.889)		top5:72.222(72.222)
+2023-03-05 02:18:30 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.852		top1:55.556 (47.222)		top5:75.000(73.611)
+2023-03-05 02:18:30 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.581		top1:50.820 (48.293)		top5:81.967(76.098)
+2023-03-05 02:18:31 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:76.098
+2023-03-05 02:18:31 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:18:31 - [32m[1mINFO   [0m - LR for epoch 133 = 0.06958
+2023-03-05 02:18:39 - [34m[1mLOGS   [0m - Epoch: 133[0/16]		Batch Time:7.9875		Loss:0.1839		top1:95.8333 (95.8333)		top5:100.0000 (100.0000)
+2023-03-05 02:18:40 - [34m[1mLOGS   [0m - Epoch: 133[10/16]		Batch Time:0.8710		Loss:0.1448		top1:93.0555 (95.8333)		top5:98.6111 (99.3687)
+2023-03-05 02:18:49 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.641		Loss:3.653		top1:43.056 (43.056)		top5:75.000(75.000)
+2023-03-05 02:18:49 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.844		top1:56.944 (50.000)		top5:77.778(76.389)
+2023-03-05 02:18:49 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.573		top1:50.820 (50.244)		top5:83.607(78.537)
+2023-03-05 02:18:50 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:78.537
+2023-03-05 02:18:50 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:18:50 - [32m[1mINFO   [0m - LR for epoch 134 = 0.06917
+2023-03-05 02:18:58 - [34m[1mLOGS   [0m - Epoch: 134[0/16]		Batch Time:7.9650		Loss:0.1240		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:18:59 - [34m[1mLOGS   [0m - Epoch: 134[10/16]		Batch Time:0.8722		Loss:0.1294		top1:95.8333 (95.7071)		top5:100.0000 (99.3687)
+2023-03-05 02:19:08 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.606		Loss:3.484		top1:44.444 (44.444)		top5:76.389(76.389)
+2023-03-05 02:19:08 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.830		top1:54.167 (49.306)		top5:79.167(77.778)
+2023-03-05 02:19:08 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.564		top1:52.459 (50.244)		top5:86.885(80.488)
+2023-03-05 02:19:08 - [32m[1mINFO   [0m -  * Prec@1:50.244 Prec@5:80.488
+2023-03-05 02:19:09 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:19:09 - [32m[1mINFO   [0m - LR for epoch 135 = 0.06875
+2023-03-05 02:19:17 - [34m[1mLOGS   [0m - Epoch: 135[0/16]		Batch Time:8.0011		Loss:0.0650		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:19:18 - [34m[1mLOGS   [0m - Epoch: 135[10/16]		Batch Time:0.8706		Loss:0.1411		top1:91.6667 (95.9596)		top5:98.6111 (99.6212)
+2023-03-05 02:19:27 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.441		Loss:3.566		top1:44.444 (44.444)		top5:75.000(75.000)
+2023-03-05 02:19:27 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.744		top1:54.167 (49.306)		top5:76.389(75.694)
+2023-03-05 02:19:27 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.512		top1:54.098 (50.732)		top5:86.885(79.024)
+2023-03-05 02:19:27 - [32m[1mINFO   [0m -  * Prec@1:50.732 Prec@5:79.024
+2023-03-05 02:19:27 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:19:27 - [32m[1mINFO   [0m - LR for epoch 136 = 0.06833
+2023-03-05 02:19:35 - [34m[1mLOGS   [0m - Epoch: 136[0/16]		Batch Time:7.9623		Loss:0.0803		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:19:37 - [34m[1mLOGS   [0m - Epoch: 136[10/16]		Batch Time:0.8673		Loss:0.1210		top1:100.0000 (96.7172)		top5:100.0000 (99.6212)
+2023-03-05 02:19:45 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.416		Loss:3.616		top1:41.667 (41.667)		top5:72.222(72.222)
+2023-03-05 02:19:46 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.734		top1:55.556 (48.611)		top5:79.167(75.694)
+2023-03-05 02:19:46 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.503		top1:60.656 (52.195)		top5:88.525(79.512)
+2023-03-05 02:19:46 - [32m[1mINFO   [0m -  * Prec@1:52.195 Prec@5:79.512
+2023-03-05 02:19:46 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:19:46 - [32m[1mINFO   [0m - LR for epoch 137 = 0.06792
+2023-03-05 02:19:54 - [34m[1mLOGS   [0m - Epoch: 137[0/16]		Batch Time:8.0496		Loss:0.2024		top1:93.0555 (93.0555)		top5:98.6111 (98.6111)
+2023-03-05 02:19:56 - [34m[1mLOGS   [0m - Epoch: 137[10/16]		Batch Time:0.8764		Loss:0.1156		top1:98.6111 (96.5909)		top5:100.0000 (99.7475)
+2023-03-05 02:20:04 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.627		Loss:3.849		top1:40.278 (40.278)		top5:77.778(77.778)
+2023-03-05 02:20:04 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.838		top1:54.167 (47.222)		top5:79.167(78.472)
+2023-03-05 02:20:05 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.572		top1:60.656 (51.220)		top5:88.525(81.463)
+2023-03-05 02:20:05 - [32m[1mINFO   [0m -  * Prec@1:51.220 Prec@5:81.463
+2023-03-05 02:20:05 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:20:05 - [32m[1mINFO   [0m - LR for epoch 138 = 0.06750
+2023-03-05 02:20:13 - [34m[1mLOGS   [0m - Epoch: 138[0/16]		Batch Time:7.9684		Loss:0.1647		top1:94.4444 (94.4444)		top5:98.6111 (98.6111)
+2023-03-05 02:20:15 - [34m[1mLOGS   [0m - Epoch: 138[10/16]		Batch Time:0.8718		Loss:0.1585		top1:93.0555 (95.5808)		top5:98.6111 (99.3687)
+2023-03-05 02:20:23 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.603		Loss:3.493		top1:41.667 (41.667)		top5:76.389(76.389)
+2023-03-05 02:20:23 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.825		top1:52.778 (47.222)		top5:79.167(77.778)
+2023-03-05 02:20:23 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:50.820 (48.293)		top5:88.525(80.976)
+2023-03-05 02:20:24 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:80.976
+2023-03-05 02:20:24 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:20:24 - [32m[1mINFO   [0m - LR for epoch 139 = 0.06708
+2023-03-05 02:20:32 - [34m[1mLOGS   [0m - Epoch: 139[0/16]		Batch Time:8.2242		Loss:0.0710		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:20:34 - [34m[1mLOGS   [0m - Epoch: 139[10/16]		Batch Time:0.8934		Loss:0.1108		top1:93.0555 (96.9697)		top5:98.6111 (99.4949)
+2023-03-05 02:20:42 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.633		Loss:3.462		top1:44.444 (44.444)		top5:77.778(77.778)
+2023-03-05 02:20:43 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.842		top1:52.778 (48.611)		top5:79.167(78.472)
+2023-03-05 02:20:43 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.575		top1:52.459 (49.756)		top5:80.328(79.024)
+2023-03-05 02:20:43 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:79.024
+2023-03-05 02:20:43 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:20:43 - [32m[1mINFO   [0m - LR for epoch 140 = 0.06667
+2023-03-05 02:20:51 - [34m[1mLOGS   [0m - Epoch: 140[0/16]		Batch Time:8.0408		Loss:0.2770		top1:93.0555 (93.0555)		top5:95.8333 (95.8333)
+2023-03-05 02:20:53 - [34m[1mLOGS   [0m - Epoch: 140[10/16]		Batch Time:0.8712		Loss:0.1365		top1:95.8333 (96.2121)		top5:100.0000 (99.1162)
+2023-03-05 02:21:01 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.596		Loss:3.549		top1:40.278 (40.278)		top5:77.778(77.778)
+2023-03-05 02:21:01 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.825		top1:55.556 (47.917)		top5:79.167(78.472)
+2023-03-05 02:21:01 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:49.180 (48.293)		top5:78.689(78.537)
+2023-03-05 02:21:02 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:78.537
+2023-03-05 02:21:02 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:21:02 - [32m[1mINFO   [0m - LR for epoch 141 = 0.06625
+2023-03-05 02:21:10 - [34m[1mLOGS   [0m - Epoch: 141[0/16]		Batch Time:8.2016		Loss:0.0366		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:21:12 - [34m[1mLOGS   [0m - Epoch: 141[10/16]		Batch Time:0.8852		Loss:0.1171		top1:97.2222 (96.7172)		top5:98.6111 (99.6212)
+2023-03-05 02:21:21 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.671		Loss:3.651		top1:44.444 (44.444)		top5:80.556(80.556)
+2023-03-05 02:21:21 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.862		top1:50.000 (47.222)		top5:76.389(78.472)
+2023-03-05 02:21:21 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.590		top1:50.820 (48.293)		top5:85.246(80.488)
+2023-03-05 02:21:21 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:80.488
+2023-03-05 02:21:21 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:21:21 - [32m[1mINFO   [0m - LR for epoch 142 = 0.06583
+2023-03-05 02:21:30 - [34m[1mLOGS   [0m - Epoch: 142[0/16]		Batch Time:8.3747		Loss:0.1311		top1:95.8333 (95.8333)		top5:100.0000 (100.0000)
+2023-03-05 02:21:31 - [34m[1mLOGS   [0m - Epoch: 142[10/16]		Batch Time:0.9046		Loss:0.1473		top1:94.4444 (95.4545)		top5:100.0000 (99.4949)
+2023-03-05 02:21:40 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.498		Loss:3.594		top1:41.667 (41.667)		top5:80.556(80.556)
+2023-03-05 02:21:40 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.773		top1:47.222 (44.444)		top5:81.944(81.250)
+2023-03-05 02:21:40 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.529		top1:55.738 (47.805)		top5:81.967(81.463)
+2023-03-05 02:21:40 - [32m[1mINFO   [0m -  * Prec@1:47.805 Prec@5:81.463
+2023-03-05 02:21:40 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:21:40 - [32m[1mINFO   [0m - LR for epoch 143 = 0.06542
+2023-03-05 02:21:48 - [34m[1mLOGS   [0m - Epoch: 143[0/16]		Batch Time:7.9575		Loss:0.0596		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:21:50 - [34m[1mLOGS   [0m - Epoch: 143[10/16]		Batch Time:0.8678		Loss:0.0736		top1:100.0000 (97.4747)		top5:100.0000 (100.0000)
+2023-03-05 02:21:59 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.579		Loss:3.315		top1:40.278 (40.278)		top5:81.944(81.944)
+2023-03-05 02:21:59 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.816		top1:54.167 (47.222)		top5:83.333(82.639)
+2023-03-05 02:21:59 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.560		top1:50.820 (48.293)		top5:77.049(80.976)
+2023-03-05 02:21:59 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:80.976
+2023-03-05 02:21:59 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:21:59 - [32m[1mINFO   [0m - LR for epoch 144 = 0.06500
+2023-03-05 02:22:07 - [34m[1mLOGS   [0m - Epoch: 144[0/16]		Batch Time:7.9749		Loss:0.1551		top1:94.4444 (94.4444)		top5:100.0000 (100.0000)
+2023-03-05 02:22:09 - [34m[1mLOGS   [0m - Epoch: 144[10/16]		Batch Time:0.8748		Loss:0.1214		top1:97.2222 (96.4646)		top5:100.0000 (99.6212)
+2023-03-05 02:22:18 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.606		Loss:3.417		top1:40.278 (40.278)		top5:77.778(77.778)
+2023-03-05 02:22:18 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.829		top1:52.778 (46.528)		top5:77.778(77.778)
+2023-03-05 02:22:18 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.566		top1:52.459 (48.293)		top5:77.049(77.561)
+2023-03-05 02:22:18 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:77.561
+2023-03-05 02:22:18 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:22:18 - [32m[1mINFO   [0m - LR for epoch 145 = 0.06458
+2023-03-05 02:22:26 - [34m[1mLOGS   [0m - Epoch: 145[0/16]		Batch Time:8.2224		Loss:0.0796		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:22:28 - [34m[1mLOGS   [0m - Epoch: 145[10/16]		Batch Time:0.8873		Loss:0.0847		top1:95.8333 (97.7273)		top5:100.0000 (100.0000)
+2023-03-05 02:22:37 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.477		Loss:3.597		top1:36.111 (36.111)		top5:79.167(79.167)
+2023-03-05 02:22:37 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.765		top1:50.000 (43.056)		top5:80.556(79.861)
+2023-03-05 02:22:37 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.521		top1:52.459 (45.854)		top5:80.328(80.000)
+2023-03-05 02:22:37 - [32m[1mINFO   [0m -  * Prec@1:45.854 Prec@5:80.000
+2023-03-05 02:22:37 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:22:37 - [32m[1mINFO   [0m - LR for epoch 146 = 0.06417
+2023-03-05 02:22:45 - [34m[1mLOGS   [0m - Epoch: 146[0/16]		Batch Time:8.0104		Loss:0.0898		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:22:47 - [34m[1mLOGS   [0m - Epoch: 146[10/16]		Batch Time:0.8701		Loss:0.1007		top1:100.0000 (97.0960)		top5:100.0000 (99.6212)
+2023-03-05 02:22:56 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:8.221		Loss:3.776		top1:41.667 (41.667)		top5:77.778(77.778)
+2023-03-05 02:22:56 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:4.136		top1:48.611 (45.139)		top5:80.556(79.167)
+2023-03-05 02:22:56 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.771		top1:55.738 (48.293)		top5:78.689(79.024)
+2023-03-05 02:22:57 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:79.024
+2023-03-05 02:22:57 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:22:57 - [32m[1mINFO   [0m - LR for epoch 147 = 0.06375
+2023-03-05 02:23:05 - [34m[1mLOGS   [0m - Epoch: 147[0/16]		Batch Time:8.3959		Loss:0.0969		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:23:07 - [34m[1mLOGS   [0m - Epoch: 147[10/16]		Batch Time:0.9080		Loss:0.1028		top1:98.6111 (96.7172)		top5:100.0000 (99.8737)
+2023-03-05 02:23:15 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.624		Loss:3.708		top1:45.833 (45.833)		top5:79.167(79.167)
+2023-03-05 02:23:15 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.839		top1:50.000 (47.917)		top5:79.167(79.167)
+2023-03-05 02:23:16 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.570		top1:59.016 (51.220)		top5:80.328(79.512)
+2023-03-05 02:23:16 - [32m[1mINFO   [0m -  * Prec@1:51.220 Prec@5:79.512
+2023-03-05 02:23:16 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:23:16 - [32m[1mINFO   [0m - LR for epoch 148 = 0.06333
+2023-03-05 02:23:24 - [34m[1mLOGS   [0m - Epoch: 148[0/16]		Batch Time:7.9695		Loss:0.0605		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:23:26 - [34m[1mLOGS   [0m - Epoch: 148[10/16]		Batch Time:0.8705		Loss:0.0744		top1:97.2222 (97.4747)		top5:100.0000 (99.8737)
+2023-03-05 02:23:35 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.816		Loss:3.545		top1:44.444 (44.444)		top5:70.833(70.833)
+2023-03-05 02:23:35 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.933		top1:45.833 (45.139)		top5:79.167(75.000)
+2023-03-05 02:23:35 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.636		top1:59.016 (49.268)		top5:85.246(78.049)
+2023-03-05 02:23:35 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:78.049
+2023-03-05 02:23:35 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:23:35 - [32m[1mINFO   [0m - LR for epoch 149 = 0.06292
+2023-03-05 02:23:43 - [34m[1mLOGS   [0m - Epoch: 149[0/16]		Batch Time:7.9687		Loss:0.0472		top1:100.0000 (100.0000)		top5:100.0000 (100.0000)
+2023-03-05 02:23:45 - [34m[1mLOGS   [0m - Epoch: 149[10/16]		Batch Time:0.8697		Loss:0.1215		top1:97.2222 (96.5909)		top5:100.0000 (99.7475)
+2023-03-05 02:23:53 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.642		Loss:3.693		top1:41.667 (41.667)		top5:73.611(73.611)
+2023-03-05 02:23:54 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.852		top1:51.389 (46.528)		top5:80.556(77.083)
+2023-03-05 02:23:54 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.581		top1:55.738 (49.268)		top5:83.607(79.024)
+2023-03-05 02:23:54 - [32m[1mINFO   [0m -  * Prec@1:49.268 Prec@5:79.024
+2023-03-05 02:23:54 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:23:54 - [32m[1mINFO   [0m - LR for epoch 150 = 0.06250
+2023-03-05 02:24:02 - [34m[1mLOGS   [0m - Epoch: 150[0/16]		Batch Time:7.9767		Loss:0.0597		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:24:04 - [34m[1mLOGS   [0m - Epoch: 150[10/16]		Batch Time:0.8725		Loss:0.0817		top1:98.6111 (97.4747)		top5:100.0000 (100.0000)
+2023-03-05 02:24:12 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.604		Loss:3.515		top1:43.056 (43.056)		top5:76.389(76.389)
+2023-03-05 02:24:12 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.829		top1:48.611 (45.833)		top5:79.167(77.778)
+2023-03-05 02:24:12 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.568		top1:59.016 (49.756)		top5:81.967(79.024)
+2023-03-05 02:24:13 - [32m[1mINFO   [0m -  * Prec@1:49.756 Prec@5:79.024
+2023-03-05 02:24:13 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:24:13 - [32m[1mINFO   [0m - LR for epoch 151 = 0.06208
+2023-03-05 02:24:21 - [34m[1mLOGS   [0m - Epoch: 151[0/16]		Batch Time:7.8350		Loss:0.2251		top1:90.2778 (90.2778)		top5:98.6111 (98.6111)
+2023-03-05 02:24:22 - [34m[1mLOGS   [0m - Epoch: 151[10/16]		Batch Time:0.8630		Loss:0.1146		top1:91.6667 (96.2121)		top5:98.6111 (99.4949)
+2023-03-05 02:24:31 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.534		Loss:3.494		top1:47.222 (47.222)		top5:75.000(75.000)
+2023-03-05 02:24:31 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.794		top1:48.611 (47.917)		top5:76.389(75.694)
+2023-03-05 02:24:31 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.545		top1:60.656 (51.707)		top5:81.967(77.561)
+2023-03-05 02:24:32 - [32m[1mINFO   [0m -  * Prec@1:51.707 Prec@5:77.561
+2023-03-05 02:24:32 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:24:32 - [32m[1mINFO   [0m - LR for epoch 152 = 0.06167
+2023-03-05 02:24:40 - [34m[1mLOGS   [0m - Epoch: 152[0/16]		Batch Time:8.1601		Loss:0.2710		top1:94.4444 (94.4444)		top5:97.2222 (97.2222)
+2023-03-05 02:24:41 - [34m[1mLOGS   [0m - Epoch: 152[10/16]		Batch Time:0.8824		Loss:0.1015		top1:98.6111 (97.6010)		top5:100.0000 (99.6212)
+2023-03-05 02:24:50 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.504		Loss:3.497		top1:44.444 (44.444)		top5:76.389(76.389)
+2023-03-05 02:24:50 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.771		top1:52.778 (48.611)		top5:76.389(76.389)
+2023-03-05 02:24:50 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.529		top1:63.934 (53.171)		top5:85.246(79.024)
+2023-03-05 02:24:50 - [32m[1mINFO   [0m -  * Prec@1:53.171 Prec@5:79.024
+2023-03-05 02:24:51 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:24:51 - [32m[1mINFO   [0m - LR for epoch 153 = 0.06125
+2023-03-05 02:24:59 - [34m[1mLOGS   [0m - Epoch: 153[0/16]		Batch Time:8.1906		Loss:0.0808		top1:97.2222 (97.2222)		top5:100.0000 (100.0000)
+2023-03-05 02:25:00 - [34m[1mLOGS   [0m - Epoch: 153[10/16]		Batch Time:0.8808		Loss:0.0772		top1:97.2222 (97.2222)		top5:100.0000 (99.8737)
+2023-03-05 02:25:09 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.549		Loss:3.553		top1:44.444 (44.444)		top5:75.000(75.000)
+2023-03-05 02:25:09 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.806		top1:52.778 (48.611)		top5:76.389(75.694)
+2023-03-05 02:25:09 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.550		top1:62.295 (52.683)		top5:86.885(79.024)
+2023-03-05 02:25:09 - [32m[1mINFO   [0m -  * Prec@1:52.683 Prec@5:79.024
+2023-03-05 02:25:10 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:25:10 - [32m[1mINFO   [0m - LR for epoch 154 = 0.06083
+2023-03-05 02:25:17 - [34m[1mLOGS   [0m - Epoch: 154[0/16]		Batch Time:7.9273		Loss:0.1149		top1:95.8333 (95.8333)		top5:98.6111 (98.6111)
+2023-03-05 02:25:19 - [34m[1mLOGS   [0m - Epoch: 154[10/16]		Batch Time:0.8686		Loss:0.0970		top1:97.2222 (97.0960)		top5:98.6111 (99.3687)
+2023-03-05 02:25:28 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.451		Loss:3.616		top1:38.889 (38.889)		top5:72.222(72.222)
+2023-03-05 02:25:28 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.752		top1:48.611 (43.750)		top5:77.778(75.000)
+2023-03-05 02:25:28 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.512		top1:59.016 (48.293)		top5:85.246(78.049)
+2023-03-05 02:25:28 - [32m[1mINFO   [0m -  * Prec@1:48.293 Prec@5:78.049
+2023-03-05 02:25:28 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+2023-03-05 02:25:28 - [32m[1mINFO   [0m - LR for epoch 155 = 0.06042
+2023-03-05 02:25:36 - [34m[1mLOGS   [0m - Epoch: 155[0/16]		Batch Time:8.1546		Loss:0.0369		top1:98.6111 (98.6111)		top5:100.0000 (100.0000)
+2023-03-05 02:25:38 - [34m[1mLOGS   [0m - Epoch: 155[10/16]		Batch Time:0.8848		Loss:0.0899		top1:98.6111 (97.4747)		top5:100.0000 (99.4949)
+2023-03-05 02:25:47 - [34m[1mLOGS   [0m - Batch:[0/3]		BatchTime:7.467		Loss:3.587		top1:43.056 (43.056)		top5:75.000(75.000)
+2023-03-05 02:25:47 - [34m[1mLOGS   [0m - Batch:[1/3]		BatchTime:3.752		top1:52.778 (47.917)		top5:77.778(76.389)
+2023-03-05 02:25:47 - [34m[1mLOGS   [0m - Batch:[2/3]		BatchTime:2.517		top1:57.377 (50.732)		top5:80.328(77.561)
+2023-03-05 02:25:47 - [32m[1mINFO   [0m -  * Prec@1:50.732 Prec@5:77.561
+2023-03-05 02:25:47 - [32m[1mINFO   [0m - Checkpoint saved at: results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_2.0_inp_224_sch_hybrid/20230305-013556/\espnetv2_2.0_checkpoint.pth.tar
+BReaking now as early stopping criterion met
