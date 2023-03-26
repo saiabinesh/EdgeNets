@@ -8,10 +8,10 @@ import os
 from PIL import Image
 from transforms.segmentation.data_transforms import RandomFlip, RandomCrop, RandomScale, Normalize, Resize, Compose
 
-CITYSCAPE_CLASS_LIST = ['road', 'sidewalk', 'building', 'wall', 'fence', 'pole', 'traffic light', 'traffic sign',
-                        'vegetation', 'terrain', 'sky', 'person', 'rider', 'car', 'truck', 'bus', 'train', 'motorcycle',
-                        'bicycle', 'background']
-
+# CITYSCAPE_CLASS_LIST = ['egovehicle','rectificationborder','outofroi','static','dynamic','ground','road','sidewalk','parking','railtrack','building','wall','fence','guardrail','bridge','tunnel','pole','polegroup','trafficlight','trafficsign','vegetation','terrain','sky','person','rider','car','truck','bus','caravan','trailer','train','motorcycle','bicycle','background']
+CITYSCAPE_CLASS_LIST = ['void', 'flat', 'construction', 'object', 'nature', 'sky', 'human', 'vehicle', 'background']
+# print(CITYSCAPE_CLASS_LIST)
+# exit()
 
 class CityscapesSegmentation(data.Dataset):
 

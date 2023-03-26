@@ -6,3 +6,7 @@ __pycache__
 vision_datasets/
 results_detection_espnetv2_2.0/
 results_detection/
+results_classification_main/
+results_segmentation/
+results_city_test/
+vision_datasets\357\200\215/

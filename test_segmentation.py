@@ -90,7 +90,9 @@ def evaluate(args, model, image_list, device):
             img_out.putpalette(cmap)
 
         # save the segmentation mask
-        name = imgName.split('/')[-1]
+        name = imgName.split('\\')[-1]
+        # print(name)
+        # exit()
         img_extn = imgName.split('.')[-1]
         name = '{}/{}'.format(args.savedir, name.replace(img_extn, 'png'))
         img_out.save(name)
@@ -144,7 +146,7 @@ def main(args):
     if args.weights_test:
         print_info_message('Loading model weights')
         weight_dict = torch.load(args.weights_test, map_location=torch.device('cpu'))
-        model.load_state_dict(weight_dict)
+        model.load_state_dict(weight_dict["state_dict"])
         print_info_message('Weight loaded successfully')
     else:
         print_error_message('weight file does not exist or not specified. Please check: {}', format(args.weights_test))

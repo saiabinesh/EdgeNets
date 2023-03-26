@@ -53,17 +53,17 @@ def main(args):
         class_wts[6] = 10.311357498169
         class_wts[7] = 10.026463508606
         class_wts[8] = 4.6323022842407
-        class_wts[9] = 9.5608062744141
-        class_wts[10] = 7.8698215484619
-        class_wts[11] = 9.5168733596802
-        class_wts[12] = 10.373730659485
-        class_wts[13] = 6.6616044044495
-        class_wts[14] = 10.260489463806
-        class_wts[15] = 10.287888526917
-        class_wts[16] = 10.289801597595
-        class_wts[17] = 10.405355453491
-        class_wts[18] = 10.138095855713
-        class_wts[19] = 0.0
+        # class_wts[9] = 9.5608062744141
+        # class_wts[10] = 7.8698215484619
+        # class_wts[11] = 9.5168733596802
+        # class_wts[12] = 10.373730659485
+        # class_wts[13] = 6.6616044044495
+        # class_wts[14] = 10.260489463806
+        # class_wts[15] = 10.287888526917
+        # class_wts[16] = 10.289801597595
+        # class_wts[17] = 10.405355453491
+        # class_wts[18] = 10.138095855713
+        # class_wts[19] = 0.0
     else:
         print_error_message('Dataset: {} not yet supported'.format(args.dataset))
         exit(-1)
