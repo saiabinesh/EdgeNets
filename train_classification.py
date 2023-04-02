@@ -1,4 +1,6 @@
 import torch
+import torch_xla.core.xla_model as xm
+import torch_xla.distributed.parallel_loader as pl
 import argparse
 import torch.optim
 import torch.utils.data
@@ -6,7 +8,7 @@ import torch.utils.data.distributed
 from data_loader.classification import imagenet as img_loader
 import random
 import os
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 import time
 from utilities.utils import model_parameters, compute_flops
 from utilities.utils import save_checkpoint
@@ -119,11 +121,11 @@ def main(args):
     # -----------------------------------------------------------------------------
     if not os.path.isdir(args.savedir):
         os.makedirs(args.savedir)
-    writer = SummaryWriter(log_dir=args.savedir, comment='Training and Validation logs')
-    try:
-        writer.add_graph(model, input_to_model=torch.randn(1, 3, args.inpSize, args.inpSize))
-    except:
-        print_log_message("Not able to generate the graph. Likely because your model is not supported by ONNX")
+    # writer = SummaryWriter(log_dir=args.savedir, comment='Training and Validation logs')
+    # try:
+        # writer.add_graph(model, input_to_model=torch.randn(1, 3, args.inpSize, args.inpSize))
+    # except:
+        # print_log_message("Not able to generate the graph. Likely because your model is not supported by ONNX")
 
     # network properties
     num_params = model_parameters(model)
@@ -135,12 +137,13 @@ def main(args):
     # Optimizer
     # -----------------------------------------------------------------------------
 
-    optimizer = torch.optim.SGD(model.parameters(), args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
+    optimizer = torch_xla.optim.SGD(model.parameters(), args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
 
     # optionally resume from a checkpoint
     best_acc = 0.0
-    num_gpus = torch.cuda.device_count()
-    device = 'cuda' if num_gpus >= 1 else 'cpu'
+    device=xm.xla_device()
+    # num_gpus = torch.cuda.device_count()
+    # device = 'cuda' if num_gpus >= 1 else 'cpu'
     es = EarlyStopping(patience=50,mode='max')
     
     if args.resume:
@@ -170,22 +173,59 @@ def main(args):
     else:
         print_error_message('{} dataset not yet supported'.format(args.dataset))
 
-    if num_gpus >= 1:
-        model = torch.nn.DataParallel(model)
-        model = model.cuda()
-        criterion = criterion.cuda()
-        if torch.backends.cudnn.is_available():
-            import torch.backends.cudnn as cudnn
-            cudnn.benchmark = True
-            cudnn.deterministic = True
-
+    # if num_gpus >= 1:
+    #     model = torch.nn.DataParallel(model)
+    #     model = model.cuda()
+    #     criterion = criterion.cuda()
+    #     if torch.backends.cudnn.is_available():
+    #         import torch.backends.cudnn as cudnn
+    #         cudnn.benchmark = True
+    #         cudnn.deterministic = True
+    model = model.to(device)
+    criterion = criterion.to(device)
     # -----------------------------------------------------------------------------
     # Data Loaders
     # -----------------------------------------------------------------------------
     # Data loading code
     if args.dataset == 'imagenet':
-        train_loader, val_loader, test_loader= img_loader.data_loaders(args)
-        # import the loaders too
+        # train_loader, val_loader, test_loader= img_loader.data_loaders(args)
+
+        train_dataset, val_dataset, test_dataset = img_loader.data_loaders(args)
+        train_sampler = torch.utils.data.distributed.DistributedSampler(
+            train_dataset,
+            num_replicas=xm.xrt_world_size(),
+            rank=xm.get_ordinal(),
+            shuffle=True)
+        train_loader = torch.utils.data.DataLoader(
+            train_dataset,
+            batch_size=args.batch_size,
+            sampler=train_sampler,
+            num_workers=args.workers,
+            drop_last=True)
+        val_sampler = torch.utils.data.distributed.DistributedSampler(
+            val_dataset,
+            num_replicas=xm.xrt_world_size(),
+            rank=xm.get_ordinal(),
+            shuffle=False)
+        val_loader = torch.utils.data.DataLoader(
+            val_dataset,
+            batch_size=args.batch_size,
+            sampler=val_sampler,
+            num_workers=args.workers)
+        test_sampler = torch.utils.data.distributed.DistributedSampler(
+            test_dataset,
+            num_replicas=xm.xrt_world_size(),
+            rank=xm.get_ordinal(),
+            shuffle=False)
+        test_loader = torch.utils.data.DataLoader(
+            test_dataset,
+            batch_size=args.batch_size,
+            sampler=test_sampler,
+            num_workers=args.workers)
+        
+        # Wrapping train loader with ParallelLoader
+        train_loader = pl.MpDeviceLoader(train_loader, dev)
+
         from utilities.train_eval_classification import train, validate
     elif args.dataset == 'coco':
         from data_loader.classification.coco import COCOClassification
@@ -272,18 +312,18 @@ def main(args):
             'optimizer': optimizer.state_dict(),
         }, is_best, args.savedir, extra_info_ckpt)
 
-        writer.add_scalar('Classification/LR/learning_rate', lr_log, epoch)
-        writer.add_scalar('Classification/Loss/Train', train_loss, epoch)
-        writer.add_scalar('Classification/Loss/Val', val_loss, epoch)
-        writer.add_scalar('Classification/{}/Train'.format(acc_metric), train_acc, epoch)
-        writer.add_scalar('Classification/{}/Val'.format(acc_metric), val_acc, epoch)
-        writer.add_scalar('Classification/Complexity/Top1_vs_flops', best_acc, round(flops, 2))
-        writer.add_scalar('Classification/Complexity/Top1_vs_params', best_acc, round(num_params, 2))
+        # writer.add_scalar('Classification/LR/learning_rate', lr_log, epoch)
+        # writer.add_scalar('Classification/Loss/Train', train_loss, epoch)
+        # writer.add_scalar('Classification/Loss/Val', val_loss, epoch)
+        # writer.add_scalar('Classification/{}/Train'.format(acc_metric), train_acc, epoch)
+        # writer.add_scalar('Classification/{}/Val'.format(acc_metric), val_acc, epoch)
+        # writer.add_scalar('Classification/Complexity/Top1_vs_flops', best_acc, round(flops, 2))
+        # writer.add_scalar('Classification/Complexity/Top1_vs_params', best_acc, round(num_params, 2))
         if es.step(torch.tensor(val_acc)):
             print("BReaking now as early stopping criterion met")
             break
 
-    writer.close()
+    # writer.close()
 
 
 if __name__ == '__main__':
