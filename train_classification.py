@@ -1,7 +1,11 @@
+
+# from jax_smi import initialise_tracking
 import torch
+import torch_xla
 import torch_xla.core.xla_model as xm
 import torch_xla.distributed.parallel_loader as pl
 import argparse
+# import torch_xla.debug.metrics as met
 import torch.optim
 import torch.utils.data
 import torch.utils.data.distributed
@@ -15,6 +19,16 @@ from utilities.utils import save_checkpoint
 import numpy as np
 from utilities.print_utils import *
 from torch import nn
+import os
+# import libtpu
+# if 'TPU_LIBRARY_PATH' in os.environ:
+#     del os.environ['TPU_LIBRARY_PATH']
+
+# libtpu.configure_library_path()
+
+# enable TPU profiling
+# torch_xla.debug.metrics.set_metrics_debug_mode(True)
+# initialise_tracking()
 
 # ============================================
 __author__ = "Sachin Mehta"
@@ -137,8 +151,9 @@ def main(args):
     # Optimizer
     # -----------------------------------------------------------------------------
 
-    optimizer = torch_xla.optim.SGD(model.parameters(), args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
-
+    # optimizer = torch_xla.core.optim.SGD(model.parameters(), args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
+    optimizer = torch.optim.SGD(model.parameters(), args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
+    # optimizer = xm.optimizer(optimizer)
     # optionally resume from a checkpoint
     best_acc = 0.0
     device=xm.xla_device()
@@ -188,43 +203,43 @@ def main(args):
     # -----------------------------------------------------------------------------
     # Data loading code
     if args.dataset == 'imagenet':
-        # train_loader, val_loader, test_loader= img_loader.data_loaders(args)
+        train_loader, val_loader, test_loader= img_loader.data_loaders(args)
 
-        train_dataset, val_dataset, test_dataset = img_loader.data_loaders(args)
-        train_sampler = torch.utils.data.distributed.DistributedSampler(
-            train_dataset,
-            num_replicas=xm.xrt_world_size(),
-            rank=xm.get_ordinal(),
-            shuffle=True)
-        train_loader = torch.utils.data.DataLoader(
-            train_dataset,
-            batch_size=args.batch_size,
-            sampler=train_sampler,
-            num_workers=args.workers,
-            drop_last=True)
-        val_sampler = torch.utils.data.distributed.DistributedSampler(
-            val_dataset,
-            num_replicas=xm.xrt_world_size(),
-            rank=xm.get_ordinal(),
-            shuffle=False)
-        val_loader = torch.utils.data.DataLoader(
-            val_dataset,
-            batch_size=args.batch_size,
-            sampler=val_sampler,
-            num_workers=args.workers)
-        test_sampler = torch.utils.data.distributed.DistributedSampler(
-            test_dataset,
-            num_replicas=xm.xrt_world_size(),
-            rank=xm.get_ordinal(),
-            shuffle=False)
-        test_loader = torch.utils.data.DataLoader(
-            test_dataset,
-            batch_size=args.batch_size,
-            sampler=test_sampler,
-            num_workers=args.workers)
+        # train_dataset, val_dataset, test_dataset = img_loader.data_loaders(args)
+        # train_sampler = torch.utils.data.distributed.DistributedSampler(
+        #     train_dataset,
+        #     num_replicas=xm.xrt_world_size(),
+        #     rank=xm.get_ordinal(),
+        #     shuffle=True)
+        # train_loader = torch.utils.data.DataLoader(
+        #     train_dataset,
+        #     batch_size=args.batch_size,
+        #     sampler=train_sampler,
+        #     num_workers=args.workers,
+        #     drop_last=True)
+        # val_sampler = torch.utils.data.distributed.DistributedSampler(
+        #     val_dataset,
+        #     num_replicas=xm.xrt_world_size(),
+        #     rank=xm.get_ordinal(),
+        #     shuffle=False)
+        # val_loader = torch.utils.data.DataLoader(
+        #     val_dataset,
+        #     batch_size=args.batch_size,
+        #     sampler=val_sampler,
+        #     num_workers=args.workers)
+        # test_sampler = torch.utils.data.distributed.DistributedSampler(
+        #     test_dataset,
+        #     num_replicas=xm.xrt_world_size(),
+        #     rank=xm.get_ordinal(),
+        #     shuffle=False)
+        # test_loader = torch.utils.data.DataLoader(
+        #     test_dataset,
+        #     batch_size=args.batch_size,
+        #     sampler=test_sampler,
+        #     num_workers=args.workers)
         
         # Wrapping train loader with ParallelLoader
-        train_loader = pl.MpDeviceLoader(train_loader, dev)
+        # train_loader = pl.MpDeviceLoader(train_loader, dev)
 
         from utilities.train_eval_classification import train, validate
     elif args.dataset == 'coco':

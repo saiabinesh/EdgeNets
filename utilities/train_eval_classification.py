@@ -2,7 +2,7 @@
 __author__ = "Sachin Mehta"
 __maintainer__ = "Sachin Mehta"
 #============================================
-
+import torch_xla.core.xla_model as xm
 import time
 import torch
 from utilities.utils import AverageMeter
@@ -161,8 +161,8 @@ def train_multi(data_loader, model, criteria, optimizer, epoch, device='cuda'):
         # compute gradient and do SGD step
         optimizer.zero_grad()
         loss.backward()
-        optimizer.step()
-
+        # optimizer.step()
+        xm.optimizer_step(optimizer, barrier=True)
 
         # measure elapsed time
         batch_time.update(time.time() - end)
