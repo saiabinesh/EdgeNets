@@ -76,7 +76,7 @@ class SSD300(nn.Module):
 
         locations = torch.cat(loc_preds, 1)
         confidences = torch.cat(cls_preds, 1)
-        return confidences, locations
+        return fms, confidences, locations
 
 
 class SSD512(nn.Module):

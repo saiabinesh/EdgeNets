@@ -13,6 +13,7 @@ from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 import torch.nn.functional as F
 import cv2
+
 def eval(model, dataset, predictor):
     model.eval()
     predictions = {}
@@ -25,7 +26,6 @@ def eval(model, dataset, predictor):
 
     predictions = [predictions[i] for i in predictions.keys()]
     return predictions
-
 
 def main(args):
     if args.im_size in [300, 512]:
@@ -49,6 +49,30 @@ def main(args):
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
 
+    
+
+    coco_80= ['__background__',
+                   'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus',
+                   'train', 'truck', 'boat', 'traffic light', 'fire hydrant',
+                   'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog',
+                   'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra',
+                   'giraffe', 'backpack', 'umbrella', 'handbag', 'tie',
+                   'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball',
+               'kite', 'baseball bat', 'baseball glove', 'skateboard',
+               'surfboard', 'tennis racket', 'bottle', 'wine glass', 'cup',
+               'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+               'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza',
+               'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed',
+               'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote',
+               'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink',
+               'refrigerator', 'book', 'clock', 'vase', 'scissors',
+               'teddy bear', 'hair drier', 'toothbrush'
+                ]
+
+
+    top_20 = ['__background__','person', 'car', 'chair', 'book', 'bottle', 'cup', 'dining table', 'traffic light', 'bowl', 'handbag', 'bird', 'boat', 'truck', 'bench', 'umbrella', 'cow', 'banana', 'motorcycle', 'backpack', 'carrot'] 
+
+    top_20_indices= [COCO_CLASS_LIST.index(i) for i in top_20]
     # -----------------------------------------------------------------------------
     # Model
     # -----------------------------------------------------------------------------
@@ -58,33 +82,8 @@ def main(args):
         weight_dict = torch.load(args.weights_test, map_location='cpu')
         model.load_state_dict(weight_dict["state_dict"])    
     model_dict = model.state_dict()
-    # Remove the last layer (classification layer) from the model
-    # print(model_dict.keys())
-    # del model_dict['classification_headers.0.weight']
-    # del model_dict['classification_headers.0.bias']
-    # model.load_state_dict(model_dict, strict=False)
-    # Remove the last layers from the model
-    del model_dict['cls_layers.0.weight']
-    del model_dict['cls_layers.0.bias']
-    del model_dict['cls_layers.1.weight']
-    del model_dict['cls_layers.1.bias']
-    del model_dict['cls_layers.2.weight']
-    del model_dict['cls_layers.2.bias']
-    del model_dict['cls_layers.3.weight']
-    del model_dict['cls_layers.3.bias']
-    del model_dict['cls_layers.4.weight']
-    del model_dict['cls_layers.4.bias']
-    del model_dict['cls_layers.5.weight']
-    del model_dict['cls_layers.5.bias']
 
-    # Load the modified state dict into the model
-    model.load_state_dict(model_dict, strict=False)    
     model.eval()
-
-    # num_params = model_parameters(model)
-    # flops = compute_flops(model, input=torch.Tensor(1, 3, cfg.image_size, cfg.image_size))
-    # print_info_message('FLOPs for an input of size {}x{}: {:.2f} million'.format(cfg.image_size, cfg.image_size, flops))
-    # print_info_message('Network Parameters: {:.2f} million'.format(num_params))
 
     num_gpus = torch.cuda.device_count()
     device = 'cuda' if num_gpus >= 1 else 'cpu'
@@ -104,172 +103,75 @@ def main(args):
     print("Getting predictions")    
     # predictions = eval(model=model, dataset=dataset_class, predictor=predictor)
 
-    # Extract features within bounding boxes
     features = []
     labels = []
-    done = []
-    with torch.no_grad():
-        for i in tqdm(range(len(dataset_class))):
-            if i % 10 == 0:
-                print_info_message('Inferring on image {}'.format(i))
-            image = dataset_class.get_image(i)
-            output = predictor.predict(model, image)
-            boxes, labels_, scores = [o.to("cpu").numpy() for o in output]
+    count_non_standard_features=0
+    for i in tqdm(range(len(dataset_class))):
+        image = dataset_class.get_image(i)
+        output = predictor.predict(model, image)
+        if output[0] is None:
+            continue
+        feature_maps, boxes, label_outputs, scores = output 
+        label = max(set(label_outputs.cpu().numpy()), key=label_outputs.cpu().numpy().tolist().count) 
+        # if label not in top_20_indices:
+        #     continue          
+        feature_map = feature_maps[0].squeeze(0)
+        if len(feature_map.shape) != 3:
+            count_non_standard_features += 1
+            continue
+        feature = feature_map.cpu().numpy()
+        feature_resized = cv2.resize(feature.transpose(1, 2, 0), (38, 38))
+        feature = feature_resized.transpose(2, 0, 1).mean(axis=(1, 2))
+        features.append(feature)
+        labels.append(label)
 
-            for box, label in zip(boxes, labels_):
-                x1, y1, x2, y2 = box.astype(int)
-                cropped_image = image[:, y1:y2, x1:x2]
-                # Pad the image to 300x300 resolution
-                # img_h, img_w = image.shape[1:]
-                # target_size = 300
-                # max_size = 500
-                # scale_factor = min(target_size / min(img_h, img_w), max_size / max(img_h, img_w))
-                # resized_height = int(round(img_h * scale_factor))
-                # resized_width = int(round(img_w * scale_factor))
-                # padding_h = target_size - resized_height
-                # padding_w = target_size - resized_width
-                # top = padding_h // 2
-                # bottom = padding_h - top
-                # left = padding_w // 2
-                # right = padding_w - left
-                # # padded_image = F.pad(image, (left, right, top, bottom), "constant", 0)
-                # padded_image = F.pad(torch.from_numpy(image), (left, right, top, bottom), "constant", 0)
+            
+    features = np.stack(features, axis=0)
+    labels = np.array(labels)
 
-                # # Crop the padded image and run through network again
-                # cropped_image = padded_image[:, y1:y2+padding_h, x1:x2+padding_w]
-                feature = model(cropped_image.unsqueeze(0)).squeeze().cpu().numpy()
-                features.append(feature)
-                labels.append(label)
+    # Save dictionaries to pickle files
+    with open("features_80_classes.pkl", "wb") as f:
+        pickle.dump(features, f)
 
-                if label not in done:
-                    features_by_label = feature
-                    cropped_images_by_label = cropped_image
-                    labels_by_label = [label]
-                    done.append(label)
-                elif label in done:
-                    index = done.index(label)
-                    features_by_label[index] = np.concatenate([features_by_label[index], feature])
-                    cropped_images_by_label = torch.cat([cropped_images_by_label, cropped_image], dim=0)
-                    labels_by_label.append(label)
+    with open("labels_80_classes.pkl", "wb") as f:
+        pickle.dump(labels, f)
+
+    # # Load dictionaries from pickle files
+    # with open("features_20_classes.pkl", "rb") as f:
+    #     features = pickle.load(f)
+
+    # with open("labels_20_classes.pkl", "rb") as f:
+    #     labels = pickle.load(f)        
 
     # Apply dimensionality reduction
     pca = PCA(n_components=50)
     features_pca = pca.fit_transform(features)
-    tsne = TSNE(n_components=2)
-    features_tsne = tsne.fit_transform(features_pca)        
-    # features = np.vstack(features)
-    # labels = np.array(labels)
 
-
-    # # #Changing code above to get just one feature per image
-    # # # Extract features within bounding boxes
-    # # print(dir(dataset_class))
-    # # features = []
-    # # labels = []
-    # # count=0
-    # # print("len(dataset_class): ",len(dataset_class))
-    # # # print("dataset_class.CLASSES: ",dataset_class.CLASSES)
-
-    # # # print(np.unique(dataset_class.CLASSES))
-    # # # print(dataset_class.CLASSES[0:10])
-    # # with torch.no_grad():
-    # #     for label in np.unique(dataset_class.CLASSES):
-    # #         indices = np.where(dataset_class.CLASSES == label)[0]
-    # #         # print(indices)
-    # #         # exit()
-    # #         if len(indices) == 0:
-    # #             continue
-    # #         # Get the first image of this class
-    # #         image = dataset_class.get_image(indices[0])
-    # #         print(image)
-    # #         output = predictor.predict(model, image)
-    # #         boxes, labels_, scores = [o.to("cpu").numpy() for o in output]
-    # #         count+=1
-    # #         # Find the box with this class label and extract features
-    # #         for box, label_ in zip(boxes, labels_):
-    # #             if label_ == label:
-    # #                 x1, y1, x2, y2 = box.astype(int)
-    # #                 cropped_image = torch.from_numpy(image[:, y1:y2, x1:x2]).unsqueeze(0)
-    # #                 with torch.no_grad():
-    # #                     feature = model(torch.from_numpy(cropped_image).unsqueeze(0)).squeeze().cpu().numpy()
-    # #                 features.append(feature)
-    # #                 labels.append(label)
-    # #                 break
-    # # print("Images done =",count)
-    # # Convert the features and labels to NumPy arrays
-    # # features = np.vstack(features)
-    # # labels = np.array(labels)
-    # Save the features a eatures.pkl', 'wb') as f:
-    #     pickle.dump(features_by_label, f)
-
-    # with open('labels.pkl', 'wb') as f:
-    #     pickle.dump(labels_by_label, f)    
-    # # Extract the last feature map for each image
-    # features = []
-    # for i in tqdm(range(len(dataset_class))):
-    #     image = dataset_class.get_image(i)
-    #     with torch.no_grad():
-    #         feature = model(image.unsqueeze(0)).squeeze().cpu().numpy()
-    #     features.append(feature)
-
-    # # Convert the features to a NumPy array
-    # features = np.vstack(features)
-
-    #unpickle
-
-    # Load the pickled variables
-    # with open('features.pkl', 'rb') as f:
-    #     features = pickle.load(f)
-
-    # with open('labels.pkl', 'rb') as f:
-    #     labels = pickle.load(f)
-    # Apply dimensionality reduction
-    # Save cropped images and corresponding features for each label
-    for label, features, cropped_images in zip(labels_by_label, features_by_label, cropped_images_by_label):
-        # Plot and save features
-        plt.figure(figsize=(12, 8))
-        features_pca = pca.transform(features.reshape(1, -1))
-        features_tsne = tsne.transform(features_pca)
-        plt.scatter(features_tsne[:, 0], features_tsne[:, 1])
-        plt.savefig(os.path.join(folder_name, f"{label}_feature.png"))
-        plt.close()
-
-        # Save cropped images
-        for i in range(len(cropped_images)):
-            filename = os.path.join(folder_name, f"{label}_{i}_image.png")
-            img = np.transpose(cropped_images[i].cpu().numpy(), (1, 2, 0))
-            cv2.imwrite(filename, cv2.cvtColor(img, cv2.COLOR_RGB2BGR))
-    
-    # Plot features for all labels
-    features = np.vstack(features_by_label)
-    labels = np.array(labels_by_label)
-    features_pca = pca.fit_transform(features)
+    tsne = TSNE(n_components=2, perplexity=30.0)
     features_tsne = tsne.fit_transform(features_pca)
-    for label in np.unique(labels):
-        plt.figure(figsize=(12, 8))
-        indices = np.where(labels == label)
-        plt.scatter(features_tsne[indices, 0], features_tsne[indices, 1], label=str(label))
-        plt.legend()
-        filename = os.path.join(folder_name, f"{label}.png")
-        plt.savefig(filename)
-        print(f"Saving {filename}")
-        plt.close()
 
-    # -----------------------------------------------------------------------------
-    # Results
-    # # -----------------------------------------------------------------------------
-    # predictor = BoxPredictor(cfg=cfg, device=device)
-    # predictions = eval(model=model, dataset=dataset_class, predictor=predictor)
-    # result_info = evaluate(dataset=dataset_class, predictions=predictions, output_dir=args.save_dir,
-    #                        dataset_name=args.dataset)
+    #code to alter labels to point to 80 class list
+    labels =[coco_80.index(COCO_CLASS_LIST[i]) for i in labels]
 
-    # if args.dataset == 'coco':
-    #     print_info_message('AP_IoU=0.50:0.95: {}'.format(result_info.stats[0]))
-    #     print_info_message('AP_IoU=0.50: {}'.format(result_info.stats[1]))
-    #     print_info_message('AP_IoU=0.75: {}'.format(result_info.stats[2]))
-    # else:
-    #     print_error_message('{} dataset not supported.'.format(args.dataset))
+    if not isinstance(labels, np.ndarray):
+        labels = np.array(labels, dtype=int)    
 
+    # Get the indices that would sort the labels array
+    sort_idx = np.argsort(labels)
+
+    # Sort the labels and features_tsne arrays using the sort indices
+    labels = labels[sort_idx]
+    features_tsne = features_tsne[sort_idx]   
+
+    # Create scatter plot of t-SNE features
+    plt.figure(figsize=(12, 8))
+    unique_labels = np.unique(labels)
+    for label in sorted(top_20_indices, reverse=False):
+        class_name = coco_80[label]
+        plt.scatter(features_tsne[labels == label, 0], features_tsne[labels == label, 1], label=class_name)
+    plt.legend(loc='best')
+    plt.savefig(os.path.join(folder_name, "all_features_tsne_sorted.png"))
+    plt.close()
 
 if __name__ == '__main__':
     from commons.general_details import detection_datasets, detection_models
