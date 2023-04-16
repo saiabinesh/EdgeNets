@@ -5,7 +5,7 @@
             "name": "Run test_detection_visualize_features.py",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/test_detection_visualize_features.py",
+            "program": "${workspaceFolder}/test_detection_visualize_features_inside_box.py",
             "args": [
                 "--model",
                 "espnetv2",

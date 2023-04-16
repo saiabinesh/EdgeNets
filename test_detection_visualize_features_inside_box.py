@@ -110,7 +110,42 @@ def main(args):
     print("Getting predictions")    
     # predictions = eval(model=model, dataset=dataset_class, predictor=predictor)
 
-
+    # for feature_map_idx in range(6):
+    #     all_features = []
+    #     labels = []
+    #     for i in tqdm(range(len(dataset_class))):
+    #         image = dataset_class.get_image(i)
+    #         output = predictor.predict(model, image)
+    #         if output[0] is None:
+    #             continue
+    #         feature_maps_temp, boxes, label_outputs, scores = output
+    #         non_outputs_count = 0  # Count of non-outputs
+    #         for box, label in zip(boxes, label_outputs):
+    #             x1, y1, x2, y2 = box.int().tolist()  # Convert to a list of integers
+    #             height, width, _ = image.shape  # Retrieve the height and width of the image                
+    #             x1 = max(0, x1)
+    #             y1 = max(0, y1)
+    #             x2 = min(width - 1, x2)
+    #             y2 = min(height - 1, y2)
+    #             cropped_image = image[y1:y2, x1:x2, :]
+    #             box_output = predictor.predict(model, cropped_image)
+    #             if box_output[0] is None:
+    #                 non_outputs_count += 1  # Increment non-outputs count
+    #                 continue
+    #             feature_maps, boxes_temp, label_outputs_temp, scores = box_output
+    #             feature_map = feature_maps[feature_map_idx].squeeze(0)
+    #             if len(feature_map.shape) != 3:
+    #                 continue
+    #             feature = feature_map.cpu().numpy()
+    #             all_features.append(feature)
+    #             labels.append(label)
+    #     print(f"Number of non-outputs in feature map {feature_map_idx}: {non_outputs_count}")
+    #     print(f"Total outputs in feature {feature_map_idx}: {len(all_features)}")                
+    #     # Save features and labels to pickle files
+    #     with open(f"feature_{num_classes}_{feature_map_idx}_box.pkl", "wb") as f:
+    #         pickle.dump(all_features, f)
+    #     with open(f"labels_{num_classes}_{feature_map_idx}_box.pkl", "wb") as f:
+    #         pickle.dump(labels, f)
 
 
 
@@ -120,36 +155,36 @@ def main(args):
         # if not i==5:
         #     continue
         start_time = time.time()
-        with open(f"feature_{num_classes}_{i}.pkl", "rb") as f:
+        with open(f"feature_{num_classes}_{i}_box.pkl", "rb") as f:
             feature_i = pickle.load(f)
-        with open(f"labels_{num_classes}_{i}.pkl", "rb") as f:
+        with open(f"labels_{num_classes}_{i}_box.pkl", "rb") as f:
             labels_i = pickle.load(f)
         end_time = time.time()
         time_taken = end_time - start_time
         print(f"Time taken for unpickle feature {i}: {time_taken:.2f} seconds")
-        save_path = os.path.join(folder_name, f"filtered_feature_map_{i}_no_persons.png")
+        save_path = os.path.join(folder_name, f"box_feature_map_{i}_no_person.png")
         # remap labels in case there are only 20 classes, so that they all have same index and colour
         labels_i=[coco_80.index(COCO_CLASS_LIST[i]) for i in labels_i]
         labels_i = np.array(labels_i)  # convert labels to numpy array
-        # # Filter feature maps based on labels in the top 20
-        # filter_mask = np.isin(labels_i, top_20_indices)
-        # filtered_features_i = [feature_i[j] for j in range(len(feature_i)) if filter_mask[j]]
-        # filtered_labels_i = labels_i[filter_mask]
+        # Filter feature maps based on labels in the top 20
+        filter_mask = np.isin(labels_i, top_20_indices)
+        filtered_features_i = [feature_i[j] for j in range(len(feature_i)) if filter_mask[j]]
+        filtered_labels_i = labels_i[filter_mask]
         # Time the execution of the plot_feature_map function
         start_time = time.time()
         full_sil_score=calculate_silhouette_score(feature_i, labels_i)
         end_time = time.time()
         time_taken = end_time - start_time
-        print(f"Full Silhouette score for feature {i} is {full_sil_score}")
+        print(f"Full Silhouette score for feature {i} is , {full_sil_score}")
         print(f"Time taken for feature {i}: {time_taken:.2f} seconds")
 
-        # start_time = time.time()
-        # plot_feature_map(filtered_features_i, filtered_labels_i, save_path)
-        # end_time = time.time()
+        start_time = time.time()
+        plot_feature_map(filtered_features_i, filtered_labels_i, save_path)
+        end_time = time.time()
 
-        # # Calculate the time taken to plot the feature map
-        # time_taken = end_time - start_time
-        # print(f"Time taken for feature {i}: {time_taken:.2f} seconds")
+        # Calculate the time taken to plot the feature map
+        time_taken = end_time - start_time
+        print(f"Time taken for feature {i}: {time_taken:.2f} seconds")
     
     #Do just labels
     # Loop over all feature maps
