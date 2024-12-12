@@ -1,0 +1,487 @@
+feature_map,label,class_name,count
+0,0,__background__,0
+0,1,person,866
+0,2,bicycle,0
+0,3,car,66
+0,4,motorcycle,0
+0,5,airplane,11
+0,6,bus,1
+0,7,train,0
+0,8,truck,4
+0,9,boat,4
+0,10,traffic light,12
+0,11,fire hydrant,0
+0,12,stop sign,23
+0,13,parking meter,0
+0,14,bench,0
+0,15,bird,2
+0,16,cat,0
+0,17,dog,0
+0,18,horse,0
+0,19,sheep,33
+0,20,cow,10
+0,21,elephant,23
+0,22,bear,0
+0,23,zebra,0
+0,24,giraffe,0
+0,25,backpack,0
+0,26,umbrella,18
+0,27,handbag,0
+0,28,tie,0
+0,29,suitcase,0
+0,30,frisbee,26
+0,31,skis,0
+0,32,snowboard,0
+0,33,sports ball,4
+0,34,kite,63
+0,35,baseball bat,25
+0,36,baseball glove,13
+0,37,skateboard,0
+0,38,surfboard,4
+0,39,tennis racket,40
+0,40,bottle,0
+0,41,wine glass,0
+0,42,cup,61
+0,43,fork,0
+0,44,knife,0
+0,45,spoon,0
+0,46,bowl,36
+0,47,banana,3
+0,48,apple,0
+0,49,sandwich,0
+0,50,orange,0
+0,51,broccoli,2
+0,52,carrot,0
+0,53,hot dog,0
+0,54,pizza,1
+0,55,donut,0
+0,56,cake,0
+0,57,chair,1
+0,58,couch,0
+0,59,potted plant,42
+0,60,bed,0
+0,61,dining table,0
+0,62,toilet,0
+0,63,tv,31
+0,64,laptop,0
+0,65,mouse,0
+0,66,remote,0
+0,67,keyboard,0
+0,68,cell phone,0
+0,69,microwave,4
+0,70,oven,0
+0,71,toaster,0
+0,72,sink,0
+0,73,refrigerator,0
+0,74,book,0
+0,75,clock,61
+0,76,vase,6
+0,77,scissors,0
+0,78,teddy bear,0
+0,79,hair drier,0
+0,80,toothbrush,0
+1,0,__background__,0
+1,1,person,1643
+1,2,bicycle,2
+1,3,car,304
+1,4,motorcycle,5
+1,5,airplane,24
+1,6,bus,22
+1,7,train,10
+1,8,truck,5
+1,9,boat,2
+1,10,traffic light,9
+1,11,fire hydrant,10
+1,12,stop sign,71
+1,13,parking meter,4
+1,14,bench,2
+1,15,bird,5
+1,16,cat,0
+1,17,dog,7
+1,18,horse,19
+1,19,sheep,62
+1,20,cow,28
+1,21,elephant,93
+1,22,bear,0
+1,23,zebra,49
+1,24,giraffe,37
+1,25,backpack,3
+1,26,umbrella,71
+1,27,handbag,0
+1,28,tie,0
+1,29,suitcase,0
+1,30,frisbee,21
+1,31,skis,0
+1,32,snowboard,0
+1,33,sports ball,1
+1,34,kite,85
+1,35,baseball bat,15
+1,36,baseball glove,25
+1,37,skateboard,21
+1,38,surfboard,16
+1,39,tennis racket,106
+1,40,bottle,4
+1,41,wine glass,0
+1,42,cup,23
+1,43,fork,0
+1,44,knife,0
+1,45,spoon,0
+1,46,bowl,30
+1,47,banana,7
+1,48,apple,0
+1,49,sandwich,0
+1,50,orange,12
+1,51,broccoli,12
+1,52,carrot,0
+1,53,hot dog,0
+1,54,pizza,15
+1,55,donut,9
+1,56,cake,0
+1,57,chair,11
+1,58,couch,0
+1,59,potted plant,77
+1,60,bed,0
+1,61,dining table,0
+1,62,toilet,0
+1,63,tv,194
+1,64,laptop,1
+1,65,mouse,0
+1,66,remote,0
+1,67,keyboard,6
+1,68,cell phone,2
+1,69,microwave,29
+1,70,oven,0
+1,71,toaster,0
+1,72,sink,0
+1,73,refrigerator,0
+1,74,book,0
+1,75,clock,154
+1,76,vase,2
+1,77,scissors,0
+1,78,teddy bear,0
+1,79,hair drier,0
+1,80,toothbrush,0
+2,0,__background__,0
+2,1,person,2354
+2,2,bicycle,10
+2,3,car,582
+2,4,motorcycle,79
+2,5,airplane,26
+2,6,bus,51
+2,7,train,13
+2,8,truck,21
+2,9,boat,3
+2,10,traffic light,1
+2,11,fire hydrant,0
+2,12,stop sign,26
+2,13,parking meter,0
+2,14,bench,14
+2,15,bird,22
+2,16,cat,0
+2,17,dog,9
+2,18,horse,92
+2,19,sheep,343
+2,20,cow,126
+2,21,elephant,55
+2,22,bear,4
+2,23,zebra,269
+2,24,giraffe,83
+2,25,backpack,1
+2,26,umbrella,34
+2,27,handbag,0
+2,28,tie,2
+2,29,suitcase,0
+2,30,frisbee,11
+2,31,skis,17
+2,32,snowboard,0
+2,33,sports ball,5
+2,34,kite,64
+2,35,baseball bat,0
+2,36,baseball glove,58
+2,37,skateboard,66
+2,38,surfboard,103
+2,39,tennis racket,72
+2,40,bottle,8
+2,41,wine glass,0
+2,42,cup,30
+2,43,fork,0
+2,44,knife,0
+2,45,spoon,0
+2,46,bowl,27
+2,47,banana,21
+2,48,apple,0
+2,49,sandwich,0
+2,50,orange,10
+2,51,broccoli,2
+2,52,carrot,0
+2,53,hot dog,0
+2,54,pizza,11
+2,55,donut,72
+2,56,cake,4
+2,57,chair,41
+2,58,couch,1
+2,59,potted plant,62
+2,60,bed,0
+2,61,dining table,4
+2,62,toilet,11
+2,63,tv,71
+2,64,laptop,27
+2,65,mouse,4
+2,66,remote,0
+2,67,keyboard,24
+2,68,cell phone,1
+2,69,microwave,9
+2,70,oven,7
+2,71,toaster,0
+2,72,sink,15
+2,73,refrigerator,0
+2,74,book,0
+2,75,clock,82
+2,76,vase,3
+2,77,scissors,0
+2,78,teddy bear,0
+2,79,hair drier,0
+2,80,toothbrush,0
+3,0,__background__,0
+3,1,person,1074
+3,2,bicycle,54
+3,3,car,449
+3,4,motorcycle,36
+3,5,airplane,10
+3,6,bus,19
+3,7,train,6
+3,8,truck,5
+3,9,boat,9
+3,10,traffic light,6
+3,11,fire hydrant,33
+3,12,stop sign,2
+3,13,parking meter,0
+3,14,bench,52
+3,15,bird,15
+3,16,cat,2
+3,17,dog,34
+3,18,horse,25
+3,19,sheep,85
+3,20,cow,4
+3,21,elephant,42
+3,22,bear,0
+3,23,zebra,33
+3,24,giraffe,11
+3,25,backpack,9
+3,26,umbrella,48
+3,27,handbag,0
+3,28,tie,0
+3,29,suitcase,0
+3,30,frisbee,29
+3,31,skis,15
+3,32,snowboard,0
+3,33,sports ball,84
+3,34,kite,12
+3,35,baseball bat,0
+3,36,baseball glove,39
+3,37,skateboard,38
+3,38,surfboard,104
+3,39,tennis racket,37
+3,40,bottle,13
+3,41,wine glass,0
+3,42,cup,46
+3,43,fork,0
+3,44,knife,0
+3,45,spoon,0
+3,46,bowl,70
+3,47,banana,4
+3,48,apple,0
+3,49,sandwich,3
+3,50,orange,21
+3,51,broccoli,3
+3,52,carrot,0
+3,53,hot dog,0
+3,54,pizza,32
+3,55,donut,69
+3,56,cake,3
+3,57,chair,15
+3,58,couch,0
+3,59,potted plant,40
+3,60,bed,0
+3,61,dining table,0
+3,62,toilet,19
+3,63,tv,17
+3,64,laptop,1
+3,65,mouse,33
+3,66,remote,8
+3,67,keyboard,22
+3,68,cell phone,5
+3,69,microwave,9
+3,70,oven,3
+3,71,toaster,0
+3,72,sink,10
+3,73,refrigerator,0
+3,74,book,0
+3,75,clock,103
+3,76,vase,14
+3,77,scissors,0
+3,78,teddy bear,0
+3,79,hair drier,0
+3,80,toothbrush,0
+4,0,__background__,0
+4,1,person,7368
+4,2,bicycle,108
+4,3,car,636
+4,4,motorcycle,80
+4,5,airplane,176
+4,6,bus,219
+4,7,train,160
+4,8,truck,54
+4,9,boat,36
+4,10,traffic light,49
+4,11,fire hydrant,42
+4,12,stop sign,283
+4,13,parking meter,5
+4,14,bench,22
+4,15,bird,44
+4,16,cat,222
+4,17,dog,125
+4,18,horse,151
+4,19,sheep,267
+4,20,cow,156
+4,21,elephant,204
+4,22,bear,31
+4,23,zebra,116
+4,24,giraffe,259
+4,25,backpack,7
+4,26,umbrella,804
+4,27,handbag,0
+4,28,tie,0
+4,29,suitcase,25
+4,30,frisbee,89
+4,31,skis,19
+4,32,snowboard,0
+4,33,sports ball,1
+4,34,kite,349
+4,35,baseball bat,137
+4,36,baseball glove,16
+4,37,skateboard,43
+4,38,surfboard,75
+4,39,tennis racket,145
+4,40,bottle,138
+4,41,wine glass,84
+4,42,cup,582
+4,43,fork,0
+4,44,knife,0
+4,45,spoon,0
+4,46,bowl,685
+4,47,banana,108
+4,48,apple,59
+4,49,sandwich,80
+4,50,orange,106
+4,51,broccoli,111
+4,52,carrot,16
+4,53,hot dog,13
+4,54,pizza,114
+4,55,donut,452
+4,56,cake,142
+4,57,chair,149
+4,58,couch,38
+4,59,potted plant,91
+4,60,bed,20
+4,61,dining table,29
+4,62,toilet,99
+4,63,tv,1096
+4,64,laptop,214
+4,65,mouse,57
+4,66,remote,27
+4,67,keyboard,12
+4,68,cell phone,84
+4,69,microwave,46
+4,70,oven,2
+4,71,toaster,0
+4,72,sink,89
+4,73,refrigerator,33
+4,74,book,3
+4,75,clock,334
+4,76,vase,11
+4,77,scissors,0
+4,78,teddy bear,112
+4,79,hair drier,0
+4,80,toothbrush,1
+5,0,__background__,0
+5,1,person,44298
+5,2,bicycle,884
+5,3,car,1805
+5,4,motorcycle,1527
+5,5,airplane,1035
+5,6,bus,2333
+5,7,train,2774
+5,8,truck,653
+5,9,boat,453
+5,10,traffic light,58
+5,11,fire hydrant,772
+5,12,stop sign,608
+5,13,parking meter,128
+5,14,bench,749
+5,15,bird,733
+5,16,cat,2378
+5,17,dog,1292
+5,18,horse,1921
+5,19,sheep,1105
+5,20,cow,1518
+5,21,elephant,2095
+5,22,bear,727
+5,23,zebra,3038
+5,24,giraffe,2702
+5,25,backpack,35
+5,26,umbrella,1295
+5,27,handbag,9
+5,28,tie,227
+5,29,suitcase,388
+5,30,frisbee,208
+5,31,skis,116
+5,32,snowboard,19
+5,33,sports ball,0
+5,34,kite,369
+5,35,baseball bat,53
+5,36,baseball glove,1
+5,37,skateboard,384
+5,38,surfboard,490
+5,39,tennis racket,243
+5,40,bottle,97
+5,41,wine glass,99
+5,42,cup,774
+5,43,fork,39
+5,44,knife,5
+5,45,spoon,0
+5,46,bowl,2093
+5,47,banana,335
+5,48,apple,177
+5,49,sandwich,663
+5,50,orange,433
+5,51,broccoli,314
+5,52,carrot,84
+5,53,hot dog,92
+5,54,pizza,1251
+5,55,donut,920
+5,56,cake,842
+5,57,chair,1857
+5,58,couch,1142
+5,59,potted plant,268
+5,60,bed,1184
+5,61,dining table,2381
+5,62,toilet,1423
+5,63,tv,1038
+5,64,laptop,1646
+5,65,mouse,172
+5,66,remote,58
+5,67,keyboard,522
+5,68,cell phone,221
+5,69,microwave,72
+5,70,oven,557
+5,71,toaster,0
+5,72,sink,423
+5,73,refrigerator,468
+5,74,book,10
+5,75,clock,572
+5,76,vase,774
+5,77,scissors,32
+5,78,teddy bear,1289
+5,79,hair drier,0
+5,80,toothbrush,6

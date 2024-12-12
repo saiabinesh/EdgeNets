@@ -1,0 +1,20 @@
+main function started
+path is :  ./results_classification_main/model_espnetv2_imagenet/aug_0.2_1.0/s_0.5_inp_224_sch_hybrid/20230522-151311/\espnetv2_0.5_checkpoint.pth.tar
+path exists
+2023-05-23 04:36:58 - [32m[1mINFO   [0m - FLOPs: 28.38 million
+2023-05-23 04:36:58 - [32m[1mINFO   [0m - Network Parameters: 0.30 million
+2023-05-23 04:37:10 - [34m[1mLOGS   [0m - Batch:[1/16]		BatchTime:4.951		top1:67.969 (66.113)		top5:92.578(90.430)
+2023-05-23 04:37:10 - [34m[1mLOGS   [0m - Batch:[2/16]		BatchTime:3.358		top1:67.773 (66.667)		top5:91.406(90.755)
+2023-05-23 04:37:11 - [34m[1mLOGS   [0m - Batch:[3/16]		BatchTime:2.555		top1:74.023 (68.506)		top5:91.406(90.918)
+2023-05-23 04:37:11 - [34m[1mLOGS   [0m - Batch:[4/16]		BatchTime:2.116		top1:68.750 (68.555)		top5:90.820(90.898)
+2023-05-23 04:37:11 - [34m[1mLOGS   [0m - Batch:[5/16]		BatchTime:1.835		top1:63.086 (67.643)		top5:89.258(90.625)
+2023-05-23 04:37:12 - [34m[1mLOGS   [0m - Batch:[6/16]		BatchTime:1.591		top1:71.094 (68.136)		top5:90.234(90.569)
+2023-05-23 04:37:12 - [34m[1mLOGS   [0m - Batch:[7/16]		BatchTime:1.408		top1:57.812 (66.846)		top5:86.719(90.088)
+2023-05-23 04:37:13 - [34m[1mLOGS   [0m - Batch:[8/16]		BatchTime:1.409		top1:72.852 (67.513)		top5:92.773(90.386)
+2023-05-23 04:37:13 - [34m[1mLOGS   [0m - Batch:[9/16]		BatchTime:1.307		top1:73.828 (68.145)		top5:90.625(90.410)
+2023-05-23 04:37:14 - [34m[1mLOGS   [0m - Batch:[11/16]		BatchTime:1.142		top1:67.188 (68.018)		top5:89.648(90.413)
+2023-05-23 04:37:16 - [34m[1mLOGS   [0m - Batch:[12/16]		BatchTime:1.182		top1:68.750 (68.074)		top5:90.625(90.430)
+2023-05-23 04:37:16 - [34m[1mLOGS   [0m - Batch:[13/16]		BatchTime:1.106		top1:70.703 (68.262)		top5:91.797(90.527)
+2023-05-23 04:37:16 - [34m[1mLOGS   [0m - Batch:[14/16]		BatchTime:1.039		top1:71.680 (68.490)		top5:91.406(90.586)
+2023-05-23 04:37:16 - [34m[1mLOGS   [0m - Batch:[15/16]		BatchTime:0.988		top1:58.125 (68.075)		top5:91.875(90.638)
+2023-05-23 04:37:16 - [32m[1mINFO   [0m -  * Prec@1:68.075 Prec@5:90.638

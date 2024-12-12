@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run test_detection_visualize_features.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_detection_visualize_features_inside_box.py",
+            "args": [
+                "--model",
+                "espnetv2",
+                "--s",
+                "2.0",
+                "--dataset",
+                "coco",
+                "--data-path",
+                "./vision_datasets/coco",
+                "--im-size",
+                "300",
+                "--weights-test",
+                "./results_detection/model_espnetv2_coco/s_2.0_sch_hybrid_im_300/20211118-230357/espnetv2_2.0_checkpoint.pth.tar"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -13,4 +13,6 @@ vision_datasets\357\200\215/
 *.pkl
 21_classes/
 81_classes/
-"vision_datasets\357\200\215\357\200\215\357\200\215/"
+vision_datasets\357\200\215\357\200\215\357\200\215/
+*.png
+
