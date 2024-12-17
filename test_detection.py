@@ -7,7 +7,21 @@ from utilities.print_utils import *
 from model.detection.ssd import ssd
 import os
 from model.detection.box_predictor import BoxPredictor
+from pycocotools.cocoeval import COCOeval
 
+def extract_ap_per_class(cocoEval):
+    ap_per_class = []
+    iou_index = 0  # IoU=0.5
+    area_index = 0  # "all"
+    max_dets_index = 2  # maxDets=100
+    for class_index in range(len(cocoEval.params.catIds)):
+        precision = cocoEval.eval['precision'][iou_index, :, class_index, area_index, max_dets_index]
+        if precision[precision > -1].size > 0:
+            ap = np.mean(precision[precision > -1])
+        else:
+            ap = -1
+        ap_per_class.append(ap)
+    return ap_per_class
 
 def eval(model, dataset, predictor):
     model.eval()
@@ -49,7 +63,7 @@ def main(args):
 
     if args.weights_test:
         weight_dict = torch.load(args.weights_test, map_location='cpu')
-        model.load_state_dict(weight_dict)
+        model.load_state_dict(weight_dict['state_dict']) # )  # 
 
     num_params = model_parameters(model)
     flops = compute_flops(model, input=torch.Tensor(1, 3, cfg.image_size, cfg.image_size))
@@ -105,11 +119,13 @@ def main(args):
     elif args.dataset == 'coco':
         print_info_message('AP_IoU=0.50:0.95: {}'.format(result_info.stats[0]))
         print_info_message('AP_IoU=0.50: {}'.format(result_info.stats[1]))
-        print_info_message('AP_IoU=0.75: {}'.format(result_info.stats[2]))
+        print_info_message('AP_IoU=0.75: {}'.format(result_info.stats[2])) 
     else:
         print_error_message('{} not supported'.format(args.dataset))
 
     print_log_message('Done')
+
+
 
 
 if __name__ == '__main__':
