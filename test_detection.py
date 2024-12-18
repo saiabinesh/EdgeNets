@@ -49,7 +49,7 @@ def main(args):
 
     if args.weights_test:
         weight_dict = torch.load(args.weights_test, map_location='cpu')
-        model.load_state_dict(weight_dict)
+        model.load_state_dict(weight_dict['state_dict'])
 
     num_params = model_parameters(model)
     flops = compute_flops(model, input=torch.Tensor(1, 3, cfg.image_size, cfg.image_size))
