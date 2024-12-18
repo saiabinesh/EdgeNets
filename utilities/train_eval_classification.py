@@ -2,7 +2,7 @@
 __author__ = "Sachin Mehta"
 __maintainer__ = "Sachin Mehta"
 #============================================
-import torch_xla.core.xla_model as xm
+# import torch_xla.core.xla_model as xm
 import time
 import torch
 from utilities.utils import AverageMeter
@@ -69,50 +69,71 @@ def validate(data_loader, model, criteria=None, device='cuda'):
     batch_time = AverageMeter()
     top1 = AverageMeter()
     top5 = AverageMeter()
+
+    # Access class labels from the dataset
+    class_labels = getattr(data_loader.dataset, 'classes', None)
+    num_classes = len(class_labels) if class_labels else len(set(data_loader.dataset.targets))
+
+    per_class_correct = torch.zeros(num_classes, dtype=torch.int64, device=device)
+    per_class_total = torch.zeros(num_classes, dtype=torch.int64, device=device)
+
     if criteria:
         losses = AverageMeter()
-    # switch to evaluate mode
+
+    # Switch to evaluate mode
     model.eval()
 
-    # with torch.no_grad():
-    end = time.time()
     with torch.no_grad():
+        end = time.time()
         for i, (input, target) in enumerate(data_loader):
             input = input.to(device)
             target = target.to(device)
 
-            # compute output
+            # Compute output
             output = model(input)
             if criteria:
                 loss = criteria(output, target)
 
-            # measure accuracy and record loss
-            prec1, prec5 = accuracy(output, target, topk=(1, 5))
+            # Measure accuracy and record loss
+            predictions = output.argmax(dim=1)
+            for label, pred in zip(target, predictions):
+                per_class_total[label] += 1
+                if label == pred:
+                    per_class_correct[label] += 1
 
-            if criteria:
-                losses.update(loss.item(), input.size(0))
+            # Top-k accuracy
+            (prec1, prec5), _ = accuracy(output, target, topk=(1, 5))
             top1.update(prec1[0].item(), input.size(0))
             top5.update(prec5[0].item(), input.size(0))
 
-            # measure elapsed time
+            # Measure elapsed time
             batch_time.update(time.time() - end)
             end = time.time()
 
-            if i % 10 == 0 and criteria: # print after every 100 batches
-                print_log_message("Batch:[%d/%d]\t\tBatchTime:%.3f\t\tLoss:%.3f\t\ttop1:%.3f (%.3f)\t\ttop5:%.3f(%.3f)" %
-                                  (i, len(data_loader), batch_time.avg, losses.avg, top1.val, top1.avg, top5.val, top5.avg))
-            elif i % 10:
+            if i % 10 == 0:
                 print_log_message(
-                    "Batch:[%d/%d]\t\tBatchTime:%.3f\t\ttop1:%.3f (%.3f)\t\ttop5:%.3f(%.3f)" %
+                    "Batch:[%d/%d]\tBatchTime:%.3f\tTop1:%.3f (%.3f)\tTop5:%.3f(%.3f)" %
                     (i, len(data_loader), batch_time.avg, top1.val, top1.avg, top5.val, top5.avg))
 
+        # Compute per-class accuracy
+        per_class_acc = {
+            cls: (100.0 * per_class_correct[cls].item() / per_class_total[cls].item() if per_class_total[cls] > 0 else 0.0)
+            for cls in range(num_classes)
+        }
 
-        print_info_message(' * Prec@1:%.3f Prec@5:%.3f' % (top1.avg, top5.avg))
+        # Print per-class accuracies
+        print("\nPer-Class Accuracy:")
+        for cls, acc in per_class_acc.items():
+            label = class_labels[cls] if class_labels else f"Class {cls}"
+            print_info_message(f"{label}: {acc:.2f}%")
+
+        print_info_message(' * Top1:%.3f Top5:%.3f' % (top1.avg, top5.avg))
 
         if criteria:
-            return top1.avg, losses.avg
+            return top1.avg, losses.avg, per_class_acc
         else:
-            return top1.avg
+            return top1.avg, per_class_acc
+
 
 
 def train_multi(data_loader, model, criteria, optimizer, epoch, device='cuda'):
