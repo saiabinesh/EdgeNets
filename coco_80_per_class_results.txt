@@ -1,0 +1,34 @@
+2024-12-20 05:55:36 - [32m[1mINFO   [0m - Initializaing Conv Layers with Xavier Unifrom
+2024-12-20 05:55:36 - [33m[1mWARNING[0m - Training from scratch!!. If you are testing, ignore this message. For testing, we do not load weights here.
+2024-12-20 05:55:36 - [32m[1mINFO   [0m - FLOPs for an input of size 300x300: 1165.12 million
+2024-12-20 05:55:36 - [32m[1mINFO   [0m - Network Parameters: 5.81 million
+loading annotations into memory...
+Done (t=0.86s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=32.70s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=159.63s).
+Accumulating evaluation results...
+DONE (t=38.01s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.161
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.306
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.153
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.025
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.163
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.299
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.267
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.304
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.063
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.344
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.503
+AP per class (AP50): [0.5019, 0.2289, 0.2332, 0.4323, 0.5938, 0.5853, 0.7047, 0.2758, 0.1722, 0.0812, 0.5165, 0.489, 0.3621, 0.1863, 0.1983, 0.7306, 0.4964, 0.4978, 0.44, 0.4014, 0.6563, 0.7027, 0.7318, 0.7293, 0.0459, 0.3379, 0.0331, 0.173, 0.2046, 0.3134, 0.1908, 0.1661, 0.0901, 0.2209, 0.185, 0.203, 0.3779, 0.2685, 0.3814, 0.104, 0.1184, 0.1814, 0.1175, 0.0292, 0.0276, 0.2773, 0.2143, 0.0857, 0.3394, 0.1906, 0.2006, 0.1209, 0.2401, 0.4783, 0.2295, 0.2581, 0.1339, 0.4712, 0.175, 0.5279, 0.3377, 0.6168, 0.5813, 0.5246, 0.255, 0.0421, 0.4755, 0.194, 0.4352, 0.3951, 0.0, 0.3129, 0.4335, 0.0647, 0.4215, 0.2001, 0.1174, 0.4276, 0.0, 0.0233]
+2024-12-20 06:09:15 - [32m[1mINFO   [0m - AP_IoU=0.50:0.95: 0.1606852152203383
+2024-12-20 06:09:15 - [32m[1mINFO   [0m - AP_IoU=0.50: 0.30647920612907437
+2024-12-20 06:09:15 - [32m[1mINFO   [0m - AP_IoU=0.75: 0.1528773200044156
+2024-12-20 06:09:15 - [34m[1mLOGS   [0m - Done

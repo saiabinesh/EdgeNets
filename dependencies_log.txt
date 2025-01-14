@@ -1,0 +1,4630 @@
+Dependencies and functions used in the script:
+
+Module: sys
+  Functions:
+    - __interactivehook__
+
+Module: builtins
+  No functions imported from this module.
+
+Module: _frozen_importlib
+  Functions:
+    - __import__
+    - _builtin_from_name
+    - _calc___package__
+    - _call_with_frames_removed
+    - _exec
+    - _find_and_load
+    - _find_and_load_unlocked
+    - _find_spec
+    - _find_spec_legacy
+    - _gcd_import
+    - _get_module_lock
+    - _handle_fromlist
+    - _init_module_attrs
+    - _install
+    - _install_external_importers
+    - _load
+    - _load_backward_compatible
+    - _load_module_shim
+    - _load_unlocked
+    - _lock_unlock_module
+    - _module_repr
+    - _module_repr_from_spec
+    - _new_module
+    - _requires_builtin
+    - _requires_frozen
+    - _resolve_name
+    - _sanity_check
+    - _setup
+    - _spec_from_module
+    - _verbose_message
+    - _wrap
+    - module_from_spec
+    - spec_from_loader
+
+Module: _imp
+  No functions imported from this module.
+
+Module: _warnings
+  No functions imported from this module.
+
+Module: _frozen_importlib_external
+  Functions:
+    - _calc_mode
+    - _check_name
+    - _classify_pyc
+    - _code_to_hash_pyc
+    - _code_to_timestamp_pyc
+    - _compile_bytecode
+    - _find_module_shim
+    - _fix_up_module
+    - _get_cached
+    - _get_sourcefile
+    - _get_supported_file_loaders
+    - _install
+    - _make_relax_case
+    - _pack_uint32
+    - _path_is_mode_type
+    - _path_isabs
+    - _path_isdir
+    - _path_isfile
+    - _path_join
+    - _path_split
+    - _path_stat
+    - _relax_case
+    - _setup
+    - _unpack_uint16
+    - _unpack_uint32
+    - _validate_hash_pyc
+    - _validate_timestamp_pyc
+    - _write_atomic
+    - cache_from_source
+    - decode_source
+    - source_from_cache
+    - spec_from_file_location
+
+Module: _io
+  No functions imported from this module.
+
+Module: marshal
+  No functions imported from this module.
+
+Module: nt
+  No functions imported from this module.
+
+Module: _thread
+  No functions imported from this module.
+
+Module: _weakref
+  No functions imported from this module.
+
+Module: winreg
+  No functions imported from this module.
+
+Module: time
+  No functions imported from this module.
+
+Module: zipimport
+  Functions:
+    - _compile_source
+    - _eq_mtime
+    - _get_data
+    - _get_decompress_func
+    - _get_module_code
+    - _get_module_info
+    - _get_module_path
+    - _get_mtime_and_size_of_source
+    - _get_pyc_source
+    - _is_dir
+    - _normalize_line_endings
+    - _parse_dostime
+    - _read_directory
+    - _unmarshal_code
+    - _unpack_uint16
+    - _unpack_uint32
+
+Module: _codecs
+  No functions imported from this module.
+
+Module: codecs
+  Functions:
+    - EncodedFile
+    - getdecoder
+    - getencoder
+    - getincrementaldecoder
+    - getincrementalencoder
+    - getreader
+    - getwriter
+    - iterdecode
+    - iterencode
+    - make_encoding_map
+    - make_identity_dict
+    - open
+
+Module: encodings.aliases
+  No functions imported from this module.
+
+Module: encodings
+  Functions:
+    - _alias_mbcs
+    - normalize_encoding
+    - search_function
+
+Module: encodings.utf_8
+  Functions:
+    - decode
+    - getregentry
+
+Module: encodings.cp1252
+  Functions:
+    - getregentry
+
+Module: _signal
+  No functions imported from this module.
+
+Module: __main__
+  Functions:
+    - compute_flops
+    - davies_bouldin_score
+    - evaluate
+    - get_curr_time_stamp
+    - log_dependencies
+    - model_parameters
+    - print_error_message
+    - print_info_message
+    - print_log_message
+    - print_warning_message
+    - silhouette_score
+    - ssd
+
+Module: encodings.latin_1
+  Functions:
+    - getregentry
+
+Module: _abc
+  No functions imported from this module.
+
+Module: abc
+  Functions:
+    - abstractmethod
+
+Module: io
+  No functions imported from this module.
+
+Module: _stat
+  No functions imported from this module.
+
+Module: stat
+  No functions imported from this module.
+
+Module: _collections_abc
+  Functions:
+    - _check_methods
+    - abstractmethod
+
+Module: genericpath
+  Functions:
+    - _check_arg_types
+    - _splitext
+    - commonprefix
+    - exists
+    - getatime
+    - getctime
+    - getmtime
+    - getsize
+    - isdir
+    - isfile
+    - samefile
+    - sameopenfile
+    - samestat
+
+Module: ntpath
+  Functions:
+    - _abspath_fallback
+    - _get_bothseps
+    - _getfinalpathname_nonstrict
+    - _readlink_deep
+    - abspath
+    - basename
+    - commonpath
+    - commonprefix
+    - dirname
+    - exists
+    - expanduser
+    - expandvars
+    - getatime
+    - getctime
+    - getmtime
+    - getsize
+    - isabs
+    - isdir
+    - isfile
+    - islink
+    - ismount
+    - join
+    - lexists
+    - normcase
+    - normpath
+    - realpath
+    - relpath
+    - samefile
+    - sameopenfile
+    - samestat
+    - split
+    - splitdrive
+    - splitext
+
+Module: os.path
+  Functions:
+    - _abspath_fallback
+    - _get_bothseps
+    - _getfinalpathname_nonstrict
+    - _readlink_deep
+    - abspath
+    - basename
+    - commonpath
+    - commonprefix
+    - dirname
+    - exists
+    - expanduser
+    - expandvars
+    - getatime
+    - getctime
+    - getmtime
+    - getsize
+    - isabs
+    - isdir
+    - isfile
+    - islink
+    - ismount
+    - join
+    - lexists
+    - normcase
+    - normpath
+    - realpath
+    - relpath
+    - samefile
+    - sameopenfile
+    - samestat
+    - split
+    - splitdrive
+    - splitext
+
+Module: os
+  Functions:
+    - _check_methods
+    - _execvpe
+    - _exists
+    - _fspath
+    - _get_exports_list
+    - _unsetenv
+    - add_dll_directory
+    - execl
+    - execle
+    - execlp
+    - execlpe
+    - execvp
+    - execvpe
+    - fdopen
+    - fsdecode
+    - fsencode
+    - get_exec_path
+    - getenv
+    - makedirs
+    - popen
+    - removedirs
+    - renames
+    - spawnl
+    - spawnle
+    - walk
+
+Module: _sitebuiltins
+  No functions imported from this module.
+
+Module: _locale
+  No functions imported from this module.
+
+Module: _bootlocale
+  Functions:
+    - getpreferredencoding
+
+Module: types
+  Functions:
+    - _calculate_meta
+    - _cell_factory
+    - coroutine
+    - new_class
+    - prepare_class
+    - resolve_bases
+
+Module: importlib._bootstrap
+  Functions:
+    - __import__
+    - _builtin_from_name
+    - _calc___package__
+    - _call_with_frames_removed
+    - _exec
+    - _find_and_load
+    - _find_and_load_unlocked
+    - _find_spec
+    - _find_spec_legacy
+    - _gcd_import
+    - _get_module_lock
+    - _handle_fromlist
+    - _init_module_attrs
+    - _install
+    - _install_external_importers
+    - _load
+    - _load_backward_compatible
+    - _load_module_shim
+    - _load_unlocked
+    - _lock_unlock_module
+    - _module_repr
+    - _module_repr_from_spec
+    - _new_module
+    - _requires_builtin
+    - _requires_frozen
+    - _resolve_name
+    - _sanity_check
+    - _setup
+    - _spec_from_module
+    - _verbose_message
+    - _wrap
+    - module_from_spec
+    - spec_from_loader
+
+Module: importlib._bootstrap_external
+  Functions:
+    - _calc_mode
+    - _check_name
+    - _classify_pyc
+    - _code_to_hash_pyc
+    - _code_to_timestamp_pyc
+    - _compile_bytecode
+    - _find_module_shim
+    - _fix_up_module
+    - _get_cached
+    - _get_sourcefile
+    - _get_supported_file_loaders
+    - _install
+    - _make_relax_case
+    - _pack_uint32
+    - _path_is_mode_type
+    - _path_isabs
+    - _path_isdir
+    - _path_isfile
+    - _path_join
+    - _path_split
+    - _path_stat
+    - _relax_case
+    - _setup
+    - _unpack_uint16
+    - _unpack_uint32
+    - _validate_hash_pyc
+    - _validate_timestamp_pyc
+    - _write_atomic
+    - cache_from_source
+    - decode_source
+    - source_from_cache
+    - spec_from_file_location
+
+Module: warnings
+  Functions:
+    - _add_filter
+    - _formatwarning_orig
+    - _formatwarnmsg
+    - _formatwarnmsg_impl
+    - _getaction
+    - _getcategory
+    - _is_internal_frame
+    - _next_external_frame
+    - _processoptions
+    - _setoption
+    - _showwarning_orig
+    - _showwarnmsg
+    - _showwarnmsg_impl
+    - _warn_unawaited_coroutine
+    - filterwarnings
+    - formatwarning
+    - resetwarnings
+    - showwarning
+    - simplefilter
+
+Module: importlib
+  Functions:
+    - __import__
+    - _pack_uint32
+    - _unpack_uint32
+    - find_loader
+    - import_module
+    - invalidate_caches
+    - reload
+
+Module: importlib.machinery
+  Functions:
+    - all_suffixes
+
+Module: importlib.abc
+  Functions:
+    - _register
+
+Module: _operator
+  No functions imported from this module.
+
+Module: operator
+  No functions imported from this module.
+
+Module: keyword
+  No functions imported from this module.
+
+Module: _heapq
+  No functions imported from this module.
+
+Module: heapq
+  Functions:
+    - _siftdown
+    - _siftdown_max
+    - _siftup
+    - _siftup_max
+    - merge
+    - nlargest
+    - nsmallest
+
+Module: itertools
+  No functions imported from this module.
+
+Module: reprlib
+  Functions:
+    - _possibly_sorted
+    - recursive_repr
+
+Module: _collections
+  No functions imported from this module.
+
+Module: collections
+  Functions:
+    - __getattr__
+    - _recursive_repr
+    - namedtuple
+
+Module: _functools
+  No functions imported from this module.
+
+Module: functools
+  Functions:
+    - _c3_merge
+    - _c3_mro
+    - _compose_mro
+    - _find_impl
+    - _ge_from_gt
+    - _ge_from_le
+    - _ge_from_lt
+    - _gt_from_ge
+    - _gt_from_le
+    - _gt_from_lt
+    - _le_from_ge
+    - _le_from_gt
+    - _le_from_lt
+    - _lt_from_ge
+    - _lt_from_gt
+    - _lt_from_le
+    - _make_key
+    - _unwrap_partial
+    - lru_cache
+    - namedtuple
+    - recursive_repr
+    - singledispatch
+    - total_ordering
+    - update_wrapper
+    - wraps
+
+Module: contextlib
+  Functions:
+    - asynccontextmanager
+    - contextmanager
+    - wraps
+
+Module: importlib.util
+  Functions:
+    - _find_spec
+    - _find_spec_from_path
+    - _module_to_load
+    - _resolve_name
+    - cache_from_source
+    - contextmanager
+    - decode_source
+    - find_spec
+    - module_for_loader
+    - module_from_spec
+    - resolve_name
+    - set_loader
+    - set_package
+    - source_from_cache
+    - source_hash
+    - spec_from_file_location
+    - spec_from_loader
+
+Module: google
+  No functions imported from this module.
+
+Module: mpl_toolkits
+  No functions imported from this module.
+
+Module: pywin32_system32
+  No functions imported from this module.
+
+Module: pywin32_bootstrap
+  No functions imported from this module.
+
+Module: site
+  Functions:
+    - _get_path
+    - _getuserbase
+    - _init_pathinfo
+    - _script
+    - abs_paths
+    - addpackage
+    - addsitedir
+    - addsitepackages
+    - addusersitepackages
+    - check_enableusersite
+    - enablerlcompleter
+    - execsitecustomize
+    - execusercustomize
+    - getsitepackages
+    - getuserbase
+    - getusersitepackages
+    - main
+    - makepath
+    - removeduppaths
+    - setcopyright
+    - sethelper
+    - setquit
+    - venv
+
+Module: _opcode
+  No functions imported from this module.
+
+Module: opcode
+  No functions imported from this module.
+
+Module: dis
+  Functions:
+    - _disassemble_bytes
+    - _disassemble_recursive
+    - _disassemble_str
+    - _format_code_info
+    - _get_code_object
+    - _get_const_info
+    - _get_instructions_bytes
+    - _get_name_info
+    - _test
+    - _try_compile
+    - _unpack_opargs
+    - code_info
+    - dis
+    - disassemble
+    - disco
+    - distb
+    - findlabels
+    - findlinestarts
+    - get_instructions
+    - pretty_flags
+    - show_code
+
+Module: collections.abc
+  No functions imported from this module.
+
+Module: enum
+  Functions:
+    - _decompose
+    - _high_bit
+    - _is_descriptor
+    - _is_dunder
+    - _is_sunder
+    - _make_class_unpicklable
+    - _power_of_two
+    - _reduce_ex_by_name
+    - unique
+
+Module: _sre
+  No functions imported from this module.
+
+Module: sre_constants
+  Functions:
+    - _makecodes
+
+Module: sre_parse
+  Functions:
+    - _class_escape
+    - _escape
+    - _parse
+    - _parse_flags
+    - _parse_sub
+    - _uniq
+    - expand_template
+    - fix_flags
+    - parse
+    - parse_template
+
+Module: sre_compile
+  Functions:
+    - _bytes_to_codes
+    - _code
+    - _combine_flags
+    - _compile
+    - _compile_charset
+    - _compile_info
+    - _generate_overlap_table
+    - _get_charset_prefix
+    - _get_iscased
+    - _get_literal_prefix
+    - _hex_code
+    - _mk_bitmap
+    - _optimize_charset
+    - _simple
+    - compile
+    - dis
+    - isstring
+
+Module: copyreg
+  Functions:
+    - __newobj__
+    - __newobj_ex__
+    - _reconstructor
+    - _reduce_ex
+    - _slotnames
+    - add_extension
+    - clear_extension_cache
+    - constructor
+    - pickle
+    - pickle_complex
+    - remove_extension
+
+Module: re
+  Functions:
+    - _compile
+    - _expand
+    - _pickle
+    - _subx
+    - compile
+    - escape
+    - findall
+    - finditer
+    - fullmatch
+    - match
+    - purge
+    - search
+    - split
+    - sub
+    - subn
+    - template
+
+Module: token
+  Functions:
+    - ISEOF
+    - ISNONTERMINAL
+    - ISTERMINAL
+
+Module: tokenize
+  Functions:
+    - ISEOF
+    - ISNONTERMINAL
+    - ISTERMINAL
+    - _all_string_prefixes
+    - _compile
+    - _get_normal_name
+    - _tokenize
+    - any
+    - detect_encoding
+    - generate_tokens
+    - group
+    - main
+    - maybe
+    - open
+    - tokenize
+    - untokenize
+
+Module: linecache
+  Functions:
+    - checkcache
+    - clearcache
+    - getline
+    - getlines
+    - lazycache
+    - updatecache
+
+Module: inspect
+  Functions:
+    - _check_class
+    - _check_instance
+    - _findclass
+    - _finddoc
+    - _has_code_flag
+    - _is_type
+    - _main
+    - _missing_arguments
+    - _shadowed_dict
+    - _signature_bound_method
+    - _signature_from_builtin
+    - _signature_from_callable
+    - _signature_from_function
+    - _signature_fromstr
+    - _signature_get_bound_param
+    - _signature_get_partial
+    - _signature_get_user_defined_method
+    - _signature_is_builtin
+    - _signature_is_functionlike
+    - _signature_strip_non_python_syntax
+    - _static_getmro
+    - _too_many
+    - classify_class_attrs
+    - cleandoc
+    - currentframe
+    - findsource
+    - formatannotation
+    - formatannotationrelativeto
+    - formatargspec
+    - formatargvalues
+    - getabsfile
+    - getargs
+    - getargspec
+    - getargvalues
+    - getattr_static
+    - getblock
+    - getcallargs
+    - getclasstree
+    - getclosurevars
+    - getcomments
+    - getcoroutinelocals
+    - getcoroutinestate
+    - getdoc
+    - getfile
+    - getframeinfo
+    - getfullargspec
+    - getgeneratorlocals
+    - getgeneratorstate
+    - getinnerframes
+    - getlineno
+    - getmembers
+    - getmodule
+    - getmodulename
+    - getmro
+    - getouterframes
+    - getsource
+    - getsourcefile
+    - getsourcelines
+    - indentsize
+    - isabstract
+    - isasyncgen
+    - isasyncgenfunction
+    - isawaitable
+    - isbuiltin
+    - isclass
+    - iscode
+    - iscoroutine
+    - iscoroutinefunction
+    - isdatadescriptor
+    - isframe
+    - isfunction
+    - isgenerator
+    - isgeneratorfunction
+    - isgetsetdescriptor
+    - ismemberdescriptor
+    - ismethod
+    - ismethoddescriptor
+    - ismodule
+    - isroutine
+    - istraceback
+    - namedtuple
+    - signature
+    - stack
+    - trace
+    - unwrap
+    - walktree
+
+Module: _struct
+  No functions imported from this module.
+
+Module: struct
+  No functions imported from this module.
+
+Module: _compat_pickle
+  No functions imported from this module.
+
+Module: _pickle
+  No functions imported from this module.
+
+Module: pickle
+  Functions:
+    - _dump
+    - _dumps
+    - _getattribute
+    - _load
+    - _loads
+    - _test
+    - decode_long
+    - encode_long
+    - whichmodule
+
+Module: atexit
+  No functions imported from this module.
+
+Module: distutils
+  No functions imported from this module.
+
+Module: distutils.version
+  No functions imported from this module.
+
+Module: locale
+  Functions:
+    - _append_modifier
+    - _build_localename
+    - _format
+    - _group
+    - _grouping_intervals
+    - _parse_localename
+    - _print_locale
+    - _replace_encoding
+    - _strcoll
+    - _strip_padding
+    - _strxfrm
+    - _test
+    - atof
+    - atoi
+    - currency
+    - delocalize
+    - format
+    - format_string
+    - getdefaultlocale
+    - getlocale
+    - getpreferredencoding
+    - localeconv
+    - normalize
+    - resetlocale
+    - setlocale
+    - str
+
+Module: traceback
+  Functions:
+    - _format_final_exc_line
+    - _some_str
+    - clear_frames
+    - extract_stack
+    - extract_tb
+    - format_exc
+    - format_exception
+    - format_exception_only
+    - format_list
+    - format_stack
+    - format_tb
+    - print_exc
+    - print_exception
+    - print_last
+    - print_list
+    - print_stack
+    - print_tb
+    - walk_stack
+    - walk_tb
+
+Module: _weakrefset
+  No functions imported from this module.
+
+Module: weakref
+  No functions imported from this module.
+
+Module: _string
+  No functions imported from this module.
+
+Module: string
+  Functions:
+    - capwords
+
+Module: threading
+  Functions:
+    - RLock
+    - _after_fork
+    - _enumerate
+    - _make_invoke_excepthook
+    - _newname
+    - _shutdown
+    - activeCount
+    - active_count
+    - currentThread
+    - current_thread
+    - enumerate
+    - main_thread
+    - setprofile
+    - settrace
+
+Module: logging
+  Functions:
+    - _acquireLock
+    - _addHandlerRef
+    - _checkLevel
+    - _register_at_fork_reinit_lock
+    - _releaseLock
+    - _removeHandlerRef
+    - _showwarning
+    - addLevelName
+    - basicConfig
+    - captureWarnings
+    - critical
+    - currentframe
+    - debug
+    - disable
+    - error
+    - exception
+    - fatal
+    - getLevelName
+    - getLogRecordFactory
+    - getLogger
+    - getLoggerClass
+    - info
+    - log
+    - makeLogRecord
+    - setLogRecordFactory
+    - setLoggerClass
+    - shutdown
+    - warn
+    - warning
+
+Module: posixpath
+  Functions:
+    - _get_sep
+    - _joinrealpath
+    - abspath
+    - basename
+    - commonpath
+    - commonprefix
+    - dirname
+    - exists
+    - expanduser
+    - expandvars
+    - getatime
+    - getctime
+    - getmtime
+    - getsize
+    - isabs
+    - isdir
+    - isfile
+    - islink
+    - ismount
+    - join
+    - lexists
+    - normcase
+    - normpath
+    - realpath
+    - relpath
+    - samefile
+    - sameopenfile
+    - samestat
+    - split
+    - splitdrive
+    - splitext
+
+Module: fnmatch
+  Functions:
+    - filter
+    - fnmatch
+    - fnmatchcase
+    - translate
+
+Module: errno
+  No functions imported from this module.
+
+Module: urllib
+  No functions imported from this module.
+
+Module: urllib.parse
+  Functions:
+    - _checknetloc
+    - _coerce_args
+    - _decode_args
+    - _encode_result
+    - _noop
+    - _splitattr
+    - _splithost
+    - _splitnetloc
+    - _splitnport
+    - _splitparams
+    - _splitpasswd
+    - _splitport
+    - _splitquery
+    - _splittag
+    - _splittype
+    - _splituser
+    - _splitvalue
+    - _to_bytes
+    - clear_cache
+    - namedtuple
+    - parse_qs
+    - parse_qsl
+    - quote
+    - quote_from_bytes
+    - quote_plus
+    - splitattr
+    - splithost
+    - splitnport
+    - splitpasswd
+    - splitport
+    - splitquery
+    - splittag
+    - splittype
+    - splituser
+    - splitvalue
+    - to_bytes
+    - unquote
+    - unquote_plus
+    - unquote_to_bytes
+    - unwrap
+    - urldefrag
+    - urlencode
+    - urljoin
+    - urlparse
+    - urlsplit
+    - urlunparse
+    - urlunsplit
+
+Module: pathlib
+  Functions:
+    - _ignore_error
+    - _is_wildcard_pattern
+    - urlquote_from_bytes
+
+Module: pprint
+  Functions:
+    - _perfcheck
+    - _recursion
+    - _safe_repr
+    - _safe_tuple
+    - _wrap_bytes_repr
+    - isreadable
+    - isrecursive
+    - pformat
+    - pp
+    - pprint
+    - saferepr
+
+Module: zlib
+  No functions imported from this module.
+
+Module: _compression
+  No functions imported from this module.
+
+Module: _bz2
+  No functions imported from this module.
+
+Module: bz2
+  Functions:
+    - RLock
+    - compress
+    - decompress
+    - open
+
+Module: _lzma
+  No functions imported from this module.
+
+Module: lzma
+  Functions:
+    - compress
+    - decompress
+    - open
+
+Module: shutil
+  Functions:
+    - _access_check
+    - _basename
+    - _check_unpack_options
+    - _copyfileobj_readinto
+    - _copytree
+    - _copyxattr
+    - _destinsrc
+    - _ensure_directory
+    - _fastcopy_fcopyfile
+    - _fastcopy_sendfile
+    - _find_unpack_format
+    - _get_gid
+    - _get_uid
+    - _islink
+    - _make_tarball
+    - _make_zipfile
+    - _rmtree_isdir
+    - _rmtree_islink
+    - _rmtree_safe_fd
+    - _rmtree_unsafe
+    - _samefile
+    - _stat
+    - _unpack_tarfile
+    - _unpack_zipfile
+    - chown
+    - copy
+    - copy2
+    - copyfile
+    - copyfileobj
+    - copymode
+    - copystat
+    - copytree
+    - disk_usage
+    - get_archive_formats
+    - get_terminal_size
+    - get_unpack_formats
+    - ignore_patterns
+    - make_archive
+    - move
+    - register_archive_format
+    - register_unpack_format
+    - rmtree
+    - unpack_archive
+    - unregister_archive_format
+    - unregister_unpack_format
+    - which
+
+Module: signal
+  Functions:
+    - _enum_to_int
+    - _int_to_enum
+    - getsignal
+    - signal
+    - valid_signals
+
+Module: msvcrt
+  No functions imported from this module.
+
+Module: _winapi
+  No functions imported from this module.
+
+Module: subprocess
+  Functions:
+    - _args_from_interpreter_flags
+    - _cleanup
+    - _optim_args_from_interpreter_flags
+    - _use_posix_spawn
+    - call
+    - check_call
+    - check_output
+    - getoutput
+    - getstatusoutput
+    - list2cmdline
+    - run
+
+Module: math
+  No functions imported from this module.
+
+Module: _bisect
+  No functions imported from this module.
+
+Module: bisect
+  No functions imported from this module.
+
+Module: _sha512
+  No functions imported from this module.
+
+Module: _random
+  No functions imported from this module.
+
+Module: random
+  Functions:
+    - _test
+    - _test_generator
+
+Module: tempfile
+  Functions:
+    - NamedTemporaryFile
+    - TemporaryFile
+    - _candidate_tempdir_list
+    - _exists
+    - _get_candidate_names
+    - _get_default_tempdir
+    - _infer_return_type
+    - _mkstemp_inner
+    - _sanitize_params
+    - gettempdir
+    - gettempdirb
+    - gettempprefix
+    - gettempprefixb
+    - mkdtemp
+    - mkstemp
+    - mktemp
+
+Module: matplotlib._api.deprecation
+  Functions:
+    - _generate_deprecation_warning
+    - delete_parameter
+    - deprecate_method_override
+    - deprecated
+    - make_keyword_only
+    - rename_parameter
+    - suppress_matplotlib_deprecation_warning
+    - warn_deprecated
+
+Module: matplotlib._api
+  Functions:
+    - check_getitem
+    - check_in_list
+    - check_isinstance
+    - check_shape
+    - delete_parameter
+    - deprecate_method_override
+    - deprecated
+    - make_keyword_only
+    - rename_parameter
+    - suppress_matplotlib_deprecation_warning
+    - warn_deprecated
+    - warn_external
+
+Module: gzip
+  Functions:
+    - compress
+    - decompress
+    - main
+    - open
+    - write32u
+
+Module: shlex
+  Functions:
+    - _print_tokens
+    - join
+    - quote
+    - split
+
+Module: numpy._globals
+  No functions imported from this module.
+
+Module: numpy.__config__
+  Functions:
+    - get_info
+    - show
+
+Module: numpy.version
+  No functions imported from this module.
+
+Module: _ctypes
+  No functions imported from this module.
+
+Module: ctypes._endian
+  Functions:
+    - ARRAY
+    - CFUNCTYPE
+    - DllCanUnloadNow
+    - DllGetClassObject
+    - PYFUNCTYPE
+    - SetPointerType
+    - WINFUNCTYPE
+    - WinError
+    - _other_endian
+    - c_buffer
+    - cast
+    - create_string_buffer
+    - create_unicode_buffer
+    - string_at
+    - wstring_at
+
+Module: ctypes
+  Functions:
+    - ARRAY
+    - CFUNCTYPE
+    - DllCanUnloadNow
+    - DllGetClassObject
+    - PYFUNCTYPE
+    - SetPointerType
+    - WINFUNCTYPE
+    - WinError
+    - _check_size
+    - _reset_cache
+    - c_buffer
+    - cast
+    - create_string_buffer
+    - create_unicode_buffer
+    - string_at
+    - wstring_at
+
+Module: mkl._mklinit
+  No functions imported from this module.
+
+Module: cython_runtime
+  No functions imported from this module.
+
+Module: numbers
+  Functions:
+    - abstractmethod
+
+Module: mkl._py_mkl_service
+  No functions imported from this module.
+
+Module: mkl
+  No functions imported from this module.
+
+Module: numpy._distributor_init
+  No functions imported from this module.
+
+Module: textwrap
+  Functions:
+    - dedent
+    - fill
+    - indent
+    - shorten
+    - wrap
+
+Module: _datetime
+  No functions imported from this module.
+
+Module: datetime
+  No functions imported from this module.
+
+Module: numpy.core._multiarray_umath
+  No functions imported from this module.
+
+Module: numpy.compat._inspect
+  Functions:
+    - formatargspec
+    - formatargvalues
+    - getargs
+    - getargspec
+    - getargvalues
+    - iscode
+    - isfunction
+    - ismethod
+    - joinseq
+    - strseq
+
+Module: numpy.compat.py3k
+  Functions:
+    - asbytes
+    - asbytes_nested
+    - asstr
+    - asunicode
+    - asunicode_nested
+    - getexception
+    - is_pathlib_path
+    - isfileobj
+    - npy_load_module
+    - open_latin1
+    - sixu
+
+Module: numpy.compat
+  Functions:
+    - asbytes
+    - asbytes_nested
+    - asstr
+    - asunicode
+    - asunicode_nested
+    - formatargspec
+    - getargspec
+    - getexception
+    - is_pathlib_path
+    - isfileobj
+    - npy_load_module
+    - open_latin1
+    - sixu
+
+Module: numpy.core.overrides
+  Functions:
+    - array_function_dispatch
+    - array_function_from_dispatcher
+    - getargspec
+    - set_module
+    - verify_matching_signatures
+
+Module: numpy.core.multiarray
+  Functions:
+    - bincount
+    - busday_count
+    - busday_offset
+    - can_cast
+    - concatenate
+    - copyto
+    - datetime_as_string
+    - dot
+    - empty_like
+    - inner
+    - is_busday
+    - lexsort
+    - may_share_memory
+    - min_scalar_type
+    - packbits
+    - putmask
+    - ravel_multi_index
+    - result_type
+    - shares_memory
+    - unpackbits
+    - unravel_index
+    - vdot
+    - where
+
+Module: numpy.core.umath
+  No functions imported from this module.
+
+Module: numpy.core._string_helpers
+  Functions:
+    - english_capitalize
+    - english_lower
+    - english_upper
+
+Module: numpy.core._dtype
+  Functions:
+    - __repr__
+    - __str__
+    - _byte_order_str
+    - _construction_repr
+    - _datetime_metadata_str
+    - _is_packed
+    - _isunsized
+    - _kind_name
+    - _name_get
+    - _name_includes_bit_suffix
+    - _scalar_str
+    - _struct_dict_str
+    - _struct_list_str
+    - _struct_str
+    - _subarray_str
+    - _unpack_field
+
+Module: numpy.core._type_aliases
+  Functions:
+    - _add_aliases
+    - _add_array_type
+    - _add_integer_aliases
+    - _add_types
+    - _bits_of
+    - _kind_name
+    - _set_array_types
+    - _set_up_aliases
+    - bitname
+    - english_capitalize
+    - english_lower
+
+Module: numpy.core.numerictypes
+  Functions:
+    - _bits_of
+    - _can_coerce_all
+    - _construct_lookups
+    - _find_common_coerce
+    - _kind_name
+    - _register_types
+    - bitname
+    - busday_count
+    - busday_offset
+    - datetime_as_string
+    - english_capitalize
+    - english_lower
+    - english_upper
+    - find_common_type
+    - is_busday
+    - issctype
+    - issubclass_
+    - issubdtype
+    - issubsctype
+    - maximum_sctype
+    - obj2sctype
+    - sctype2char
+    - set_module
+
+Module: numpy.core._asarray
+  Functions:
+    - asanyarray
+    - asarray
+    - ascontiguousarray
+    - asfortranarray
+    - require
+    - set_module
+
+Module: numpy.core._exceptions
+  Functions:
+    - _display_as_base
+    - _unpack_tuple
+    - set_module
+
+Module: numpy.core._methods
+  Functions:
+    - _all
+    - _amax
+    - _amin
+    - _any
+    - _clip
+    - _clip_dep_invoke_with_casting
+    - _clip_dep_is_byte_swapped
+    - _clip_dep_is_scalar_nan
+    - _count_reduce_items
+    - _dump
+    - _dumps
+    - _mean
+    - _prod
+    - _ptp
+    - _std
+    - _sum
+    - _var
+    - asanyarray
+
+Module: numpy.core.fromnumeric
+  Functions:
+    - _alen_dispathcer
+    - _all_dispatcher
+    - _amax_dispatcher
+    - _amin_dispatcher
+    - _any_dispatcher
+    - _argmax_dispatcher
+    - _argmin_dispatcher
+    - _argpartition_dispatcher
+    - _argsort_dispatcher
+    - _around_dispatcher
+    - _choose_dispatcher
+    - _clip_dispatcher
+    - _compress_dispatcher
+    - _cumprod_dispatcher
+    - _cumsum_dispatcher
+    - _diagonal_dispatcher
+    - _dt_
+    - _mean_dispatcher
+    - _ndim_dispatcher
+    - _nonzero_dispatcher
+    - _partition_dispatcher
+    - _prod_dispatcher
+    - _ptp_dispatcher
+    - _put_dispatcher
+    - _ravel_dispatcher
+    - _repeat_dispatcher
+    - _reshape_dispatcher
+    - _resize_dispatcher
+    - _searchsorted_dispatcher
+    - _shape_dispatcher
+    - _size_dispatcher
+    - _sort_dispatcher
+    - _squeeze_dispatcher
+    - _std_dispatcher
+    - _sum_dispatcher
+    - _swapaxes_dispatcher
+    - _take_dispatcher
+    - _trace_dispatcher
+    - _transpose_dispatcher
+    - _var_dispatcher
+    - _wrapfunc
+    - _wrapit
+    - _wrapreduction
+    - alen
+    - all
+    - alltrue
+    - amax
+    - amin
+    - any
+    - argmax
+    - argmin
+    - argpartition
+    - argsort
+    - around
+    - asanyarray
+    - asarray
+    - choose
+    - clip
+    - compress
+    - concatenate
+    - cumprod
+    - cumproduct
+    - cumsum
+    - diagonal
+    - mean
+    - ndim
+    - nonzero
+    - partition
+    - prod
+    - product
+    - ptp
+    - put
+    - ravel
+    - repeat
+    - reshape
+    - resize
+    - round_
+    - searchsorted
+    - shape
+    - size
+    - sometrue
+    - sort
+    - squeeze
+    - std
+    - sum
+    - swapaxes
+    - take
+    - trace
+    - transpose
+    - var
+
+Module: numpy.core.shape_base
+  Functions:
+    - _accumulate
+    - _arrays_for_stack_dispatcher
+    - _atleast_1d_dispatcher
+    - _atleast_2d_dispatcher
+    - _atleast_3d_dispatcher
+    - _atleast_nd
+    - _block
+    - _block_check_depths_match
+    - _block_concatenate
+    - _block_dispatcher
+    - _block_format_index
+    - _block_info_recursion
+    - _block_setup
+    - _block_slicing
+    - _concatenate_shapes
+    - _ndim
+    - _size
+    - _stack_dispatcher
+    - _vhstack_dispatcher
+    - asanyarray
+    - atleast_1d
+    - atleast_2d
+    - atleast_3d
+    - block
+    - hstack
+    - stack
+    - vstack
+
+Module: numpy.core._ufunc_config
+  Functions:
+    - _setdef
+    - getbufsize
+    - geterr
+    - geterrcall
+    - set_module
+    - setbufsize
+    - seterr
+    - seterrcall
+
+Module: numpy.core.arrayprint
+  Functions:
+    - _array2string
+    - _array2string_dispatcher
+    - _array2string_impl
+    - _array_repr_dispatcher
+    - _array_repr_implementation
+    - _array_str_dispatcher
+    - _array_str_implementation
+    - _extendLine
+    - _formatArray
+    - _get_format_function
+    - _get_formatdict
+    - _guarded_repr_or_str
+    - _leading_trailing
+    - _make_options_dict
+    - _none_or_positive_arg
+    - _object_format
+    - _recursive_guard
+    - _void_scalar_repr
+    - any
+    - array2string
+    - array_function_dispatch
+    - array_repr
+    - array_str
+    - asarray
+    - concatenate
+    - datetime_as_string
+    - dtype_is_implied
+    - dtype_short_repr
+    - format_float_positional
+    - format_float_scientific
+    - get_printoptions
+    - printoptions
+    - repr_format
+    - set_module
+    - set_printoptions
+    - set_string_function
+    - str_format
+
+Module: numpy.core.numeric
+  Functions:
+    - _allclose_dispatcher
+    - _argwhere_dispatcher
+    - _array_equal_dispatcher
+    - _array_equiv_dispatcher
+    - _convolve_dispatcher
+    - _correlate_dispatcher
+    - _count_nonzero_dispatcher
+    - _cross_dispatcher
+    - _flatnonzero_dispatcher
+    - _frombuffer
+    - _full_like_dispatcher
+    - _isclose_dispatcher
+    - _maketup
+    - _mode_from_name
+    - _move_axis_to_0
+    - _moveaxis_dispatcher
+    - _ones_like_dispatcher
+    - _outer_dispatcher
+    - _roll_dispatcher
+    - _rollaxis_dispatcher
+    - _tensordot_dispatcher
+    - _zeros_like_dispatcher
+    - alen
+    - all
+    - allclose
+    - alltrue
+    - amax
+    - amin
+    - any
+    - argmax
+    - argmin
+    - argpartition
+    - argsort
+    - argwhere
+    - around
+    - array2string
+    - array_equal
+    - array_equiv
+    - array_repr
+    - array_str
+    - asanyarray
+    - asarray
+    - ascontiguousarray
+    - asfortranarray
+    - base_repr
+    - binary_repr
+    - busday_count
+    - busday_offset
+    - can_cast
+    - choose
+    - clip
+    - compress
+    - concatenate
+    - convolve
+    - copyto
+    - correlate
+    - count_nonzero
+    - cross
+    - cumprod
+    - cumproduct
+    - cumsum
+    - datetime_as_string
+    - diagonal
+    - dot
+    - empty_like
+    - extend_all
+    - find_common_type
+    - flatnonzero
+    - format_float_positional
+    - format_float_scientific
+    - fromfunction
+    - full
+    - full_like
+    - get_printoptions
+    - getbufsize
+    - geterr
+    - geterrcall
+    - identity
+    - indices
+    - inner
+    - is_busday
+    - isclose
+    - isfortran
+    - isscalar
+    - issctype
+    - issubdtype
+    - lexsort
+    - maximum_sctype
+    - may_share_memory
+    - mean
+    - min_scalar_type
+    - moveaxis
+    - ndim
+    - nonzero
+    - normalize_axis_tuple
+    - obj2sctype
+    - ones
+    - ones_like
+    - outer
+    - partition
+    - printoptions
+    - prod
+    - product
+    - ptp
+    - put
+    - putmask
+    - ravel
+    - repeat
+    - require
+    - reshape
+    - resize
+    - result_type
+    - roll
+    - rollaxis
+    - round_
+    - sctype2char
+    - searchsorted
+    - set_module
+    - set_printoptions
+    - set_string_function
+    - setbufsize
+    - seterr
+    - seterrcall
+    - shape
+    - shares_memory
+    - size
+    - sometrue
+    - sort
+    - squeeze
+    - std
+    - sum
+    - swapaxes
+    - take
+    - tensordot
+    - trace
+    - transpose
+    - var
+    - vdot
+    - where
+    - zeros_like
+
+Module: numpy.core.defchararray
+  Functions:
+    - _binary_op_dispatcher
+    - _center_dispatcher
+    - _clean_args
+    - _code_dispatcher
+    - _count_dispatcher
+    - _endswith_dispatcher
+    - _expandtabs_dispatcher
+    - _get_num_chars
+    - _join_dispatcher
+    - _just_dispatcher
+    - _mod_dispatcher
+    - _multiply_dispatcher
+    - _partition_dispatcher
+    - _replace_dispatcher
+    - _split_dispatcher
+    - _splitlines_dispatcher
+    - _startswith_dispatcher
+    - _strip_dispatcher
+    - _to_string_or_unicode_array
+    - _translate_dispatcher
+    - _unary_op_dispatcher
+    - _use_unicode
+    - _zfill_dispatcher
+    - add
+    - array
+    - asarray
+    - asbytes
+    - capitalize
+    - center
+    - count
+    - decode
+    - encode
+    - endswith
+    - equal
+    - expandtabs
+    - find
+    - greater
+    - greater_equal
+    - index
+    - isalnum
+    - isalpha
+    - isdecimal
+    - isdigit
+    - islower
+    - isnumeric
+    - isspace
+    - istitle
+    - isupper
+    - join
+    - less
+    - less_equal
+    - ljust
+    - lower
+    - lstrip
+    - mod
+    - multiply
+    - not_equal
+    - partition
+    - replace
+    - rfind
+    - rindex
+    - rjust
+    - rpartition
+    - rsplit
+    - rstrip
+    - set_module
+    - split
+    - splitlines
+    - startswith
+    - str_len
+    - strip
+    - swapcase
+    - title
+    - translate
+    - upper
+    - zfill
+
+Module: numpy.core.records
+  Functions:
+    - _deprecate_shape_0_as_None
+    - array
+    - find_duplicate
+    - fromarrays
+    - fromfile
+    - fromrecords
+    - fromstring
+    - get_printoptions
+    - get_remaining_size
+    - isfileobj
+    - set_module
+
+Module: numpy.core.memmap
+  Functions:
+    - is_pathlib_path
+    - set_module
+
+Module: numpy.core.function_base
+  Functions:
+    - _add_docstring
+    - _geomspace_dispatcher
+    - _linspace_dispatcher
+    - _logspace_dispatcher
+    - _needs_add_docstring
+    - add_newdoc
+    - asanyarray
+    - geomspace
+    - linspace
+    - logspace
+    - ndim
+    - result_type
+
+Module: numpy.core.machar
+  Functions:
+    - any
+    - set_module
+
+Module: numpy.core.getlimits
+  Functions:
+    - _discovered_machar
+    - _fr0
+    - _fr1
+    - _get_machar
+    - _register_known_types
+    - _register_type
+    - set_module
+
+Module: numpy.core.einsumfunc
+  Functions:
+    - _can_dot
+    - _compute_size_by_dict
+    - _einsum_dispatcher
+    - _einsum_path_dispatcher
+    - _find_contraction
+    - _flop_count
+    - _greedy_path
+    - _optimal_path
+    - _parse_einsum_input
+    - _parse_possible_contraction
+    - _update_other_results
+    - array_function_dispatch
+    - asanyarray
+    - einsum
+    - einsum_path
+    - tensordot
+
+Module: numpy.core._multiarray_tests
+  No functions imported from this module.
+
+Module: numpy.core._add_newdocs
+  Functions:
+    - add_newdoc
+    - add_newdoc_for_scalar_type
+    - numeric_type_aliases
+
+Module: numpy.core._dtype_ctypes
+  Functions:
+    - _from_ctypes_array
+    - _from_ctypes_scalar
+    - _from_ctypes_structure
+    - _from_ctypes_union
+    - dtype_from_ctypes_type
+
+Module: _ast
+  No functions imported from this module.
+
+Module: ast
+  Functions:
+    - _getter
+    - _new
+    - _pad_whitespace
+    - _setter
+    - _splitlines_no_ff
+    - copy_location
+    - dump
+    - fix_missing_locations
+    - get_docstring
+    - get_source_segment
+    - increment_lineno
+    - iter_child_nodes
+    - iter_fields
+    - literal_eval
+    - parse
+    - walk
+
+Module: platform
+  Functions:
+    - _comparable_version
+    - _follow_symlinks
+    - _java_getprop
+    - _mac_ver_xml
+    - _node
+    - _norm_version
+    - _platform
+    - _sys_version
+    - _syscmd_file
+    - _syscmd_uname
+    - _syscmd_ver
+    - architecture
+    - java_ver
+    - libc_ver
+    - mac_ver
+    - machine
+    - node
+    - platform
+    - processor
+    - python_branch
+    - python_build
+    - python_compiler
+    - python_implementation
+    - python_revision
+    - python_version
+    - python_version_tuple
+    - release
+    - system
+    - system_alias
+    - uname
+    - version
+    - win32_edition
+    - win32_is_iot
+    - win32_ver
+
+Module: numpy.core._internal
+  Functions:
+    - __dtype_from_pep3118
+    - _add_trailing_padding
+    - _array_descr
+    - _commastring
+    - _copy_fields
+    - _dtype_from_pep3118
+    - _fix_names
+    - _gcd
+    - _getfield_is_safe
+    - _getintp_ctype
+    - _lcm
+    - _makenames_list
+    - _newnames
+    - _prod
+    - _reconstruct
+    - _ufunc_doc_signature_formatter
+    - _usefields
+    - _view_is_safe
+    - array_function_errmsg_formatter
+    - array_ufunc_errmsg_formatter
+    - npy_ctypes_check
+
+Module: numpy._pytesttester
+  Functions:
+    - _show_numpy_info
+
+Module: numpy.core
+  Functions:
+    - _ufunc_reconstruct
+    - alen
+    - all
+    - allclose
+    - alltrue
+    - amax
+    - amin
+    - any
+    - argmax
+    - argmin
+    - argpartition
+    - argsort
+    - argwhere
+    - around
+    - array2string
+    - array_equal
+    - array_equiv
+    - array_repr
+    - array_str
+    - asanyarray
+    - asarray
+    - ascontiguousarray
+    - asfortranarray
+    - atleast_1d
+    - atleast_2d
+    - atleast_3d
+    - base_repr
+    - binary_repr
+    - block
+    - busday_count
+    - busday_offset
+    - can_cast
+    - choose
+    - clip
+    - compress
+    - concatenate
+    - convolve
+    - copyto
+    - correlate
+    - count_nonzero
+    - cross
+    - cumprod
+    - cumproduct
+    - cumsum
+    - datetime_as_string
+    - diagonal
+    - dot
+    - einsum
+    - einsum_path
+    - empty_like
+    - find_common_type
+    - flatnonzero
+    - format_float_positional
+    - format_float_scientific
+    - fromfunction
+    - full
+    - full_like
+    - geomspace
+    - get_printoptions
+    - getbufsize
+    - geterr
+    - geterrcall
+    - hstack
+    - identity
+    - indices
+    - inner
+    - is_busday
+    - isclose
+    - isfortran
+    - isscalar
+    - issctype
+    - issubdtype
+    - lexsort
+    - linspace
+    - logspace
+    - max
+    - maximum_sctype
+    - may_share_memory
+    - mean
+    - min
+    - min_scalar_type
+    - moveaxis
+    - ndim
+    - nonzero
+    - obj2sctype
+    - ones
+    - ones_like
+    - outer
+    - partition
+    - printoptions
+    - prod
+    - product
+    - ptp
+    - put
+    - putmask
+    - ravel
+    - repeat
+    - require
+    - reshape
+    - resize
+    - result_type
+    - roll
+    - rollaxis
+    - round
+    - round_
+    - sctype2char
+    - searchsorted
+    - set_printoptions
+    - set_string_function
+    - setbufsize
+    - seterr
+    - seterrcall
+    - shape
+    - shares_memory
+    - size
+    - sometrue
+    - sort
+    - squeeze
+    - stack
+    - std
+    - sum
+    - swapaxes
+    - take
+    - tensordot
+    - trace
+    - transpose
+    - var
+    - vdot
+    - vstack
+    - where
+    - zeros_like
+
+Module: numpy.lib.mixins
+  Functions:
+    - _binary_method
+    - _disables_array_ufunc
+    - _inplace_binary_method
+    - _numeric_methods
+    - _reflected_binary_method
+    - _unary_method
+
+Module: numpy.lib.ufunclike
+  Functions:
+    - _deprecate_out_named_y
+    - _dispatcher
+    - _fix_and_maybe_deprecate_out_named_y
+    - _fix_out_named_y
+    - array_function_dispatch
+    - fix
+    - isneginf
+    - isposinf
+
+Module: numpy.lib.type_check
+  Functions:
+    - _asfarray_dispatcher
+    - _asscalar_dispatcher
+    - _common_type_dispatcher
+    - _getmaxmin
+    - _imag_dispatcher
+    - _is_type_dispatcher
+    - _nan_to_num_dispatcher
+    - _real_dispatcher
+    - _real_if_close_dispatcher
+    - asanyarray
+    - asarray
+    - asfarray
+    - asscalar
+    - common_type
+    - imag
+    - iscomplex
+    - iscomplexobj
+    - isneginf
+    - isposinf
+    - isreal
+    - isrealobj
+    - mintypecode
+    - nan_to_num
+    - real
+    - real_if_close
+    - set_module
+    - typename
+
+Module: numpy.lib.scimath
+  Functions:
+    - _fix_int_lt_zero
+    - _fix_real_abs_gt_1
+    - _fix_real_lt_zero
+    - _logn_dispatcher
+    - _power_dispatcher
+    - _tocomplex
+    - _unary_dispatcher
+    - any
+    - arccos
+    - arcsin
+    - arctanh
+    - array_function_dispatch
+    - asarray
+    - isreal
+    - log
+    - log10
+    - log2
+    - logn
+    - power
+    - sqrt
+
+Module: numpy.lib.twodim_base
+  Functions:
+    - _diag_dispatcher
+    - _flip_dispatcher
+    - _histogram2d_dispatcher
+    - _min_int
+    - _trilu_dispatcher
+    - _trilu_indices_form_dispatcher
+    - _vander_dispatcher
+    - asanyarray
+    - asarray
+    - diag
+    - diagflat
+    - diagonal
+    - eye
+    - fliplr
+    - flipud
+    - histogram2d
+    - mask_indices
+    - nonzero
+    - ones
+    - set_module
+    - tri
+    - tril
+    - tril_indices
+    - tril_indices_from
+    - triu
+    - triu_indices
+    - triu_indices_from
+    - vander
+    - where
+
+Module: numpy.linalg.lapack_lite
+  No functions imported from this module.
+
+Module: numpy.linalg._umath_linalg
+  No functions imported from this module.
+
+Module: numpy.linalg.linalg
+  Functions:
+    - _assert_2d
+    - _assert_finite
+    - _assert_stacked_2d
+    - _assert_stacked_square
+    - _commonType
+    - _complexType
+    - _cond_dispatcher
+    - _convertarray
+    - _eigvalsh_dispatcher
+    - _fastCopyAndTranspose
+    - _is_empty_2d
+    - _linalgRealType
+    - _lstsq_dispatcher
+    - _makearray
+    - _matrix_power_dispatcher
+    - _matrix_rank_dispatcher
+    - _multi_dot
+    - _multi_dot_matrix_chain_order
+    - _multi_dot_three
+    - _multi_svd_norm
+    - _multidot_dispatcher
+    - _norm_dispatcher
+    - _pinv_dispatcher
+    - _qr_dispatcher
+    - _raise_linalgerror_eigenvalues_nonconvergence
+    - _raise_linalgerror_lstsq
+    - _raise_linalgerror_nonposdef
+    - _raise_linalgerror_singular
+    - _raise_linalgerror_svd_nonconvergence
+    - _realType
+    - _solve_dispatcher
+    - _svd_dispatcher
+    - _tensorinv_dispatcher
+    - _tensorsolve_dispatcher
+    - _to_native_byte_order
+    - _unary_dispatcher
+    - all
+    - amax
+    - amin
+    - argsort
+    - asanyarray
+    - asarray
+    - atleast_2d
+    - cholesky
+    - cond
+    - count_nonzero
+    - det
+    - dot
+    - eig
+    - eigh
+    - eigvals
+    - eigvalsh
+    - empty_like
+    - eye
+    - get_linalg_error_extobj
+    - inv
+    - isComplexType
+    - lstsq
+    - matrix_power
+    - matrix_rank
+    - moveaxis
+    - multi_dot
+    - norm
+    - pinv
+    - product
+    - qr
+    - set_module
+    - slogdet
+    - solve
+    - sort
+    - sum
+    - svd
+    - swapaxes
+    - tensorinv
+    - tensorsolve
+    - transpose
+    - triu
+
+Module: numpy.linalg
+  Functions:
+    - cholesky
+    - cond
+    - det
+    - eig
+    - eigh
+    - eigvals
+    - eigvalsh
+    - inv
+    - lstsq
+    - matrix_power
+    - matrix_rank
+    - multi_dot
+    - norm
+    - pinv
+    - qr
+    - slogdet
+    - solve
+    - svd
+    - tensorinv
+    - tensorsolve
+
+Module: numpy.matrixlib.defmatrix
+  Functions:
+    - _convert_from_string
+    - _from_string
+    - asmatrix
+    - bmat
+    - concatenate
+    - isscalar
+    - mat
+    - matrix_power
+    - set_module
+
+Module: numpy.matrixlib
+  Functions:
+    - asmatrix
+    - bmat
+    - mat
+
+Module: numpy.lib.histograms
+  Functions:
+    - _get_bin_edges
+    - _get_outer_edges
+    - _hist_bin_auto
+    - _hist_bin_doane
+    - _hist_bin_fd
+    - _hist_bin_rice
+    - _hist_bin_scott
+    - _hist_bin_sqrt
+    - _hist_bin_stone
+    - _hist_bin_sturges
+    - _histogram_bin_edges_dispatcher
+    - _histogram_dispatcher
+    - _histogramdd_dispatcher
+    - _ptp
+    - _ravel_and_check_weights
+    - _search_sorted_inclusive
+    - _unsigned_subtract
+    - histogram
+    - histogram_bin_edges
+    - histogramdd
+
+Module: numpy.lib.function_base
+  Functions:
+    - _angle_dispatcher
+    - _append_dispatcher
+    - _average_dispatcher
+    - _calculate_shapes
+    - _chbevl
+    - _copy_dispatcher
+    - _corrcoef_dispatcher
+    - _cov_dispatcher
+    - _create_arrays
+    - _delete_dispatcher
+    - _diff_dispatcher
+    - _digitize_dispatcher
+    - _extract_dispatcher
+    - _flip_dispatcher
+    - _gradient_dispatcher
+    - _i0_1
+    - _i0_2
+    - _i0_dispatcher
+    - _insert_dispatcher
+    - _interp_dispatcher
+    - _median
+    - _median_dispatcher
+    - _meshgrid_dispatcher
+    - _msort_dispatcher
+    - _parse_gufunc_signature
+    - _parse_input_dimensions
+    - _percentile_dispatcher
+    - _piecewise_dispatcher
+    - _place_dispatcher
+    - _quantile_dispatcher
+    - _quantile_is_valid
+    - _quantile_unchecked
+    - _quantile_ureduce_func
+    - _rot90_dispatcher
+    - _select_dispatcher
+    - _sinc_dispatcher
+    - _sort_complex
+    - _trapz_dispatcher
+    - _trim_zeros
+    - _unwrap_dispatcher
+    - _update_dim_sizes
+    - _ureduce
+    - add_newdoc
+    - angle
+    - any
+    - append
+    - around
+    - asanyarray
+    - asarray
+    - asarray_chkfinite
+    - average
+    - bartlett
+    - bincount
+    - blackman
+    - concatenate
+    - copy
+    - corrcoef
+    - cov
+    - delete
+    - diag
+    - diff
+    - digitize
+    - disp
+    - dot
+    - extract
+    - flip
+    - gradient
+    - hamming
+    - hanning
+    - histogram
+    - histogramdd
+    - i0
+    - insert
+    - interp
+    - isscalar
+    - iterable
+    - kaiser
+    - mean
+    - median
+    - meshgrid
+    - msort
+    - nonzero
+    - ones
+    - partition
+    - percentile
+    - piecewise
+    - place
+    - quantile
+    - ravel
+    - rot90
+    - select
+    - set_module
+    - sinc
+    - sort_complex
+    - sum
+    - take
+    - transpose
+    - trapz
+    - trim_zeros
+    - unwrap
+    - where
+
+Module: numpy.lib.stride_tricks
+  Functions:
+    - _broadcast_arrays_dispatcher
+    - _broadcast_shape
+    - _broadcast_to
+    - _broadcast_to_dispatcher
+    - _maybe_view_as_subclass
+    - array_function_dispatch
+    - as_strided
+    - broadcast_arrays
+    - broadcast_to
+
+Module: numpy.lib.index_tricks
+  Functions:
+    - _diag_indices_from
+    - _fill_diagonal_dispatcher
+    - _ix__dispatcher
+    - alltrue
+    - as_strided
+    - asarray
+    - cumprod
+    - diag_indices
+    - diag_indices_from
+    - diff
+    - fill_diagonal
+    - find_common_type
+    - issubdtype
+    - ix_
+    - linspace
+    - ndim
+    - ravel_multi_index
+    - set_module
+    - unravel_index
+
+Module: numpy.lib.nanfunctions
+  Functions:
+    - _copyto
+    - _divide_by_count
+    - _nan_mask
+    - _nanargmax_dispatcher
+    - _nanargmin_dispatcher
+    - _nancumprod_dispatcher
+    - _nancumsum_dispatcher
+    - _nanmax_dispatcher
+    - _nanmean_dispatcher
+    - _nanmedian
+    - _nanmedian1d
+    - _nanmedian_dispatcher
+    - _nanmedian_small
+    - _nanmin_dispatcher
+    - _nanpercentile_dispatcher
+    - _nanprod_dispatcher
+    - _nanquantile_1d
+    - _nanquantile_dispatcher
+    - _nanquantile_unchecked
+    - _nanquantile_ureduce_func
+    - _nanstd_dispatcher
+    - _nansum_dispatcher
+    - _nanvar_dispatcher
+    - _remove_nan_1d
+    - _replace_nan
+    - nanargmax
+    - nanargmin
+    - nancumprod
+    - nancumsum
+    - nanmax
+    - nanmean
+    - nanmedian
+    - nanmin
+    - nanpercentile
+    - nanprod
+    - nanquantile
+    - nanstd
+    - nansum
+    - nanvar
+
+Module: numpy.lib.shape_base
+  Functions:
+    - _apply_along_axis_dispatcher
+    - _apply_over_axes_dispatcher
+    - _array_split_dispatcher
+    - _arrays_for_stack_dispatcher
+    - _column_stack_dispatcher
+    - _dstack_dispatcher
+    - _expand_dims_dispatcher
+    - _hvdsplit_dispatcher
+    - _kron_dispatcher
+    - _make_along_axis_idx
+    - _put_along_axis_dispatcher
+    - _replace_zero_by_x_arrays
+    - _split_dispatcher
+    - _take_along_axis_dispatcher
+    - _tile_dispatcher
+    - apply_along_axis
+    - apply_over_axes
+    - array_split
+    - asanyarray
+    - asarray
+    - atleast_3d
+    - column_stack
+    - concatenate
+    - dsplit
+    - dstack
+    - expand_dims
+    - get_array_prepare
+    - get_array_wrap
+    - hsplit
+    - kron
+    - normalize_axis_tuple
+    - outer
+    - put_along_axis
+    - reshape
+    - row_stack
+    - split
+    - take_along_axis
+    - tile
+    - transpose
+    - vsplit
+    - vstack
+
+Module: numpy.lib.polynomial
+  Functions:
+    - _binary_op_dispatcher
+    - _poly_dispatcher
+    - _polyder_dispatcher
+    - _polydiv_dispatcher
+    - _polyfit_dispatcher
+    - _polyint_dispatcher
+    - _polyval_dispatcher
+    - _raise_power
+    - _roots_dispatcher
+    - atleast_1d
+    - diag
+    - dot
+    - eigvals
+    - hstack
+    - imag
+    - inv
+    - iscomplex
+    - isscalar
+    - lstsq
+    - mintypecode
+    - ones
+    - poly
+    - polyadd
+    - polyder
+    - polydiv
+    - polyfit
+    - polyint
+    - polymul
+    - polysub
+    - polyval
+    - real
+    - roots
+    - set_module
+    - trim_zeros
+    - vander
+
+Module: numpy.lib.utils
+  Functions:
+    - _get_indent
+    - _getmembers
+    - _info
+    - _lookfor_generate_cache
+    - _makenamedict
+    - _median_nancheck
+    - _set_function_name
+    - _split_line
+    - asarray
+    - byte_bounds
+    - deprecate
+    - deprecate_with_doc
+    - formatargspec
+    - get_include
+    - getargspec
+    - info
+    - issubclass_
+    - issubdtype
+    - issubsctype
+    - lookfor
+    - safe_eval
+    - set_module
+    - source
+    - who
+
+Module: numpy.lib.arraysetops
+  Functions:
+    - _ediff1d_dispatcher
+    - _in1d_dispatcher
+    - _intersect1d_dispatcher
+    - _isin_dispatcher
+    - _setdiff1d_dispatcher
+    - _setxor1d_dispatcher
+    - _union1d_dispatcher
+    - _unique1d
+    - _unique_dispatcher
+    - _unpack_tuple
+    - ediff1d
+    - in1d
+    - intersect1d
+    - isin
+    - setdiff1d
+    - setxor1d
+    - union1d
+    - unique
+
+Module: numpy.lib.format
+  Functions:
+    - _check_version
+    - _filter_header
+    - _has_metadata
+    - _read_array_header
+    - _read_bytes
+    - _wrap_header
+    - _wrap_header_guess_version
+    - _write_array_header
+    - descr_to_dtype
+    - dtype_to_descr
+    - header_data_from_array_1_0
+    - isfileobj
+    - magic
+    - open_memmap
+    - read_array
+    - read_array_header_1_0
+    - read_array_header_2_0
+    - read_magic
+    - safe_eval
+    - write_array
+    - write_array_header_1_0
+    - write_array_header_2_0
+
+Module: numpy.lib._datasource
+  Functions:
+    - _check_mode
+    - open
+    - set_module
+
+Module: numpy.lib._iotools
+  Functions:
+    - _decode_line
+    - _is_bytes_like
+    - _is_string_like
+    - asbytes
+    - asunicode
+    - easy_dtype
+    - flatten_dtype
+    - has_nested_fields
+    - str2bool
+
+Module: numpy.lib.npyio
+  Functions:
+    - _decode_line
+    - _getconv
+    - _is_string_like
+    - _save_dispatcher
+    - _savetxt_dispatcher
+    - _savez
+    - _savez_compressed_dispatcher
+    - _savez_dispatcher
+    - asbytes
+    - asstr
+    - asunicode
+    - easy_dtype
+    - flatten_dtype
+    - fromregex
+    - genfromtxt
+    - has_nested_fields
+    - load
+    - loads
+    - loadtxt
+    - mafromtxt
+    - ndfromtxt
+    - packbits
+    - recfromcsv
+    - recfromtxt
+    - save
+    - savetxt
+    - savez
+    - savez_compressed
+    - set_module
+    - unpackbits
+    - zipfile_factory
+
+Module: _decimal
+  No functions imported from this module.
+
+Module: decimal
+  No functions imported from this module.
+
+Module: numpy.lib.financial
+  Functions:
+    - _convert_when
+    - _fv_dispatcher
+    - _g_div_gp
+    - _ipmt_dispatcher
+    - _irr_dispatcher
+    - _mirr_dispatcher
+    - _nper_dispatcher
+    - _npv_dispatcher
+    - _pmt_dispatcher
+    - _ppmt_dispatcher
+    - _pv_dispatcher
+    - _rate_dispatcher
+    - _rbl
+    - fv
+    - ipmt
+    - irr
+    - mirr
+    - nper
+    - npv
+    - pmt
+    - ppmt
+    - pv
+    - rate
+
+Module: numpy.lib.arrayterator
+  No functions imported from this module.
+
+Module: numpy.lib.arraypad
+  Functions:
+    - _as_pairs
+    - _get_edges
+    - _get_linear_ramps
+    - _get_stats
+    - _pad_dispatcher
+    - _pad_simple
+    - _round_if_needed
+    - _set_pad_area
+    - _set_reflect_both
+    - _set_wrap_both
+    - _slice_at_axis
+    - _view_roi
+    - array_function_dispatch
+    - pad
+
+Module: numpy.lib._version
+  No functions imported from this module.
+
+Module: numpy.lib
+  Functions:
+    - add_newdoc
+    - angle
+    - append
+    - apply_along_axis
+    - apply_over_axes
+    - array_split
+    - asarray_chkfinite
+    - asfarray
+    - asscalar
+    - average
+    - bartlett
+    - bincount
+    - blackman
+    - broadcast_arrays
+    - broadcast_to
+    - byte_bounds
+    - column_stack
+    - common_type
+    - copy
+    - corrcoef
+    - cov
+    - delete
+    - deprecate
+    - deprecate_with_doc
+    - diag
+    - diag_indices
+    - diag_indices_from
+    - diagflat
+    - diff
+    - digitize
+    - disp
+    - dsplit
+    - dstack
+    - ediff1d
+    - expand_dims
+    - extract
+    - eye
+    - fill_diagonal
+    - fix
+    - flip
+    - fliplr
+    - flipud
+    - fromregex
+    - fv
+    - genfromtxt
+    - get_array_wrap
+    - get_include
+    - gradient
+    - hamming
+    - hanning
+    - histogram
+    - histogram2d
+    - histogram_bin_edges
+    - histogramdd
+    - hsplit
+    - i0
+    - imag
+    - in1d
+    - info
+    - insert
+    - interp
+    - intersect1d
+    - ipmt
+    - irr
+    - iscomplex
+    - iscomplexobj
+    - isin
+    - isneginf
+    - isposinf
+    - isreal
+    - isrealobj
+    - issubclass_
+    - issubdtype
+    - issubsctype
+    - iterable
+    - ix_
+    - kaiser
+    - kron
+    - load
+    - loads
+    - loadtxt
+    - lookfor
+    - mafromtxt
+    - mask_indices
+    - median
+    - meshgrid
+    - mintypecode
+    - mirr
+    - msort
+    - nan_to_num
+    - nanargmax
+    - nanargmin
+    - nancumprod
+    - nancumsum
+    - nanmax
+    - nanmean
+    - nanmedian
+    - nanmin
+    - nanpercentile
+    - nanprod
+    - nanquantile
+    - nanstd
+    - nansum
+    - nanvar
+    - ndfromtxt
+    - nper
+    - npv
+    - packbits
+    - pad
+    - percentile
+    - piecewise
+    - place
+    - pmt
+    - poly
+    - polyadd
+    - polyder
+    - polydiv
+    - polyfit
+    - polyint
+    - polymul
+    - polysub
+    - polyval
+    - ppmt
+    - put_along_axis
+    - pv
+    - quantile
+    - rate
+    - ravel_multi_index
+    - real
+    - real_if_close
+    - recfromcsv
+    - recfromtxt
+    - roots
+    - rot90
+    - row_stack
+    - safe_eval
+    - save
+    - savetxt
+    - savez
+    - savez_compressed
+    - select
+    - setdiff1d
+    - setxor1d
+    - sinc
+    - sort_complex
+    - source
+    - split
+    - take_along_axis
+    - tile
+    - trapz
+    - tri
+    - tril
+    - tril_indices
+    - tril_indices_from
+    - trim_zeros
+    - triu
+    - triu_indices
+    - triu_indices_from
+    - typename
+    - union1d
+    - unique
+    - unpackbits
+    - unravel_index
+    - unwrap
+    - vander
+    - vsplit
+    - who
+
+Module: numpy.fft._pocketfft_internal
+  No functions imported from this module.
+
+Module: numpy.fft._pocketfft
+  Functions:
+    - _cook_nd_args
+    - _fft_dispatcher
+    - _fftn_dispatcher
+    - _raw_fft
+    - _raw_fftnd
+    - _unitary
+    - asarray
+    - fft
+    - fft2
+    - fftn
+    - hfft
+    - ifft
+    - ifft2
+    - ifftn
+    - ihfft
+    - irfft
+    - irfft2
+    - irfftn
+    - rfft
+    - rfft2
+    - rfftn
+    - swapaxes
+    - take
+
+Module: numpy.fft.helper
+  Functions:
+    - _fftshift_dispatcher
+    - array_function_dispatch
+    - asarray
+    - fftfreq
+    - fftshift
+    - ifftshift
+    - rfftfreq
+    - roll
+    - set_module
+
+Module: numpy.fft
+  Functions:
+    - fft
+    - fft2
+    - fftfreq
+    - fftn
+    - fftshift
+    - hfft
+    - ifft
+    - ifft2
+    - ifftn
+    - ifftshift
+    - ihfft
+    - irfft
+    - irfft2
+    - irfftn
+    - rfft
+    - rfft2
+    - rfftfreq
+    - rfftn
+
+Module: numpy.polynomial.polyutils
+  Functions:
+    - _add
+    - _deprecate_as_int
+    - _div
+    - _fit
+    - _fromroots
+    - _gridnd
+    - _nth_slice
+    - _pow
+    - _sub
+    - _valnd
+    - _vander_nd
+    - _vander_nd_flat
+    - as_series
+    - getdomain
+    - mapdomain
+    - mapparms
+    - trimcoef
+    - trimseq
+
+Module: numpy.polynomial._polybase
+  No functions imported from this module.
+
+Module: numpy.polynomial.polynomial
+  Functions:
+    - polyadd
+    - polycompanion
+    - polyder
+    - polydiv
+    - polyfit
+    - polyfromroots
+    - polygrid2d
+    - polygrid3d
+    - polyint
+    - polyline
+    - polymul
+    - polymulx
+    - polypow
+    - polyroots
+    - polysub
+    - polytrim
+    - polyval
+    - polyval2d
+    - polyval3d
+    - polyvalfromroots
+    - polyvander
+    - polyvander2d
+    - polyvander3d
+
+Module: numpy.polynomial.chebyshev
+  Functions:
+    - _cseries_to_zseries
+    - _zseries_der
+    - _zseries_div
+    - _zseries_int
+    - _zseries_mul
+    - _zseries_to_cseries
+    - cheb2poly
+    - chebadd
+    - chebcompanion
+    - chebder
+    - chebdiv
+    - chebfit
+    - chebfromroots
+    - chebgauss
+    - chebgrid2d
+    - chebgrid3d
+    - chebint
+    - chebinterpolate
+    - chebline
+    - chebmul
+    - chebmulx
+    - chebpow
+    - chebpts1
+    - chebpts2
+    - chebroots
+    - chebsub
+    - chebtrim
+    - chebval
+    - chebval2d
+    - chebval3d
+    - chebvander
+    - chebvander2d
+    - chebvander3d
+    - chebweight
+    - poly2cheb
+
+Module: numpy.polynomial.legendre
+  Functions:
+    - leg2poly
+    - legadd
+    - legcompanion
+    - legder
+    - legdiv
+    - legfit
+    - legfromroots
+    - leggauss
+    - leggrid2d
+    - leggrid3d
+    - legint
+    - legline
+    - legmul
+    - legmulx
+    - legpow
+    - legroots
+    - legsub
+    - legtrim
+    - legval
+    - legval2d
+    - legval3d
+    - legvander
+    - legvander2d
+    - legvander3d
+    - legweight
+    - poly2leg
+
+Module: numpy.polynomial.hermite
+  Functions:
+    - _normed_hermite_n
+    - herm2poly
+    - hermadd
+    - hermcompanion
+    - hermder
+    - hermdiv
+    - hermfit
+    - hermfromroots
+    - hermgauss
+    - hermgrid2d
+    - hermgrid3d
+    - hermint
+    - hermline
+    - hermmul
+    - hermmulx
+    - hermpow
+    - hermroots
+    - hermsub
+    - hermtrim
+    - hermval
+    - hermval2d
+    - hermval3d
+    - hermvander
+    - hermvander2d
+    - hermvander3d
+    - hermweight
+    - poly2herm
+
+Module: numpy.polynomial.hermite_e
+  Functions:
+    - _normed_hermite_e_n
+    - herme2poly
+    - hermeadd
+    - hermecompanion
+    - hermeder
+    - hermediv
+    - hermefit
+    - hermefromroots
+    - hermegauss
+    - hermegrid2d
+    - hermegrid3d
+    - hermeint
+    - hermeline
+    - hermemul
+    - hermemulx
+    - hermepow
+    - hermeroots
+    - hermesub
+    - hermetrim
+    - hermeval
+    - hermeval2d
+    - hermeval3d
+    - hermevander
+    - hermevander2d
+    - hermevander3d
+    - hermeweight
+    - poly2herme
+
+Module: numpy.polynomial.laguerre
+  Functions:
+    - lag2poly
+    - lagadd
+    - lagcompanion
+    - lagder
+    - lagdiv
+    - lagfit
+    - lagfromroots
+    - laggauss
+    - laggrid2d
+    - laggrid3d
+    - lagint
+    - lagline
+    - lagmul
+    - lagmulx
+    - lagpow
+    - lagroots
+    - lagsub
+    - lagtrim
+    - lagval
+    - lagval2d
+    - lagval3d
+    - lagvander
+    - lagvander2d
+    - lagvander3d
+    - lagweight
+    - poly2lag
+
+Module: numpy.polynomial
+  No functions imported from this module.
+
+Module: _cython_0_29_30
+  No functions imported from this module.
+
+Module: numpy.random._common
+  Functions:
+    - namedtuple
+
+Module: binascii
+  No functions imported from this module.
+
+Module: base64
+  Functions:
+    - _85encode
+    - _bytes_from_decode_data
+    - _input_type_check
+    - a85decode
+    - a85encode
+    - b16decode
+    - b16encode
+    - b32decode
+    - b32encode
+    - b64decode
+    - b64encode
+    - b85decode
+    - b85encode
+    - decode
+    - decodebytes
+    - decodestring
+    - encode
+    - encodebytes
+    - encodestring
+    - main
+    - standard_b64decode
+    - standard_b64encode
+    - test
+    - urlsafe_b64decode
+    - urlsafe_b64encode
+
+Module: _hashlib
+  No functions imported from this module.
+
+Module: _blake2
+  No functions imported from this module.
+
+Module: _sha3
+  No functions imported from this module.
+
+Module: hashlib
+  Functions:
+    - __get_builtin_constructor
+    - new
+
+Module: hmac
+  Functions:
+    - digest
+    - new
+
+Module: secrets
+  Functions:
+    - randbelow
+    - token_bytes
+    - token_hex
+    - token_urlsafe
+
+Module: numpy.random.bit_generator
+  No functions imported from this module.
+
+Module: numpy.random._bounded_integers
+  No functions imported from this module.
+
+Module: numpy.random._mt19937
+  No functions imported from this module.
+
+Module: numpy.random.mtrand
+  No functions imported from this module.
+
+Module: numpy.random._philox
+  No functions imported from this module.
+
+Module: numpy.random._pcg64
+  No functions imported from this module.
+
+Module: numpy.random._sfc64
+  No functions imported from this module.
+
+Module: numpy.random._generator
+  No functions imported from this module.
+
+Module: numpy.random._pickle
+  Functions:
+    - __bit_generator_ctor
+    - __generator_ctor
+    - __randomstate_ctor
+
+Module: numpy.random
+  Functions:
+    - __RandomState_ctor
+
+Module: numpy.ctypeslib
+  Functions:
+    - _ctype_from_dtype
+    - _ctype_from_dtype_scalar
+    - _ctype_from_dtype_structured
+    - _ctype_from_dtype_subarray
+    - _ctype_ndarray
+    - _flags_fromnum
+    - _get_scalar_type_map
+    - _num_fromflags
+    - as_array
+    - as_ctypes
+    - as_ctypes_type
+    - ctypes_load_library
+    - deprecate
+    - load_library
+    - ndpointer
+
+Module: numpy.ma.core
+  Functions:
+    - _arraymethod
+    - _check_fill_value
+    - _check_mask_axis
+    - _convolve_or_correlate
+    - _deprecate_argsort_axis
+    - _extremum_fill_value
+    - _get_dtype_of
+    - _mareconstruct
+    - _pickle_warn
+    - _recursive_fill_value
+    - _recursive_filled
+    - _recursive_printoption
+    - _recursive_set_fill_value
+    - _replace_dtype_fields
+    - _replace_dtype_fields_recursive
+    - _shrink_mask
+    - allclose
+    - allequal
+    - amax
+    - amin
+    - append
+    - argsort
+    - array
+    - asanyarray
+    - asarray
+    - choose
+    - clip
+    - common_fill_value
+    - compressed
+    - concatenate
+    - convolve
+    - correlate
+    - default_fill_value
+    - diag
+    - diff
+    - doc_note
+    - dot
+    - expand_dims
+    - filled
+    - fix_invalid
+    - flatten_mask
+    - flatten_structured_array
+    - formatargspec
+    - fromfile
+    - fromflex
+    - get_data
+    - get_fill_value
+    - get_mask
+    - get_masked_subclass
+    - get_object_signature
+    - getargspec
+    - getdata
+    - getmask
+    - getmaskarray
+    - indices
+    - inner
+    - innerproduct
+    - isMA
+    - isMaskedArray
+    - is_mask
+    - is_masked
+    - is_string_or_list_of_strings
+    - isarray
+    - iscomplexobj
+    - left_shift
+    - make_mask
+    - make_mask_descr
+    - make_mask_none
+    - mask_or
+    - mask_rowcols
+    - masked_equal
+    - masked_greater
+    - masked_greater_equal
+    - masked_inside
+    - masked_invalid
+    - masked_less
+    - masked_less_equal
+    - masked_not_equal
+    - masked_object
+    - masked_outside
+    - masked_values
+    - masked_where
+    - max
+    - maximum_fill_value
+    - min
+    - minimum_fill_value
+    - ndim
+    - normalize_axis_tuple
+    - ones_like
+    - outer
+    - outerproduct
+    - power
+    - ptp
+    - put
+    - putmask
+    - reshape
+    - resize
+    - right_shift
+    - round
+    - round_
+    - set_fill_value
+    - shape
+    - size
+    - sort
+    - squeeze
+    - take
+    - transpose
+    - where
+    - zeros_like
+
+Module: numpy.ma.extras
+  Functions:
+    - _covhelper
+    - _ezclump
+    - _median
+    - _ureduce
+    - apply_along_axis
+    - apply_over_axes
+    - array
+    - asarray
+    - average
+    - clump_masked
+    - clump_unmasked
+    - compress_cols
+    - compress_nd
+    - compress_rowcols
+    - compress_rows
+    - concatenate
+    - corrcoef
+    - count_masked
+    - cov
+    - dot
+    - ediff1d
+    - filled
+    - flatnotmasked_contiguous
+    - flatnotmasked_edges
+    - flatten_inplace
+    - get_masked_subclass
+    - getdata
+    - getmask
+    - getmaskarray
+    - in1d
+    - intersect1d
+    - isin
+    - issequence
+    - make_mask_descr
+    - mask_cols
+    - mask_or
+    - mask_rowcols
+    - mask_rows
+    - masked_all
+    - masked_all_like
+    - median
+    - normalize_axis_tuple
+    - notmasked_contiguous
+    - notmasked_edges
+    - polyfit
+    - setdiff1d
+    - setxor1d
+    - sort
+    - union1d
+    - unique
+    - vander
+
+Module: numpy.ma
+  Functions:
+    - allclose
+    - allequal
+    - amax
+    - amin
+    - append
+    - apply_along_axis
+    - apply_over_axes
+    - argsort
+    - array
+    - asanyarray
+    - asarray
+    - average
+    - choose
+    - clip
+    - clump_masked
+    - clump_unmasked
+    - common_fill_value
+    - compress_cols
+    - compress_nd
+    - compress_rowcols
+    - compress_rows
+    - compressed
+    - concatenate
+    - convolve
+    - corrcoef
+    - correlate
+    - count_masked
+    - cov
+    - default_fill_value
+    - diag
+    - diff
+    - dot
+    - ediff1d
+    - expand_dims
+    - filled
+    - fix_invalid
+    - flatnotmasked_contiguous
+    - flatnotmasked_edges
+    - flatten_mask
+    - flatten_structured_array
+    - fromflex
+    - getdata
+    - getmask
+    - getmaskarray
+    - in1d
+    - indices
+    - inner
+    - innerproduct
+    - intersect1d
+    - isMA
+    - isMaskedArray
+    - is_mask
+    - is_masked
+    - isarray
+    - isin
+    - left_shift
+    - make_mask
+    - make_mask_descr
+    - make_mask_none
+    - mask_cols
+    - mask_or
+    - mask_rowcols
+    - mask_rows
+    - masked_all
+    - masked_all_like
+    - masked_equal
+    - masked_greater
+    - masked_greater_equal
+    - masked_inside
+    - masked_invalid
+    - masked_less
+    - masked_less_equal
+    - masked_not_equal
+    - masked_object
+    - masked_outside
+    - masked_values
+    - masked_where
+    - max
+    - maximum_fill_value
+    - median
+    - min
+    - minimum_fill_value
+    - ndim
+    - notmasked_contiguous
+    - notmasked_edges
+    - outer
+    - outerproduct
+    - polyfit
+    - power
+    - ptp
+    - put
+    - putmask
+    - reshape
+    - resize
+    - right_shift
+    - round
+    - round_
+    - set_fill_value
+    - setdiff1d
+    - setxor1d
+    - shape
+    - size
+    - sort
+    - squeeze
+    - take
+    - transpose
+    - union1d
+    - unique
+    - vander
+    - where
+
+Module: numpy
+  Functions:
+    - __dir__
+    - __getattr__
+    - add_newdoc
+    - alen
+    - all
+    - allclose
+    - alltrue
+    - amax
+    - amin
+    - angle
+    - any
+    - append
+    - apply_along_axis
+    - apply_over_axes
+    - argmax
+    - argmin
+    - argpartition
+    - argsort
+    - argwhere
+    - around
+    - array2string
+    - array_equal
+    - array_equiv
+    - array_repr
+    - array_split
+    - array_str
+    - asanyarray
+    - asarray
+    - asarray_chkfinite
+    - ascontiguousarray
+    - asfarray
+    - asfortranarray
+    - asmatrix
+    - asscalar
+    - atleast_1d
+    - atleast_2d
+    - atleast_3d
+    - average
+    - bartlett
+    - base_repr
+    - binary_repr
+    - bincount
+    - blackman
+    - block
+    - bmat
+    - broadcast_arrays
+    - broadcast_to
+    - busday_count
+    - busday_offset
+    - byte_bounds
+    - can_cast
+    - choose
+    - clip
+    - column_stack
+    - common_type
+    - compress
+    - concatenate
+    - convolve
+    - copy
+    - copyto
+    - corrcoef
+    - correlate
+    - count_nonzero
+    - cov
+    - cross
+    - cumprod
+    - cumproduct
+    - cumsum
+    - datetime_as_string
+    - delete
+    - deprecate
+    - deprecate_with_doc
+    - diag
+    - diag_indices
+    - diag_indices_from
+    - diagflat
+    - diagonal
+    - diff
+    - digitize
+    - disp
+    - dot
+    - dsplit
+    - dstack
+    - ediff1d
+    - einsum
+    - einsum_path
+    - empty_like
+    - expand_dims
+    - extract
+    - eye
+    - fill_diagonal
+    - find_common_type
+    - fix
+    - flatnonzero
+    - flip
+    - fliplr
+    - flipud
+    - format_float_positional
+    - format_float_scientific
+    - fromfunction
+    - fromregex
+    - full
+    - full_like
+    - fv
+    - genfromtxt
+    - geomspace
+    - get_array_wrap
+    - get_include
+    - get_printoptions
+    - getbufsize
+    - geterr
+    - geterrcall
+    - gradient
+    - hamming
+    - hanning
+    - histogram
+    - histogram2d
+    - histogram_bin_edges
+    - histogramdd
+    - hsplit
+    - hstack
+    - i0
+    - identity
+    - imag
+    - in1d
+    - indices
+    - info
+    - inner
+    - insert
+    - interp
+    - intersect1d
+    - ipmt
+    - irr
+    - is_busday
+    - isclose
+    - iscomplex
+    - iscomplexobj
+    - isfortran
+    - isin
+    - isneginf
+    - isposinf
+    - isreal
+    - isrealobj
+    - isscalar
+    - issctype
+    - issubclass_
+    - issubdtype
+    - issubsctype
+    - iterable
+    - ix_
+    - kaiser
+    - kron
+    - lexsort
+    - linspace
+    - load
+    - loads
+    - loadtxt
+    - logspace
+    - lookfor
+    - mafromtxt
+    - mask_indices
+    - mat
+    - max
+    - maximum_sctype
+    - may_share_memory
+    - mean
+    - median
+    - meshgrid
+    - min
+    - min_scalar_type
+    - mintypecode
+    - mirr
+    - moveaxis
+    - msort
+    - nan_to_num
+    - nanargmax
+    - nanargmin
+    - nancumprod
+    - nancumsum
+    - nanmax
+    - nanmean
+    - nanmedian
+    - nanmin
+    - nanpercentile
+    - nanprod
+    - nanquantile
+    - nanstd
+    - nansum
+    - nanvar
+    - ndfromtxt
+    - ndim
+    - nonzero
+    - nper
+    - npv
+    - obj2sctype
+    - ones
+    - ones_like
+    - outer
+    - packbits
+    - pad
+    - partition
+    - percentile
+    - piecewise
+    - place
+    - pmt
+    - poly
+    - polyadd
+    - polyder
+    - polydiv
+    - polyfit
+    - polyint
+    - polymul
+    - polysub
+    - polyval
+    - ppmt
+    - printoptions
+    - prod
+    - product
+    - ptp
+    - put
+    - put_along_axis
+    - putmask
+    - pv
+    - quantile
+    - rate
+    - ravel
+    - ravel_multi_index
+    - real
+    - real_if_close
+    - recfromcsv
+    - recfromtxt
+    - repeat
+    - require
+    - reshape
+    - resize
+    - result_type
+    - roll
+    - rollaxis
+    - roots
+    - rot90
+    - round
+    - round_
+    - row_stack
+    - safe_eval
+    - save
+    - savetxt
+    - savez
+    - savez_compressed
+    - sctype2char
+    - searchsorted
+    - select
+    - set_printoptions
+    - set_string_function
+    - setbufsize
+    - setdiff1d
+    - seterr
+    - seterrcall
+    - setxor1d
+    - shape
+    - shares_memory
+    - show_config
+    - sinc
+    - size
+    - sometrue
+    - sort
+    - sort_complex
+    - source
+    - split
+    - squeeze
+    - stack
+    - std
+    - sum
+    - swapaxes
+    - take
+    - take_along_axis
+    - tensordot
+    - tile
+    - trace
+    - transpose
+    - trapz
+    - tri
+    - tril
+    - tril_indices
+    - tril_indices_from
+    - trim_zeros
+    - triu
+    - triu_indices
+    - triu_indices_from
+    - typename
+    - union1d
+    - unique
+    - unpackbits
+    - unravel_index
+    - unwrap
+    - vander
+    - var
+    - vdot
+    - vsplit
+    - vstack
+    - where
+    - who
+    - zeros_like
+
+Module: matplotlib._c_internal_utils
+  No functions imported from this module.
+
+Module: matplotlib.cbook
+  Functions:
+    - _array_patch_perimeters
+    - _array_perimeter
+    - _backend_module_name
+    - _check_1d
+    - _check_and_log_subprocess
+    - _combine_masks
+    - _define_aliases
+    - _exception_printer
+    - _format_approx
+    - _get_data_path
+    - _get_nonzero_slices
+    - _get_running_interactive_framework
+    - _local_over_kwdict
+    - _lock_path
+    - _pformat_subprocess
+    - _premultiplied_argb32_to_unmultiplied_rgba8888
+    - _reshape_2D
+    - _setattr_cm
+    - _setup_new_guiapp
+    - _str_equal
+    - _str_lower_equal
+    - _to_unmasked_float_array
+    - _topmost_artist
+    - _unfold
+    - _unikey_or_keysym_to_mplkey
+    - _unmultiplied_rgba8888_to_premultiplied_argb32
+    - _weak_or_strong_ref
+    - boxplot_stats
+    - contiguous_regions
+    - delete_masked_points
+    - deprecated
+    - file_requires_unicode
+    - flatten
+    - get_realpath_and_stat
+    - get_sample_data
+    - index_of
+    - is_math_text
+    - is_scalar_or_string
+    - is_writable_file_like
+    - local_over_kwdict
+    - normalize_kwargs
+    - open_file_cm
+    - print_cycles
+    - pts_to_midstep
+    - pts_to_poststep
+    - pts_to_prestep
+    - report_memory
+    - safe_first_element
+    - safe_masked_invalid
+    - sanitize_sequence
+    - simple_linear_interpolation
+    - strip_math
+    - to_filehandle
+    - violin_stats
+    - warn_deprecated
+
+Module: matplotlib.docstring
+  Functions:
+    - copy
+
+Module: _socket
+  No functions imported from this module.
+
+Module: select
+  No functions imported from this module.
+
+Module: selectors
+  Functions:
+    - _fileobj_to_fd
+    - abstractmethod
+    - namedtuple
+
+Module: socket
+  Functions:
+    - _intenum_converter
+    - create_connection
+    - create_server
+    - fromfd
+    - fromshare
+    - getaddrinfo
+    - getfqdn
+    - has_dualstack_ipv6
+    - socketpair
+
+Module: uuid
+  Functions:
+    - _arp_getnode
+    - _find_mac
+    - _ifconfig_getnode
+    - _ip_getnode
+    - _ipconfig_getnode
+    - _is_universal
+    - _lanscan_getnode
+    - _load_system_functions
+    - _netbios_getnode
+    - _netstat_getnode
+    - _popen
+    - _random_getnode
+    - _unix_getnode
+    - _windll_getnode
+    - getnode
+    - uuid1
+    - uuid3
+    - uuid4
+    - uuid5
+
+Module: PIL._version
+  No functions imported from this module.
+
+Module: PIL
+  Functions:
+    - __getattr__
+    - _raise_version_warning
+
+Module: xml
+  No functions imported from this module.
+
+Module: xml.etree
+  No functions imported from this module.
+
+Module: xml.etree.ElementPath
+  Functions:
+    - _is_wildcard_tag
+    - _prepare_tag
+    - find
+    - findall
+    - findtext
+    - get_parent_map
+    - iterfind
+    - prepare_child
+    - prepare_descendant
+    - prepare_parent
+    - prepare_predicate
+    - prepare_self
+    - prepare_star
+    - xpath_tokenizer
+
+Module: copy
+  Functions:
+    - _copy_immutable
+    - _deepcopy_atomic
+    - _deepcopy_dict
+    - _deepcopy_list
+    - _deepcopy_method
+    - _deepcopy_tuple
+    - _keep_alive
+    - _reconstruct
+    - copy
+    - deepcopy
+
+Module: pyexpat.errors
+  No functions imported from this module.
+
+Module: pyexpat.model
+  No functions imported from this module.
+
+Module: pyexpat
+  No functions imported from this module.
+
+Module: _elementtree
+  No functions imported from this module.
+
+Module: xml.etree.ElementTree
+  Functions:
+    - Comment
+    - PI
+    - ProcessingInstruction
+    - XML
+    - XMLID
+    - _escape_attrib
+    - _escape_attrib_c14n
+    - _escape_attrib_html
+    - _escape_cdata
+    - _escape_cdata_c14n
+    - _get_writer
+    - _namespaces
+    - _raise_serialization_error
+    - _serialize_html
+    - _serialize_text
+    - _serialize_xml
+    - canonicalize
+    - dump
+    - fromstring
+    - fromstringlist
+    - iselement
+    - iterparse
+    - parse
+    - register_namespace
+    - tostring
+    - tostringlist
+
+Module: PIL.ImageMode
+  Functions:
+    - getmode
+
+Module: PIL.TiffTags
+  Functions:
+    - _populate
+    - lookup
+    - namedtuple
+
+Module: PIL._binary
+  Functions:
+    - i16be
+    - i16le
+    - i32be
+    - i32le
+    - i8
+    - o16be
+    - o16le
+    - o32be
+    - o32le
+    - o8
+    - si16le
+    - si32le
+
+Module: PIL._util
+  Functions:
+    - isDirectory
+    - isPath
+
+Module: PIL._imaging
+  No functions imported from this module.
+
+Module: PIL.Image
+  Functions:
+    - __getattr__
+    - _apply_env_variables
+    - _check_size
+    - _conv_type_shape
+    - _decompression_bomb_check
+    - _getdecoder
+    - _getencoder
+    - _getscaleoffset
+    - _raise_version_warning
+    - _show
+    - _showxv
+    - _wedge
+    - alpha_composite
+    - blend
+    - coerce_e
+    - composite
+    - effect_mandelbrot
+    - effect_noise
+    - eval
+    - fromarray
+    - frombuffer
+    - frombytes
+    - fromqimage
+    - fromqpixmap
+    - getmodebandnames
+    - getmodebands
+    - getmodebase
+    - getmodetype
+    - i32le
+    - init
+    - isImageType
+    - isPath
+    - linear_gradient
+    - merge
+    - new
+    - open
+    - preinit
+    - radial_gradient
+    - register_decoder
+    - register_encoder
+    - register_extension
+    - register_extensions
+    - register_mime
+    - register_open
+    - register_save
+    - register_save_all
+    - registered_extensions
+
+Module: matplotlib._animation_data
+  No functions imported from this module.
+
+Module: matplotlib.animation
+  Functions:
+    - _embedded_frames
+    - _included_frames
+    - adjusted_figsize
+
+Module: PIL.ImageChops
+  Functions:
+    - add
+    - add_modulo
+    - blend
+    - composite
+    - constant
+    - darker
+    - difference
+    - duplicate
+    - hard_light
+    - invert
+    - lighter
+    - logical_and
+    - logical_or
+    - logical_xor
+    - multiply
+    - offset
+    - overlay
+    - screen
+    - soft_light
+    - subtract
+    - subtract_modulo
+
+Module: PIL.ImageFile
+  Functions:
+    - _safe_read
+    - _save
+    - _tilesort
+    - isPath
+    - raise_ioerror
+    - raise_oserror
+
+Module: array
+  No functions imported from this module.
+
+Module: PIL.GimpGradientFile
+  Functions:
+    - curved
+    - linear
+    - o8
+    - sine
+    - sphere_decreasing
+    - sphere_increasing
+
+Module: PIL.GimpPaletteFile
+  Functions:
+    - o8
+
+Module: PIL.ImageColor
+  Functions:
+    - getcolor
+    - getrgb
+
+Module: PIL.PaletteFile
+  Functions:
+    - o8
+
+Module: PIL.ImagePalette
+  Functions:
+    - load
+    - make_gamma_lut
+    - make_linear_lut
+    - negative
+    - random
+    - raw
+    - sepia
+    - wedge
+
+Module: PIL.ImageSequence
+  Functions:
+    - all_frames
+
+Module: PIL.PngImagePlugin
+  Functions:
+    - _accept
+    - _crc32
+    - _safe_zlib_decompress
+    - _save
+    - _save_all
+    - _write_multiple_frames
+    - getchunks
+    - i16
+    - i32
+    - o16
+    - o32
+    - o8
+    - putchunk
+
+Module: matplotlib._path
+  No functions imported from this module.
+
+Module: matplotlib.bezier
+  Functions:
+    - _de_casteljau1
+    - check_if_parallel
+    - concatenate_paths
+    - find_bezier_t_intersecting_with_closedpath
+    - find_control_points
+    - get_cos_sin
+    - get_intersection
+    - get_normal_points
+    - get_parallels
+    - inside_circle
+    - lru_cache
+    - make_path_regular
+    - make_wedged_bezier2
+    - split_bezier_intersecting_with_closedpath
+    - split_de_casteljau
+    - split_path_inout
+
+Module: matplotlib.path
+  Functions:
+    - _to_unmasked_float_array
+    - get_path_collection_extents
+    - lru_cache
+    - simple_linear_interpolation
+
+Module: matplotlib.transforms
+  Functions:
+    - _interval_contains_close
+    - _make_str_method
+    - blended_transform_factory
+    - composite_transform_factory
+    - interval_contains
+    - interval_contains_open
+    - inv
+    - nonsingular
+    - offset_copy
+
+Module: matplotlib.ticker
+  Functions:
+    - _decade_greater
+    - _decade_greater_equal
+    - _decade_less
+    - _decade_less_equal
+    - _if_refresh_overridden_call_and_emit_deprec
+    - is_close_to_int
+    - is_decade
+    - scale_range
+
+Module: matplotlib.scale
+  Functions:
+    - _get_scale_docs
+    - get_scale_names
+    - register_scale
+    - scale_factory
+
+Module: matplotlib._color_data
+  No functions imported from this module.
+
+Module: matplotlib.colors
+  Functions:
+    - _check_color_like
+    - _create_lookup_table
+    - _is_nth_color
+    - _make_norm_from_scale
+    - _sanitize_extrema
+    - _to_rgba_no_colorcycle
+    - _vector_magnitude
+    - _warn_if_global_cmap_modified
+    - from_levels_and_colors
+    - get_named_colors_mapping
+    - hex2color
+    - hsv_to_rgb
+    - is_color_like
+    - rgb2hex
+    - rgb_to_hsv
+    - same_color
+    - to_hex
+    - to_rgb
+    - to_rgba
+    - to_rgba_array
+
+Module: pyparsing
+  Functions:
+    - _defaultExceptionDebugAction
+    - _defaultStartDebugAction
+    - _defaultSuccessDebugAction
+    - _enable_all_warnings
+    - _escapeRegexRangeChars
+    - _flatten
+    - _makeTags
+    - _trim_arity
+    - _xml_escape
+    - col
+    - conditionAsParseAction
+    - contextmanager
+    - countedArray
+    - delimitedList
+    - dictOf
+    - downcaseTokens
+    - indentedBlock
+    - infixNotation
+    - line
+    - lineno
+    - locatedExpr
+    - makeHTMLTags
+    - makeXMLTags
+    - matchOnlyAtCol
+    - matchPreviousExpr
+    - matchPreviousLiteral
+    - nestedExpr
+    - nullDebugAction
+    - oneOf
+    - operatorPrecedence
+    - originalTextFor
+    - removeQuotes
+    - replaceHTMLEntity
+    - replaceWith
+    - srange
+    - tokenMap
+    - traceParseAction
+    - ungroup
+    - upcaseTokens
+    - withAttribute
+    - withClass
+    - wraps
+
+Module: matplotlib.fontconfig_pattern
+  Functions:
+    - _escape_val
+    - generate_fontconfig_pattern
+    - lru_cache
+
+Module: matplotlib._enums
+  Functions:
+    - _deprecate_case_insensitive_join_cap
+
+Module: __future__
+  No functions imported from this module.
+
+Module: six
+  Functions:
+    - _add_doc
+    - _import_module
+    - add_metaclass
+    - add_move
+    - assertCountEqual
+    - assertNotRegex
+    - assertRaisesRegex
+    - assertRegex
+    - b
+    - create_unbound_method
+    - ensure_binary
+    - ensure_str
+    - ensure_text
+    - get_unbound_function
+    - iteritems
+    - iterkeys
+    - iterlists
+    - itervalues
+    - python_2_unicode_compatible
+    - raise_from
+    - remove_move
+    - reraise
+    - u
+    - with_metaclass
+    - wraps
+
+Module: six.moves
+Error inspecting module six.moves: No module named '_gdbm'
+
