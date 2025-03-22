@@ -54,34 +54,25 @@ def plot_feature_map(features, labels, save_path):
     full_cmap = plt.cm.get_cmap('tab20')
     colors = [full_cmap(i) for i in np.linspace(0, 1, 20)]
     cmap = ListedColormap(colors)
-    
-    # Add a distinct color for the background (e.g., gray)
-    distinct_colors = ["gray"] + colors  # Gray for background at index 0
-    extended_cmap = ListedColormap(distinct_colors)
 
-    # Sort data by labels
+    # Sort by labels to cluster visually
     sort_idx = np.argsort(labels)
     labels = labels[sort_idx]
     features_tsne = features_tsne[sort_idx]
 
-    # Create plot
     plt.figure(figsize=(12, 8))
     unique_labels = np.unique(labels)
-    for label in unique_labels:
-        label_color = distinct_colors[label] if label == 0 else cmap(label)
+    for i, label in enumerate(unique_labels):
         plt.scatter(
             features_tsne[labels == label, 0],
             features_tsne[labels == label, 1],
-            label=f"{COCO_CLASS_LIST[label]}",
-            color=label_color,
-            alpha=0.6,
+            label=label,
+            color=cmap(i)
         )
 
-    plt.legend(loc='best', bbox_to_anchor=(1.05, 1), borderaxespad=0.)
-    plt.tight_layout()
+    plt.legend()
     plt.savefig(save_path)
     plt.close()
-
 
 def calculate_db_score(features, labels):
     f = np.stack(features, axis=0)
@@ -101,27 +92,52 @@ def calculate_db_score(features, labels):
 def main(pickle_dir, save_dir):
     os.makedirs(save_dir, exist_ok=True)
 
-    feature_file = os.path.join(pickle_dir, "new_features_all_points_{}_map.pkl")
-    label_file = os.path.join(pickle_dir, "new_labels_all_points_{}_map.pkl")
+    feature_file = os.path.join(pickle_dir, "new_features_0_map.pkl")
+    label_file = os.path.join(pickle_dir, "new_labels_0_map.pkl")
 
-    # Load features and labels
-    with open(feature_file, "rb") as f:
-        features = pickle.load(f)
+    # # Load features and labels
+    # with open(feature_file, "rb") as f:
+    #     features = pickle.load(f)
     with open(label_file, "rb") as f:
         labels = pickle.load(f)
 
     # Remap labels
     labels = np.array([top_20_indices.index(label) if label in top_20_indices else -1 for label in labels])
     filter_mask = labels != -1
-    features = [features[i] for i in range(len(features)) if filter_mask[i]]
+    # features = [features[i] for i in range(len(features)) if filter_mask[i]]
     labels = labels[filter_mask]
+    # allowed_labels = [1, 2, 8, 11, 12, 13, 14, 16, 18]
+    # print("Allowed labels by name:", [COCO_CLASS_LIST[i] for i in allowed_labels])
+    # # exit()
+    # filter_mask_2 = np.isin(labels, allowed_labels)
+    # features = [features[i] for i in range(len(features)) if filter_mask_2[i]]
+    # labels = labels[filter_mask_2]    
+
+    # ---- NEW LINES START HERE ----
+    # Count the number of samples per label (after filtering)
+    unique_labels = np.unique(labels)
+    print("len (unique_labels): ", len(unique_labels))
+    print("unique_labels: ",unique_labels )
+    label_counts = {lbl: int(np.sum(labels == lbl)) for lbl in unique_labels}
+    print("Count of labels before t-SNE:")
+    for lbl, cnt in label_counts.items():
+        print(f"{COCO_CLASS_LIST[lbl]}: {cnt}")
+    exit()
+
+
+    # # Save the list of unique labels to a new pickle file
+    # unique_labels_path = os.path.join(save_dir, "unique_labels.pkl")
+    # with open(unique_labels_path, "wb") as f:
+    #     pickle.dump(unique_labels, f)
+    # print(f"Unique labels saved to {unique_labels_path}")
+    # # ---- NEW LINES END HERE ----
 
     # Calculate DB score
     db_score = calculate_db_score(features, labels)
     print(f"Davies-Bouldin Score: {db_score}")
 
     # Plot features
-    save_path = os.path.join(save_dir, "feature_map_plot.png")
+    save_path = os.path.join(save_dir, "feature_map_plot_filtered_labels.png")
     plot_feature_map(features, labels, save_path)
     print(f"Feature map plot saved to {save_path}")
 
