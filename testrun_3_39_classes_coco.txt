@@ -1,0 +1,33 @@
+2025-05-22 12:59:20 - [32m[1mINFO   [0m - Initializaing Conv Layers with Xavier Unifrom
+2025-05-22 12:59:20 - [33m[1mWARNING[0m - Training from scratch!!. If you are testing, ignore this message. For testing, we do not load weights here.
+2025-05-22 12:59:21 - [32m[1mINFO   [0m - FLOPs for an input of size 300x300: 993.24 million
+2025-05-22 12:59:21 - [32m[1mINFO   [0m - Network Parameters: 5.09 million
+loading annotations into memory...
+Done (t=1.74s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=74.67s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=158.67s).
+Accumulating evaluation results...
+DONE (t=55.04s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.132
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.261
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.121
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.024
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.183
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.340
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.122
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.225
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.275
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.075
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.392
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.560
+2025-05-22 13:17:03 - [32m[1mINFO   [0m - AP_IoU=0.50:0.95: 0.13212590361185966
+2025-05-22 13:17:03 - [32m[1mINFO   [0m - AP_IoU=0.50: 0.2605728354107653
+2025-05-22 13:17:03 - [32m[1mINFO   [0m - AP_IoU=0.75: 0.1211843455845807
+2025-05-22 13:17:03 - [34m[1mLOGS   [0m - Done
